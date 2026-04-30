@@ -395,11 +395,48 @@ input, textarea, select { font-family: var(--font); }
   font-size: 22px;
 }
 
+/* ── Mobile action bar (hidden on desktop) ── */
+.nb-mobile-bar { display: none; }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .nb-utility   { display: none; }
   .nb-bottom    { display: none; }
   .nb-toggle    { display: flex; }
+
+  .nb-mobile-bar {
+    display: flex;
+    border-top: 1px solid var(--border);
+    border-bottom: 2px solid var(--yellow);
+  }
+
+  .nb-mobile-bar-btn {
+    flex: 1;
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nb-mobile-bar-quote {
+    background: var(--yellow);
+    color: var(--black);
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+  .nb-mobile-bar-quote:hover { background: var(--yellow-dark); }
+
+  .nb-mobile-bar-call {
+    background: var(--black);
+    color: var(--yellow);
+  }
+  .nb-mobile-bar-call:hover { background: var(--black-2); }
 }
 
 @media (max-width: 480px) {

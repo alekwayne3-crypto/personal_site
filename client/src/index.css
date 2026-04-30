@@ -403,7 +403,7 @@ input, textarea, select { font-family: var(--font); }
 }
 
 @media (max-width: 480px) {
-  .nb-logo img  { height: 80px; }
+  .nb-logo img  { height: 110px; }
 }
 
 /* ============================================================

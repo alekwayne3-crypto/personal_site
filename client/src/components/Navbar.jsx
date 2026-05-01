@@ -85,6 +85,16 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* ── Mobile action bar ── */}
+      <div className="nb-mobile-bar">
+        <button className="nb-mobile-bar-btn" onClick={() => go('contact')}>
+          Get a Free Quote
+        </button>
+        <a className="nb-mobile-bar-btn" href="tel:9187727228">
+          Call Us
+        </a>
+      </div>
+
       {/* ── Mobile dropdown ── */}
       <div className={`nb-mobile-menu${menuOpen ? ' open' : ''}`}>
         {NAV_LINKS.map(([label, id]) => (

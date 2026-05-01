@@ -251,6 +251,9 @@ input, textarea, select { font-family: var(--font); }
 }
 
 /* Mobile toggle (hidden on desktop) */
+.nb-mobile-phone-icon { display: none; align-items: center; justify-content: center; padding: 8px; color: var(--black); text-decoration: none; }
+.nb-mobile-phone-icon:hover { color: var(--yellow-dark); }
+
 .nb-toggle {
   display: none;
   flex-direction: column;
@@ -397,9 +400,10 @@ input, textarea, select { font-family: var(--font); }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
-  .nb-utility   { display: none; }
-  .nb-bottom    { display: none; }
-  .nb-toggle    { display: flex; }
+  .nb-utility            { display: none; }
+  .nb-bottom             { display: none; }
+  .nb-toggle             { display: flex; }
+  .nb-mobile-phone-icon  { display: flex; }
 }
 
 @media (max-width: 480px) {
@@ -567,7 +571,14 @@ input, textarea, select { font-family: var(--font); }
 @media (max-width: 768px) {
   .hero-left { padding: 5px 28px 60px; max-width: 100%; }
   .hero-bg-photo { object-position: 75% top; }
-  .hero-overlay { background: linear-gradient(to right, rgba(245,194,0,0.22) 0%, rgba(255,255,255,0.92) 20%, rgba(255,252,240,0.88) 55%, rgba(255,248,208,0.65) 100%); }
+  .hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.96) 0%,
+      rgba(255,252,240,0.92) 50%,
+      rgba(255,248,208,0.7) 100%
+    );
+  }
 }
 
 /* ── Scroll hint (reused) ── */

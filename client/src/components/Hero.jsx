@@ -56,7 +56,7 @@ export default function Hero() {
             Get a Free Quote →
           </button>
           <a className="hero-phone-link" href="tel:9187727228">
-            Call Us Now →
+            (918) 772-7228
           </a>
         </div>
       </div>

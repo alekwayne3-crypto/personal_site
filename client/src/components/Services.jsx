@@ -54,7 +54,7 @@ export default function Services() {
 
         <div className="services-grid">
           {SERVICES.map((s) => (
-            <div className={`service-card${s.title === 'Commercial Cleaning' ? ' hide-mobile' : ''}`} key={s.title}>
+            <div className="service-card" key={s.title}>
               <div className="service-card-top-bar" />
               <div className="service-icon-box">{s.icon}</div>
               <h3 className="service-title">{s.title}</h3>

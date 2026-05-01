@@ -395,41 +395,15 @@ input, textarea, select { font-family: var(--font); }
   font-size: 22px;
 }
 
-/* ── Mobile action bar — hidden on desktop ── */
+/* ── Responsive ── */
 .nb-mobile-bar { display: none; }
 
-/* ── Responsive ── */
 @media (max-width: 900px) {
   .nb-utility { display: none; }
-  .nb-bottom  { display: none; }
-  .nb-toggle  { display: flex; }
-
-  .nb-mobile-bar {
-    display: flex;
-    gap: 10px;
-    padding: 10px 16px;
-    background: var(--white);
-    border-top: 1px solid var(--border);
-  }
-
-  .nb-mobile-bar-btn {
-    flex: 1;
-    padding: 11px 8px;
-    font-size: 14px;
-    font-weight: 800;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    background: var(--black);
-    color: var(--white);
-    border: none;
-    transition: all var(--transition);
-  }
-  .nb-mobile-bar-btn:hover { background: var(--black-3); }
+  .nb-bottom { display: none; }
+  .nb-toggle { display: flex; }
+  .nb-mobile-bar { display: flex; gap: 10px; padding: 10px 16px; background: #fff; border-top: 1px solid #E0DDD0; border-bottom: 2px solid #F5C200; }
+  .nb-mobile-bar-btn { flex: 1; padding: 11px 8px; font-size: 14px; font-weight: 800; text-align: center; cursor: pointer; text-decoration: none; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: #0A0A0A; color: #fff; border: none; }
 }
 
 @media (max-width: 480px) {

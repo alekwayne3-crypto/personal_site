@@ -1060,7 +1060,7 @@ input, textarea, select { font-family: var(--font); }
 .form-card {
   background: var(--white);
   border-radius: var(--radius-xl);
-  padding: 48px;
+  padding: 36px 48px 58px;
   border: 1.5px solid var(--border);
   box-shadow: var(--shadow-lg);
 }

@@ -427,6 +427,7 @@ input, textarea, select { font-family: var(--font); }
   height: 100%;
   object-fit: cover;
   object-position: right top;
+  opacity: 0.85;
   z-index: 0;
 }
 

@@ -55,7 +55,7 @@ input, textarea, select { font-family: var(--font); }
 .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
 
 .section-header { text-align: center; margin-bottom: 72px; }
-@media (max-width: 900px) { .services .section-header { margin-bottom: 52px; } .contact .section-header { margin-bottom: 52px; } }
+@media (max-width: 900px) { .services .section-header { margin-bottom: 52px; } .contact .section-header { margin-bottom: 62px; } }
 
 .pill {
   display: inline-flex;

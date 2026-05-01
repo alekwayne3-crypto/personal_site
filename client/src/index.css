@@ -1030,7 +1030,8 @@ input, textarea, select { font-family: var(--font); }
 .contact { padding: 108px 0; background: var(--white); }
 
 .contact-inner { display: grid; grid-template-columns: 1fr 1.45fr; gap: 72px; align-items: start; }
-@media (max-width: 960px) { .contact-inner { grid-template-columns: 1fr; gap: 52px; } }
+.contact-hours-col { grid-column: 1; }
+@media (max-width: 960px) { .contact-inner { grid-template-columns: 1fr; gap: 52px; } .contact-form-col { order: 1; } .contact-info-col { order: 2; } .contact-hours-col { order: 3; grid-column: unset; } }
 
 .contact-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 18px; background: var(--yellow); color: var(--black); }
 .contact-title { font-size: clamp(24px, 3.2vw, 38px); font-weight: 900; color: var(--black); margin-bottom: 14px; line-height: 1.16; letter-spacing: -0.025em; }

@@ -12,6 +12,18 @@ const SERVICE_OPTIONS = [
   'Not Sure — Help Me Choose',
 ]
 
+const HOURS = [
+  { day: 'Monday – Friday', time: '8:00 AM – 6:00 PM', open: true },
+  { day: 'Saturday',        time: '9:00 AM – 5:00 PM', open: true },
+  { day: 'Sunday',          time: 'Closed',             open: false },
+]
+
+const DETAILS = [
+  { icon: '📞', label: 'Phone',        value: '(918) 772-7228' },
+  { icon: '✉️', label: 'Email',        value: 'hello@cleanbeecleaning.com' },
+  { icon: '📍', label: 'Service Area', value: 'Greater Tulsa, OK & Surrounding Areas' },
+]
+
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' })
   const [status, setStatus] = useState('idle')
@@ -47,21 +59,17 @@ export default function Contact() {
         </div>
 
         <div className="contact-inner">
-          {/* Left — info */}
-          <div className="contact-info">
+
+          {/* Left — info (order-2 on mobile) */}
+          <div className="contact-info-col">
             <span className="contact-eyebrow">Reach Us</span>
             <h3 className="contact-title">Let&apos;s Make Your Home Shine</h3>
             <p className="contact-sub">
               Fill out the form and a Clean Bee team member will reach back out with
               a custom quote. Or give us a call — we&apos;re happy to chat.
             </p>
-
             <div className="contact-details">
-              {[
-                { icon: '📞', label: 'Phone', value: '(918) 772-7228' },
-                { icon: '✉️', label: 'Email', value: 'hello@cleanbeecleaning.com' },
-                { icon: '📍', label: 'Service Area', value: 'Greater Tulsa, OK & Surrounding Areas' },
-              ].map(({ icon, label, value }) => (
+              {DETAILS.map(({ icon, label, value }) => (
                 <div className="contact-item" key={label}>
                   <div className="contact-item-icon">{icon}</div>
                   <div>
@@ -73,8 +81,8 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — form */}
-          <div className="form-card">
+          {/* Right — form (order-1 on mobile) */}
+          <div className="form-card contact-form-col">
             {status === 'success' ? (
               <div className="form-success">
                 <div className="form-success-icon">🐝</div>
@@ -89,7 +97,6 @@ export default function Contact() {
               <>
                 <h3 className="form-card-title">Request a Free Quote</h3>
                 <p className="form-card-sub">No obligation — we&apos;ll get back to you fast.</p>
-
                 <form onSubmit={submit}>
                   <div className="form-row">
                     <div className="form-col">
@@ -101,7 +108,6 @@ export default function Contact() {
                       <input className="form-input" type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} required />
                     </div>
                   </div>
-
                   <div className="form-row">
                     <div className="form-col">
                       <label className="form-label">Phone Number</label>
@@ -115,20 +121,11 @@ export default function Contact() {
                       </select>
                     </div>
                   </div>
-
                   <div className="form-col">
                     <label className="form-label">Tell Us About Your Home *</label>
-                    <textarea
-                      className="form-textarea"
-                      placeholder="e.g. 3-bed house in South Tulsa, need bi-weekly cleaning, 1 dog…"
-                      value={form.message}
-                      onChange={set('message')}
-                      required
-                    />
+                    <textarea className="form-textarea" placeholder="e.g. 3-bed house in South Tulsa, need bi-weekly cleaning, 1 dog…" value={form.message} onChange={set('message')} required />
                   </div>
-
                   {status === 'error' && <p className="form-error">⚠️ {errMsg}</p>}
-
                   <button type="submit" className="form-submit" disabled={status === 'loading'}>
                     {status === 'loading' ? '⏳ Sending…' : '🐝 Send My Free Quote Request'}
                   </button>
@@ -137,20 +134,17 @@ export default function Contact() {
             )}
           </div>
 
-          {/* Hours — separate grid item so it can reorder on mobile */}
-          <div className="contact-hours-box contact-hours-grid-item">
+          {/* Hours — order-3 on mobile */}
+          <div className="contact-hours-box contact-hours-col">
             <div className="contact-hours-title">🕐 Business Hours</div>
-            {[
-              { day: 'Monday – Friday', time: '8:00 AM – 6:00 PM', open: true },
-              { day: 'Saturday',        time: '9:00 AM – 5:00 PM', open: true },
-              { day: 'Sunday',          time: 'Closed',             open: false },
-            ].map(({ day, time, open }) => (
+            {HOURS.map(({ day, time, open }) => (
               <div className="hours-row" key={day}>
                 <span>{day}</span>
                 <span className={open ? 'hours-open' : 'hours-closed'}>{time}</span>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

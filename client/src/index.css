@@ -198,7 +198,7 @@ input, textarea, select { font-family: var(--font); }
   flex-shrink: 0;
 }
 .nb-logo img {
-  height: 106px;
+  height: 96px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 2px 12px rgba(245,194,0,0.2));

@@ -23,7 +23,7 @@ export default function Hero() {
       {/* Text content — same layout as before */}
       <div className="hero-left">
         <p className="hero-eyebrow">
-          <span className="hero-dot" /> Serving Tulsa, OKC &amp; Surrounding Areas
+          <span className="hero-dot" /> Serving Tulsa &amp; Surrounding Areas
         </p>
 
         <h1 className="hero-title">

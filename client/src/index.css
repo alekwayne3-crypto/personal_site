@@ -1060,11 +1060,11 @@ input, textarea, select { font-family: var(--font); }
 .form-card {
   background: var(--white);
   border-radius: var(--radius-xl);
-  padding: 36px 48px 58px;
+  padding: 48px;
   border: 1.5px solid var(--border);
   box-shadow: var(--shadow-lg);
 }
-@media (max-width: 600px) { .form-card { padding: 28px 20px; } }
+@media (max-width: 960px) { .form-card { padding: 18px 20px 42px; } }
 
 .form-card-title { font-size: 22px; font-weight: 900; color: var(--black); margin-bottom: 5px; letter-spacing: -0.02em; }
 .form-card-sub   { font-size: 14px; color: var(--text-muted); margin-bottom: 30px; }

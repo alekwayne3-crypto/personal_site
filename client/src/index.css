@@ -789,7 +789,8 @@ input, textarea, select { font-family: var(--font); }
 .about-side-badge-icon { font-size: 20px; }
 .about-side-badge-text { font-size: 13px; font-weight: 700; color: var(--yellow); }
 
-.about-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 18px; background: var(--white); color: var(--black); border: 2px solid var(--yellow); }
+.about-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 18px; background: linear-gradient(135deg, #FFFBE6 0%, #FFF5B0 35%, #FFFBE6 65%, #FFF0A0 100%); color: var(--black); box-shadow: 0 0 0 2px #DAA520; }
+@media (max-width: 900px) { .about-tag { margin-top: 24px; } }
 .about-title { font-size: clamp(24px, 3.2vw, 38px); font-weight: 900; color: var(--black); line-height: 1.14; margin-bottom: 18px; letter-spacing: -0.025em; }
 .about-body { font-size: 15px; color: var(--text-muted); line-height: 1.82; margin-bottom: 12px; }
 

@@ -577,7 +577,7 @@ input, textarea, select { font-family: var(--font); }
   .hero-left { padding: 5px 28px 30px; max-width: 100%; }
   .hero-bg-photo { object-position: 75% top; }
   .hero-overlay { background: linear-gradient(to right, rgba(255,255,255,0.93) 0%, rgba(255,252,240,0.89) 50%, rgba(255,248,208,0.65) 100%); }
-  .hero-phone-link { border: 2px solid var(--yellow); border-radius: 8px; padding: 8px 32px; }
+  .hero-phone-link { border: 2px solid var(--yellow); border-radius: 8px; padding: 9px 32px; }
 }
 
 /* ── Scroll hint (reused) ── */

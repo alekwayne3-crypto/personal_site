@@ -575,6 +575,13 @@ input, textarea, select { font-family: var(--font); }
       rgba(255,248,208,0.7) 100%
     );
   }
+  .hero-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top left, rgba(245,194,0,0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
 }
 
 /* ── Scroll hint (reused) ── */

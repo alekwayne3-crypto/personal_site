@@ -567,15 +567,7 @@ input, textarea, select { font-family: var(--font); }
 @media (max-width: 768px) {
   .hero-left { padding: 5px 28px 60px; max-width: 100%; }
   .hero-bg-photo { object-position: 75% top; }
-  .hero-overlay {
-    background: linear-gradient(
-      to right,
-      rgba(255,255,255,0.96) 0%,
-      rgba(255,252,240,0.92) 50%,
-      rgba(255,248,208,0.7) 100%
-    );
-  }
-  .hero-overlay::after { content: ''; position: absolute; inset: 0; background: rgba(245,194,0,0.12); pointer-events: none; }
+  .hero-overlay { background: linear-gradient(to right, rgba(245,194,0,0.22) 0%, rgba(255,255,255,0.92) 20%, rgba(255,252,240,0.88) 55%, rgba(255,248,208,0.65) 100%); }
 }
 
 /* ── Scroll hint (reused) ── */

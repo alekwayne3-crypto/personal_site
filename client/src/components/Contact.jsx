@@ -48,7 +48,7 @@ export default function Contact() {
 
         <div className="contact-inner">
           {/* Left — info */}
-          <div>
+          <div className="contact-info">
             <span className="contact-eyebrow">Reach Us</span>
             <h3 className="contact-title">Let&apos;s Make Your Home Shine</h3>
             <p className="contact-sub">
@@ -68,20 +68,6 @@ export default function Contact() {
                     <div className="contact-item-label">{label}</div>
                     <div className="contact-item-value">{value}</div>
                   </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="contact-hours-box">
-              <div className="contact-hours-title">🕐 Business Hours</div>
-              {[
-                { day: 'Monday – Friday', time: '8:00 AM – 6:00 PM', open: true },
-                { day: 'Saturday',        time: '9:00 AM – 5:00 PM', open: true },
-                { day: 'Sunday',          time: 'Closed',             open: false },
-              ].map(({ day, time, open }) => (
-                <div className="hours-row" key={day}>
-                  <span>{day}</span>
-                  <span className={open ? 'hours-open' : 'hours-closed'}>{time}</span>
                 </div>
               ))}
             </div>
@@ -149,6 +135,21 @@ export default function Contact() {
                 </form>
               </>
             )}
+          </div>
+
+          {/* Hours — separate grid item so it can reorder on mobile */}
+          <div className="contact-hours-box contact-hours-grid-item">
+            <div className="contact-hours-title">🕐 Business Hours</div>
+            {[
+              { day: 'Monday – Friday', time: '8:00 AM – 6:00 PM', open: true },
+              { day: 'Saturday',        time: '9:00 AM – 5:00 PM', open: true },
+              { day: 'Sunday',          time: 'Closed',             open: false },
+            ].map(({ day, time, open }) => (
+              <div className="hours-row" key={day}>
+                <span>{day}</span>
+                <span className={open ? 'hours-open' : 'hours-closed'}>{time}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ export default function WhyUs() {
           <span className="pill pill-white-yellow">Why Clean Bee?</span>
           <h2 className="h2 h2-dark">The Clean Bee Difference</h2>
           <p className="lead lead-muted">
-            We don&apos;t just clean — we build lasting trust. Here&apos;s why hundreds
+            We don&apos;t just clean, we build lasting trust. Here&apos;s why hundreds
             of Tulsa families choose Clean Bee over every other option.
           </p>
         </div>

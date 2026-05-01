@@ -406,6 +406,7 @@ input, textarea, select { font-family: var(--font); }
   .nb-mobile-icons { display: flex; }
   .nb-mobile-icons .nb-toggle { display: flex; }
   .nb-top-inner    { height: 100px; }
+  .callout-banner  { display: none; }
 }
 
 @media (max-width: 480px) {

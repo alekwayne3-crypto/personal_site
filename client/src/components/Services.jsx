@@ -30,10 +30,10 @@ const SERVICES = [
     features: ['Construction dust', 'Window & glass clean', 'Floor polish', 'Detail vacuuming'],
   },
   {
-    icon: '🌿',
-    title: 'Green Cleaning',
-    desc: 'Non-toxic, eco-certified products — completely safe for children, pets, and allergy-sensitive households.',
-    features: ['Non-toxic products', 'Pet & child safe', 'Eco-certified', 'Allergy-friendly'],
+    icon: '🏢',
+    title: 'Commercial Cleaning',
+    desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
+    features: ['Office & workspace', 'Restroom sanitation', 'Floor care', 'Flexible scheduling'],
   },
 ]
 
@@ -54,7 +54,7 @@ export default function Services() {
 
         <div className="services-grid">
           {SERVICES.map((s) => (
-            <div className={`service-card${s.title === 'Green Cleaning' ? ' hide-mobile' : ''}`} key={s.title}>
+            <div className={`service-card${s.title === 'Commercial Cleaning' ? ' hide-mobile' : ''}`} key={s.title}>
               <div className="service-card-top-bar" />
               <div className="service-icon-box">{s.icon}</div>
               <h3 className="service-title">{s.title}</h3>

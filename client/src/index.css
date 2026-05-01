@@ -1053,12 +1053,12 @@ input, textarea, select { font-family: var(--font); }
 .contact-item-label { font-size: 11px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
 .contact-item-value { font-size: 15px; font-weight: 700; color: var(--black); }
 
-.contact-hours-box { background: var(--yellow); border-radius: var(--radius); padding: 22px 24px; }
-.contact-hours-title { font-size: 13px; font-weight: 800; color: var(--black); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
-.hours-row { display: flex; justify-content: space-between; font-size: 13px; color: rgba(0,0,0,0.6); padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+.contact-hours-box { background: var(--black); border-radius: var(--radius); padding: 22px 24px; }
+.contact-hours-title { font-size: 13px; font-weight: 800; color: var(--white); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+.hours-row { display: flex; justify-content: space-between; font-size: 13px; color: rgba(255,255,255,0.7); padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.15); }
 .hours-row:last-child { border-bottom: none; }
-.hours-open { font-weight: 800; color: var(--black); }
-.hours-closed { font-weight: 600; color: rgba(0,0,0,0.4); }
+.hours-open { font-weight: 800; color: var(--white); }
+.hours-closed { font-weight: 600; color: rgba(255,255,255,0.4); }
 
 /* Form card */
 .form-card {

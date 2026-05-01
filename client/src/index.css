@@ -559,10 +559,10 @@ input, textarea, select { font-family: var(--font); }
   flex-wrap: wrap;
 }
 
-.hero-cta { font-size: 15px; padding: 15px 32px; border-radius: 8px; }
+.hero-cta { font-size: 17px; padding: 15px 32px; border-radius: 8px; }
 
 .hero-phone-link {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 900;
   color: var(--black);
   letter-spacing: -0.02em;

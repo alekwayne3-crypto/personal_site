@@ -1035,7 +1035,7 @@ input, textarea, select { font-family: var(--font); }
 
 .contact-inner { display: grid; grid-template-columns: 1fr 1.45fr; gap: 72px; align-items: start; }
 .contact-hours-col { grid-column: 1; }
-@media (max-width: 960px) { .contact-inner { grid-template-columns: 1fr; gap: 52px; } .contact-form-col { order: 1; margin-top: -20px; margin-bottom: 16px; } .contact-info-col { order: 2; text-align: center; margin-top: 16px; } .contact-info-col .contact-item { justify-content: flex-start; flex-direction: row; align-items: center; text-align: left; } .contact-info-col .contact-item-value { margin-top: -6px; } .contact-details .contact-item:nth-child(2) { display: none; } .contact-hours-col { order: 3; grid-column: unset; margin-top: -28px; } }
+@media (max-width: 960px) { .contact-inner { grid-template-columns: 1fr; gap: 52px; } .contact-form-col { order: 1; margin-top: -20px; margin-bottom: 16px; } .contact-info-col { order: 2; text-align: left; margin-top: 16px; } .contact-info-col .contact-item { justify-content: flex-start; flex-direction: row; align-items: center; text-align: left; } .contact-info-col .contact-item-value { margin-top: -6px; } .contact-details .contact-item:nth-child(2) { display: none; } .contact-hours-col { order: 3; grid-column: unset; margin-top: -28px; } }
 
 .contact-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 18px; background: var(--white); color: var(--black); border: 2px solid var(--yellow); }
 .contact-title { font-size: clamp(24px, 3.2vw, 38px); font-weight: 900; color: var(--black); margin-bottom: 14px; line-height: 1.16; letter-spacing: -0.025em; }

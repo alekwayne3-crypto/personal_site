@@ -571,7 +571,7 @@ input, textarea, select { font-family: var(--font); }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .hero { padding-top: 145px; min-height: 80vh; }
+  .hero { padding-top: 145px; min-height: 88vh; }
   .hero-left { padding: 5px 28px 30px; max-width: 100%; }
   .hero-bg-photo { object-position: 75% top; }
   .hero-overlay { background: linear-gradient(to right, rgba(255,255,255,0.93) 0%, rgba(255,252,240,0.89) 50%, rgba(255,248,208,0.65) 100%); }

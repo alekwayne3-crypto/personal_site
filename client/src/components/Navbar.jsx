@@ -54,14 +54,16 @@ export default function Navbar() {
           </div>
 
           {/* Mobile phone icon + hamburger */}
-          <a className="nb-mobile-phone-icon" href="tel:9187727228" aria-label="Call us">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-          </a>
-          <button className="nb-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
-            <span className={menuOpen ? 'open' : ''} />
-            <span className={menuOpen ? 'open' : ''} />
-            <span className={menuOpen ? 'open' : ''} />
-          </button>
+          <div className="nb-mobile-icons">
+            <a className="nb-mobile-phone-icon" href="tel:9187727228" aria-label="Call us">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            </a>
+            <button className="nb-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+              <span className={menuOpen ? 'open' : ''} />
+              <span className={menuOpen ? 'open' : ''} />
+              <span className={menuOpen ? 'open' : ''} />
+            </button>
+          </div>
 
         </div>
       </div>

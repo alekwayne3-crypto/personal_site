@@ -45,7 +45,7 @@ export default function Services() {
       <div className="container">
         <div className="section-header">
           <span className="pill pill-white-yellow">Our Services</span>
-          <h2 className="h2 h2-dark">Everything Your Home Needs</h2>
+          <h2 className="h2 h2-dark">Cleaning Built Around You</h2>
           <p className="lead lead-muted">
             From routine upkeep to one-time deep cleans, Clean Bee offers flexible
             packages designed for every Tulsa homeowner.

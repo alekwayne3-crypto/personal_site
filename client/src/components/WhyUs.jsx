@@ -6,18 +6,18 @@ const REASONS = [
   },
   {
     icon: '✅',
-    title: 'Background-Checked Staff',
+    title: 'Background Checked Staff',
     desc: 'Every member of our team passes a thorough background check before entering your home. Trust is everything.',
   },
   {
     icon: '🌱',
-    title: 'Eco-Friendly Products',
-    desc: 'Our non-toxic, biodegradable solutions are safe for children, pets, and the environment — zero compromises.',
+    title: 'Eco Friendly Products',
+    desc: 'Our nontoxic, biodegradable solutions are safe for children, pets, and the environment — zero compromises.',
   },
   {
     icon: '⭐',
     title: 'Satisfaction Guaranteed',
-    desc: "Not happy with something? Tell us within 24 hours and we'll re-clean that area at absolutely no charge.",
+    desc: "Not happy with something? Tell us within 24 hours and we'll clean that area again at absolutely no charge.",
   },
   {
     icon: '📅',

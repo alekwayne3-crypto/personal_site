@@ -405,7 +405,7 @@ input, textarea, select { font-family: var(--font); }
   .nb-bottom       { display: none; }
   .nb-mobile-icons { display: flex; }
   .nb-mobile-icons .nb-toggle { display: flex; }
-  .nb-top-inner    { height: 95px; }
+  .nb-top-inner    { height: 100px; }
 }
 
 @media (max-width: 480px) {

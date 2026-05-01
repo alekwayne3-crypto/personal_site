@@ -459,7 +459,7 @@ input, textarea, select { font-family: var(--font); }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 90px 56px 100px 170px;
+  padding: 60px 56px 70px 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;

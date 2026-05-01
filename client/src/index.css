@@ -1035,7 +1035,7 @@ input, textarea, select { font-family: var(--font); }
 
 .contact-inner { display: grid; grid-template-columns: 1fr 1.45fr; gap: 72px; align-items: start; }
 .contact-hours-col { grid-column: 1; }
-@media (max-width: 960px) { .contact-inner { grid-template-columns: 1fr; gap: 52px; } .contact-form-col { order: 1; margin-top: -20px; margin-bottom: 16px; } .contact-info-col { order: 2; text-align: center; margin-top: 16px; } .contact-info-col .contact-item { justify-content: center; } .contact-hours-col { order: 3; grid-column: unset; margin-top: -24px; } .contact-details { display: none !important; } }
+@media (max-width: 960px) { .contact-inner { grid-template-columns: 1fr; gap: 52px; } .contact-form-col { order: 1; margin-top: -20px; margin-bottom: 16px; } .contact-info-col { order: 2; text-align: center; margin-top: 16px; } .contact-info-col .contact-item { justify-content: center; } .contact-hours-col { order: 3; grid-column: unset; margin-top: -28px; } .contact-details { display: none !important; } }
 
 .contact-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 18px; background: var(--white); color: var(--black); border: 2px solid var(--yellow); }
 .contact-title { font-size: clamp(24px, 3.2vw, 38px); font-weight: 900; color: var(--black); margin-bottom: 14px; line-height: 1.16; letter-spacing: -0.025em; }
@@ -1053,12 +1053,12 @@ input, textarea, select { font-family: var(--font); }
 .contact-item-label { font-size: 11px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
 .contact-item-value { font-size: 15px; font-weight: 700; color: var(--black); }
 
-.contact-hours-box { background: var(--black); border-radius: var(--radius); padding: 22px 24px; }
-.contact-hours-title { font-size: 13px; font-weight: 800; color: var(--white); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
-.hours-row { display: flex; justify-content: space-between; font-size: 13px; color: rgba(255,255,255,0.7); padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.contact-hours-box { background: var(--yellow); border-radius: var(--radius); padding: 22px 24px; }
+.contact-hours-title { font-size: 13px; font-weight: 800; color: var(--black); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+.hours-row { display: flex; justify-content: space-between; font-size: 13px; color: rgba(0,0,0,0.6); padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
 .hours-row:last-child { border-bottom: none; }
-.hours-open { font-weight: 800; color: var(--white); }
-.hours-closed { font-weight: 600; color: rgba(255,255,255,0.4); }
+.hours-open { font-weight: 800; color: var(--black); }
+.hours-closed { font-weight: 600; color: rgba(0,0,0,0.4); }
 
 /* Form card */
 .form-card {

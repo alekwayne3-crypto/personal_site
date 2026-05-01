@@ -31,9 +31,8 @@ export default function Hero() {
         </h1>
 
         <p className="hero-body">
-          Let Clean Bee deliver professional home cleaning services in Tulsa,
-          Oklahoma tailored to your schedule and budget. Backed by our
-          100% Satisfaction Guarantee.
+          Professional home cleaning in Tulsa, tailored to your schedule, budget,
+          and standards. Backed by our 100% Satisfaction Guarantee.
         </p>
 
         <hr className="hero-divider" />

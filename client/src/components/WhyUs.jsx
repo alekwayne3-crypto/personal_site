@@ -36,7 +36,7 @@ export default function WhyUs() {
     <section className="why-us" id="why-us">
       <div className="container">
         <div className="section-header">
-          <span className="pill pill-yellow">Why Clean Bee?</span>
+          <span className="pill pill-white-yellow">Why Clean Bee?</span>
           <h2 className="h2 h2-dark">The Clean Bee Difference</h2>
           <p className="lead lead-muted">
             We don&apos;t just clean — we build lasting trust. Here&apos;s why hundreds

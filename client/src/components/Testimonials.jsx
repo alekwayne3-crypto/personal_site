@@ -42,7 +42,7 @@ export default function Testimonials() {
     <section className="testimonials" id="testimonials">
       <div className="container">
         <div className="section-header">
-          <span className="pill pill-yellow">Customer Reviews</span>
+          <span className="pill pill-white-yellow">Customer Reviews</span>
           <h2 className="h2 h2-dark">Tulsa Loves Clean Bee</h2>
           <p className="lead lead-muted">
             Don&apos;t take our word for it — here&apos;s what our neighbors across

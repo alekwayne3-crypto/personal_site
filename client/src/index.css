@@ -562,7 +562,7 @@ input, textarea, select { font-family: var(--font); }
 .hero-cta { font-size: 15px; padding: 15px 32px; border-radius: 8px; }
 
 .hero-phone-link {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 900;
   color: var(--black);
   letter-spacing: -0.02em;

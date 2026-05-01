@@ -405,6 +405,7 @@ input, textarea, select { font-family: var(--font); }
   .nb-bottom       { display: none; }
   .nb-mobile-icons { display: flex; }
   .nb-mobile-icons .nb-toggle { display: flex; }
+  .nb-top-inner    { height: 90px; }
 }
 
 @media (max-width: 480px) {
@@ -432,7 +433,7 @@ input, textarea, select { font-family: var(--font); }
   height: 100%;
   object-fit: cover;
   object-position: right top;
-  opacity: 0.95;
+  opacity: 0.92;
   z-index: 0;
 }
 

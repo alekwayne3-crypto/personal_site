@@ -3,12 +3,12 @@ import { useState } from 'react'
 const TEAM_IMG = '/team.jpg'
 
 const POINTS = [
-  { icon: '🏆', text: "Award-winning local service" },
-  { icon: '🔐', text: "Fully bonded & insured" },
-  { icon: '👥', text: "Background-checked staff" },
-  { icon: '🌱', text: "Eco-friendly products" },
-  { icon: '📅', text: "Flexible scheduling" },
-  { icon: '⭐', text: "100% satisfaction guarantee" },
+  { icon: '🏆', text: "Award-Winning Local Service" },
+  { icon: '🔐', text: "Fully Bonded & Insured" },
+  { icon: '👥', text: "Background-Checked Staff" },
+  { icon: '🌱', text: "Eco-Friendly Products" },
+  { icon: '📅', text: "Flexible Scheduling" },
+  { icon: '⭐', text: "100% Satisfaction Guarantee" },
 ]
 
 export default function About() {

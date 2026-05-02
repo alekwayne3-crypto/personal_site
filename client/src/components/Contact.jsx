@@ -83,7 +83,6 @@ export default function Contact() {
             ) : (
               <>
                 <h3 className="form-card-title">Get a Free Quote Today</h3>
-                <p className="form-card-sub">A team member will be in touch with details.</p>
                 <form onSubmit={submit}>
                   <div className="form-row">
                     <div className="form-col">

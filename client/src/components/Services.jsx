@@ -17,7 +17,7 @@ const SERVICES = [
     icon: '🏢',
     title: 'Commercial Cleaning',
     desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
-    features: ['Office & workspace', 'Restroom sanitation', 'Floor care', 'Flexible scheduling'],
+    features: ['Office & Workspace Cleaning', 'Restroom Sanitation', 'Floor Care & Maintenance', 'Flexible Scheduling', 'Trash Removal & Recycling', 'Custom Cleaning Plans'],
   },
   {
     icon: '🔄',

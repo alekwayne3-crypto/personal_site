@@ -1,17 +1,5 @@
 import { useState } from 'react'
 
-const SERVICE_OPTIONS = [
-  'Standard Cleaning',
-  'Deep Cleaning',
-  'Move-In / Move-Out Cleaning',
-  'Recurring Cleaning — Weekly',
-  'Recurring Cleaning — Bi-Weekly',
-  'Recurring Cleaning — Monthly',
-  'Post-Construction Cleaning',
-  'Green / Eco-Friendly Cleaning',
-  'Not Sure — Help Me Choose',
-]
-
 const HOURS = [
   { day: 'Monday – Friday', time: '8:00 AM – 6:00 PM', open: true },
   { day: 'Saturday',        time: '9:00 AM – 5:00 PM', open: true },
@@ -24,12 +12,27 @@ const DETAILS = [
   { icon: '📍', label: 'Service Area', value: 'Tulsa, OK' },
 ]
 
+const STEPS = [
+  { key: 'bedrooms',  question: 'How many bedrooms?',  options: ['1', '2', '3', '4', '5', '6+'] },
+  { key: 'bathrooms', question: 'How many bathrooms?', options: ['1', '1.5', '2', '2.5', '3', '4+'] },
+  { key: 'service',   question: 'What type of cleaning?', options: ['Standard Cleaning', 'Deep Cleaning', 'Move-In / Move-Out', 'Recurring Cleaning', 'Post-Construction', 'Not Sure'] },
+]
+
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', bedrooms: '', bathrooms: '', message: '' })
+  const [step, setStep] = useState(0)
+  const [form, setForm] = useState({ bedrooms: '', bathrooms: '', service: '', name: '', phone: '', email: '', message: '' })
   const [status, setStatus] = useState('idle')
   const [errMsg, setErrMsg] = useState('')
 
-  const set = (f) => (e) => setForm((prev) => ({ ...prev, [f]: e.target.value }))
+  const totalSteps = STEPS.length + 1
+  const progress = Math.round(((step) / totalSteps) * 100)
+
+  const pick = (key, val) => {
+    setForm(f => ({ ...f, [key]: val }))
+    setStep(s => s + 1)
+  }
+
+  const set = (f) => (e) => setForm(prev => ({ ...prev, [f]: e.target.value }))
 
   const submit = async (e) => {
     e.preventDefault()
@@ -59,7 +62,7 @@ export default function Contact() {
 
         <div className="contact-inner">
 
-          {/* Left — info (order-2 on mobile) */}
+          {/* Left — info */}
           <div className="contact-info-col">
             <span className="contact-eyebrow">Reach Us</span>
             <h3 className="contact-title">Let&apos;s Make Your Home Shine</h3>
@@ -80,7 +83,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — form (order-1 on mobile) */}
+          {/* Right — funnel form */}
           <div className="form-card contact-form-col">
             {status === 'success' ? (
               <div className="form-success">
@@ -94,51 +97,61 @@ export default function Contact() {
               </div>
             ) : (
               <>
-                <h3 className="form-card-title">Request a Free Quote</h3>
-                <p className="form-card-sub">A team member will be in touch with details.</p>
-                <form onSubmit={submit}>
-                  <div className="form-row">
-                    <div className="form-col">
-                      <label className="form-label">Full Name *</label>
-                      <input className="form-input" type="text" placeholder="Jane Smith" value={form.name} onChange={set('name')} required />
+                <div className="funnel-progress-bar">
+                  <div className="funnel-progress-fill" style={{ width: `${progress}%` }} />
+                </div>
+
+                {step < STEPS.length ? (
+                  <div className="funnel-step">
+                    <p className="funnel-step-num">Step {step + 1} of {totalSteps}</p>
+                    <h3 className="funnel-question">{STEPS[step].question}</h3>
+                    <div className="funnel-options">
+                      {STEPS[step].options.map(opt => (
+                        <button
+                          key={opt}
+                          className={`funnel-option${form[STEPS[step].key] === opt ? ' selected' : ''}`}
+                          onClick={() => pick(STEPS[step].key, opt)}
+                          type="button"
+                        >
+                          {opt}
+                        </button>
+                      ))}
                     </div>
-                    <div className="form-col">
-                      <label className="form-label">Email Address *</label>
-                      <input className="form-input" type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} required />
-                    </div>
+                    {step > 0 && (
+                      <button className="funnel-back" onClick={() => setStep(s => s - 1)} type="button">← Back</button>
+                    )}
                   </div>
-                  <div className="form-row">
-                    <div className="form-col">
-                      <label className="form-label">Phone Number</label>
-                      <input className="form-input" type="tel" placeholder="(918) 555-0000" value={form.phone} onChange={set('phone')} />
-                    </div>
-                    <div className="form-col">
-                      <label className="form-label">How Many Bedrooms?</label>
-                      <select className="form-select" value={form.bedrooms} onChange={set('bedrooms')}>
-                        <option value="">Select…</option>
-                        {['1', '2', '3', '4', '5', '6+'].map(o => <option key={o} value={o}>{o}</option>)}
-                      </select>
-                    </div>
+                ) : (
+                  <div className="funnel-step">
+                    <p className="funnel-step-num">Step {step + 1} of {totalSteps}</p>
+                    <h3 className="funnel-question">Almost done — how can we reach you?</h3>
+                    <form onSubmit={submit}>
+                      <div className="form-row">
+                        <div className="form-col">
+                          <label className="form-label">Full Name *</label>
+                          <input className="form-input" type="text" placeholder="Jane Smith" value={form.name} onChange={set('name')} required />
+                        </div>
+                        <div className="form-col">
+                          <label className="form-label">Phone Number *</label>
+                          <input className="form-input" type="tel" placeholder="(918) 555-0000" value={form.phone} onChange={set('phone')} required />
+                        </div>
+                      </div>
+                      <div className="form-col">
+                        <label className="form-label">Email Address *</label>
+                        <input className="form-input" type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} required />
+                      </div>
+                      <div className="form-col">
+                        <label className="form-label">Anything else we should know?</label>
+                        <textarea className="form-textarea" placeholder="e.g. pets, special requests, preferred schedule…" value={form.message} onChange={set('message')} />
+                      </div>
+                      {status === 'error' && <p className="form-error">⚠️ {errMsg}</p>}
+                      <button type="submit" className="form-submit" disabled={status === 'loading'}>
+                        {status === 'loading' ? '⏳ Sending…' : '🐝 Send My Free Quote Request'}
+                      </button>
+                    </form>
+                    <button className="funnel-back" onClick={() => setStep(s => s - 1)} type="button">← Back</button>
                   </div>
-                  <div className="form-row">
-                    <div className="form-col">
-                      <label className="form-label">How Many Bathrooms?</label>
-                      <select className="form-select" value={form.bathrooms} onChange={set('bathrooms')}>
-                        <option value="">Select…</option>
-                        {['1', '1.5', '2', '2.5', '3', '3.5', '4+'].map(o => <option key={o} value={o}>{o}</option>)}
-                      </select>
-                    </div>
-                    <div className="form-col" />
-                  </div>
-                  <div className="form-col">
-                    <label className="form-label">Tell Us About Your Home *</label>
-                    <textarea className="form-textarea" placeholder="e.g. 3-bed house in South Tulsa, need bi-weekly cleaning, 1 dog…" value={form.message} onChange={set('message')} required />
-                  </div>
-                  {status === 'error' && <p className="form-error">⚠️ {errMsg}</p>}
-                  <button type="submit" className="form-submit" disabled={status === 'loading'}>
-                    {status === 'loading' ? '⏳ Sending…' : '🐝 Send My Free Quote Request'}
-                  </button>
-                </form>
+                )}
               </>
             )}
           </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 const SERVICES = [
   {
@@ -41,7 +41,21 @@ const SERVICES = [
 
 export default function Services() {
   const [open, setOpen] = useState(null)
+  const [closing, setClosing] = useState(null)
+  const closingTimer = useRef(null)
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+
+  const handleOpen = (i) => {
+    clearTimeout(closingTimer.current)
+    if (open === i) {
+      setClosing(i)
+      setOpen(null)
+      closingTimer.current = setTimeout(() => setClosing(null), 350)
+    } else {
+      setClosing(null)
+      setOpen(i)
+    }
+  }
 
   return (
     <section className="services" id="services">
@@ -61,7 +75,7 @@ export default function Services() {
               key={s.title}
               className={`svc-item${open === i ? ' svc-item--open' : ''}`}
             >
-              <button className="svc-header" onClick={() => setOpen(open === i ? null : i)}>
+              <button className="svc-header" onClick={() => handleOpen(i)}>
                 <div className="svc-header-left">
                   <span className="svc-icon">{s.icon}</span>
                   <span className="svc-title">{s.title}</span>
@@ -69,7 +83,7 @@ export default function Services() {
                 <span className="svc-arrow">{open === i ? '−' : '+'}</span>
               </button>
 
-              <div className={`svc-body-wrap${open === i ? ' svc-body-wrap--open' : ''}`}>
+              <div className={`svc-body-wrap${open === i ? ' svc-body-wrap--open' : closing === i ? ' svc-body-wrap--closing' : ''}`}>
                 <div className="svc-body">
                   <p className="svc-desc">{s.desc}</p>
                   <ul className="svc-features">

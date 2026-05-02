@@ -17,8 +17,7 @@ export default function Navbar() {
   }
 
   const NAV_LINKS = [
-    ['Residential',    'services'],
-    ['Deep Cleaning',  'services'],
+    ['Our Services',   'services'],
     ['Why Clean Bee',  'why-us'],
     ['Get Free Quote', 'contact'],
     ['About Us',       'about'],

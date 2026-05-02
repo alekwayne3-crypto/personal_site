@@ -97,6 +97,7 @@ export default function Contact() {
               </div>
             ) : (
               <>
+                <h3 className="form-card-title">Get a Free Quote</h3>
                 <div className="funnel-progress-bar">
                   <div className="funnel-progress-fill" style={{ width: `${progress}%` }} />
                 </div>

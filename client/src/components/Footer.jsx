@@ -49,7 +49,7 @@ export default function Footer() {
             <div>
               <h4 className="footer-col-title">Company</h4>
               <ul className="footer-links">
-                {[['About Clean Bee','about'],['Customer Reviews','testimonials'],['Why Choose Us','why-us'],['Free Quote','contact']].map(([l,id]) => (
+                {[['About Clean Bee','about'],['Customer Reviews','testimonials'],['Why Clean Bee','why-us'],['Free Quote','contact']].map(([l,id]) => (
                   <li key={l}><a href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{l}</a></li>
                 ))}
               </ul>
@@ -61,7 +61,7 @@ export default function Footer() {
                 { icon: '📞', text: '(918) 772-7228' },
                 { icon: '✉️', text: 'info@cleanbeetulsa.com' },
                 { icon: '📍', text: 'Tulsa, OK & Surrounding Areas' },
-                { icon: '🕐', text: 'Mon–Fri 8AM–6PM · Sat 9AM–5PM' },
+                { icon: '🕐', text: 'Mon–Fri 8AM–8PM · Sat 9AM–5PM' },
               ].map(({ icon, text }) => (
                 <div className="footer-contact-row" key={text}>
                   <span className="footer-contact-icon">{icon}</span>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const HOURS = [
-  { day: 'Monday – Friday', time: '8:00 AM – 6:00 PM', open: true },
+  { day: 'Monday – Friday', time: '8:00 AM – 8:00 PM', open: true },
   { day: 'Saturday',        time: '9:00 AM – 5:00 PM', open: true },
   { day: 'Sunday',          time: 'Closed',             open: false },
 ]

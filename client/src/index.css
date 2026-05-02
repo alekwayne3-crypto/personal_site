@@ -704,7 +704,7 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    About
    ============================================================ */
-.about { padding: 108px 0; background: #FFF9EC; }
+.about { padding: 108px 0; background: linear-gradient(to bottom, #ffffff 0%, #FFF9EC 8%, #FFF9EC 92%, #ffffff 100%); }
 
 .about-inner {
   display: grid;

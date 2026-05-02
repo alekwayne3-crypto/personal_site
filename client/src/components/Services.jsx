@@ -51,8 +51,7 @@ export default function Services() {
           <span className="pill pill-white-yellow">Our Services</span>
           <h2 className="h2 h2-dark">Cleaning Built Around You</h2>
           <p className="lead lead-muted">
-            From routine upkeep to one-time deep cleans, Clean Bee offers flexible
-            packages designed for every Tulsa homeowner.
+            Whether you need a quick refresh or a full top-to-bottom clean, we have a service that fits your home, your schedule, and your budget.
           </p>
         </div>
 

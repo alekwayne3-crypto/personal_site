@@ -629,7 +629,7 @@ input, textarea, select { font-family: var(--font); }
 .svc-header:hover { background: var(--yellow-pale); }
 .svc-header-left { display: flex; align-items: center; gap: 16px; }
 .svc-icon { font-size: 26px; width: 44px; height: 44px; background: var(--yellow-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.svc-title { font-size: 17px; font-weight: 800; color: var(--black); letter-spacing: -0.01em; }
+.svc-title { font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; }
 .svc-item--open .svc-title { color: var(--black); }
 .svc-arrow { font-size: 22px; font-weight: 300; color: var(--yellow-dark); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--yellow-light); flex-shrink: 0; }
 

@@ -33,7 +33,7 @@ export default function Footer() {
                 }
               </div>
               <p className="footer-body">
-                Keeping Tulsa homes clean since 2016. Locally owned, trusted by hundreds.
+                Keeping Tulsa homes clean since 2016. No shortcuts, no excuses, just a clean home every time.
               </p>
             </div>
 

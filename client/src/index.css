@@ -1125,7 +1125,15 @@ input, textarea, select { font-family: var(--font); }
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-@media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; } .footer-brand { grid-column: 1 / -1; } .footer-col-title { font-size: 15px; } .footer-links a { font-size: 15px; } .footer-contact-val { font-size: 14px; } }
+@media (max-width: 900px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-col-title { font-size: 13px; padding-bottom: 10px; border-bottom: 1px solid rgba(245,194,0,0.3); margin-bottom: 16px; }
+  .footer-links { gap: 12px; }
+  .footer-links a { font-size: 14px; color: rgba(255,255,255,0.6); }
+  .footer-contact-val { font-size: 13px; color: rgba(255,255,255,0.6); }
+  .footer-contact-icon { opacity: 0.8; }
+}
 @media (max-width: 540px)  { .footer-top { grid-template-columns: 1fr; } }
 
 .footer-logo-row { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }

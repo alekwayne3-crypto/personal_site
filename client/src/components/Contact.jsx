@@ -53,7 +53,7 @@ export default function Contact() {
           <span className="pill pill-white-yellow">GET A QUOTE</span>
           <h2 className="h2 h2-dark">Let&apos;s Make Your Home Shine</h2>
           <p className="lead lead-muted">
-            Ready for a cleaner home? Reach out and we&apos;ll respond within a few hours.
+            Fill out the form and a Clean Bee team member will reach back out to you with a custom quote. Or give us a call, we&apos;d be happy to help.
           </p>
         </div>
 

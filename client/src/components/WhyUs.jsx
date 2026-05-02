@@ -46,7 +46,7 @@ export default function WhyUs() {
 
         <div className="why-grid">
           {REASONS.map((r) => (
-            <div className="why-card" key={r.title}>
+            <div className={`why-card${r.title === 'Easy Online Booking' || r.title === "Tulsa's Local Experts" ? ' hide-mobile' : ''}`} key={r.title}>
               <div className="why-icon-wrap">{r.icon}</div>
               <h3 className="why-title">{r.title}</h3>
               <p className="why-desc">{r.desc}</p>

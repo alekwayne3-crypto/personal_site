@@ -13,7 +13,7 @@ const DETAILS = [
 ]
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', address: '', bedrooms: '', bathrooms: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', address: '', bedrooms: '', bathrooms: '', service: '', message: '' })
   const [status, setStatus] = useState('idle')
   const [errMsg, setErrMsg] = useState('')
 
@@ -102,6 +102,13 @@ export default function Contact() {
                   <div className="form-col">
                     <label className="form-label">Home Address *</label>
                     <input className="form-input" type="text" placeholder="123 Main St, Tulsa, OK" value={form.address} onChange={set('address')} required />
+                  </div>
+                  <div className="form-col">
+                    <label className="form-label">Type of Cleaning</label>
+                    <select className="form-select" value={form.service} onChange={set('service')}>
+                      <option value="">Select a service…</option>
+                      {['Standard Cleaning', 'Deep Cleaning', 'Move-In / Move-Out', 'Recurring Cleaning', 'Post-Construction', 'Commercial Cleaning', 'Not Sure'].map(o => <option key={o} value={o}>{o}</option>)}
+                    </select>
                   </div>
                   <div className="form-row">
                     <div className="form-col">

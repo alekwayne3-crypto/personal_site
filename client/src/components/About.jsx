@@ -45,15 +45,10 @@ export default function About() {
               Tulsa Proud &amp; Creating a Buzz Since 2016
             </h2>
             <p className="about-body">
-              Clean Bee was founded right here in Tulsa by a family who believed every
-              homeowner deserves a spotless, healthy home — without the hassle, the
-              harsh chemicals, or unreliable service.
+              We started Clean Bee because we were tired of the same story. A cleaning company shows up late, does a rushed job, and you're left wondering if anything was actually cleaned. We knew Tulsa deserved better.
             </p>
             <p className="about-body">
-              Over eight years we&apos;ve grown into one of Tulsa&apos;s most trusted
-              residential cleaning companies, serving South Tulsa, Midtown, Broken Arrow,
-              Owasso, Jenks, and beyond. Every bee in our hive is personally vetted,
-              trained, and equipped with eco-friendly supplies.
+              So in 2016 we built something different. A small team, high standards, and a simple promise: we treat your home like it's our own. Eight years later, hundreds of Tulsa families trust us every week, and that promise hasn't changed.
             </p>
 
             <div className="about-points">

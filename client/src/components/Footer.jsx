@@ -18,9 +18,6 @@ export default function Footer() {
             <span key={area} className="service-area-tag">{area}</span>
           ))}
         </div>
-        <button className="btn btn-black" style={{ fontSize: 16, padding: '15px 36px', marginTop: 32 }} onClick={() => go('contact')}>
-          Get My Free Quote →
-        </button>
       </div>
 
       <footer className="footer">

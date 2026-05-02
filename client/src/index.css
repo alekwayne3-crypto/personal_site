@@ -967,53 +967,11 @@ input, textarea, select { font-family: var(--font); }
 .testi-name { font-size: 14px; font-weight: 800; color: var(--black); }
 .testi-loc  { font-size: 12px; color: var(--text-muted); margin-top: 2px; font-weight: 500; }
 
-.google-badge-wrap {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.google-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 18px 32px;
-  box-shadow: var(--shadow-md);
-}
-
-.google-badge-icon { width: 40px; height: 40px; flex-shrink: 0; }
-
-.google-badge-info { display: flex; flex-direction: column; gap: 3px; }
-
-.google-badge-label {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  font-size: 15px;
-  font-weight: 700;
-}
-.google-badge-g   { color: #4285F4; }
-.google-badge-o1  { color: #EA4335; }
-.google-badge-o2  { color: #FBBC04; }
-.google-badge-g2  { color: #4285F4; }
-.google-badge-l   { color: #34A853; }
-.google-badge-e   { color: #EA4335; }
-.google-badge-reviews-text { color: var(--text-muted); font-weight: 500; margin-left: 6px; font-size: 14px; }
-
-.google-badge-stars { display: flex; align-items: center; gap: 8px; }
-.google-badge-score { font-size: 22px; font-weight: 900; color: var(--black); letter-spacing: -0.02em; }
-.google-badge-star-icons { color: #FBBC04; font-size: 17px; letter-spacing: 1px; }
-
-.google-badge-count { font-size: 12px; color: var(--text-muted); font-weight: 500; }
 
 /* ============================================================
    Contact
    ============================================================ */
-.contact { padding: 80px 0 108px; background: var(--white); }
+.contact { padding: 108px 0; background: var(--white); }
 
 .contact-inner { display: grid; grid-template-columns: 1fr 1.45fr; gap: 72px; align-items: start; }
 .contact-hours-col { grid-column: 1; }

@@ -825,7 +825,7 @@ input, textarea, select { font-family: var(--font); }
 .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 960px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 580px) { .why-grid { grid-template-columns: 1fr; } }
-@media (max-width: 900px) { .why-card { text-align: center; } .why-icon-wrap { margin-left: auto; margin-right: auto; } }
+@media (max-width: 900px) { .why-card { text-align: center !important; } .why-icon-wrap { margin-left: auto !important; margin-right: auto !important; } }
 
 .why-card {
   padding: 36px 28px;

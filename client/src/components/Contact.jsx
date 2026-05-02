@@ -145,7 +145,7 @@ export default function Contact() {
             <div className="contact-map">
               <iframe
                 title="Clean Bee Service Area"
-                src="https://maps.google.com/maps?q=8211+E+Regal+Pl,+Tulsa,+OK&z=11&output=embed"
+                src="https://maps.google.com/maps?q=8211+E+Regal+Pl,+Tulsa,+OK&z=10&output=embed"
                 width="100%"
                 height="200"
                 style={{ border: 0, borderRadius: '8px', marginTop: '16px' }}

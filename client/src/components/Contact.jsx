@@ -82,7 +82,7 @@ export default function Contact() {
               </div>
             ) : (
               <>
-                <h3 className="form-card-title">Get a Free Quote Today</h3>
+                <h3 className="form-card-title">Get Your Free Quote Today</h3>
                 <form onSubmit={submit}>
                   <div className="form-row">
                     <div className="form-col">

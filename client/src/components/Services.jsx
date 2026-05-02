@@ -23,7 +23,7 @@ const SERVICES = [
     icon: '🔄',
     title: 'Recurring Cleaning',
     desc: 'Weekly, bi-weekly, or monthly visits at a discounted rate. Same great team, every time.',
-    features: ['Flexible scheduling', 'Loyalty discounts', 'Consistent crew', 'No contracts'],
+    features: ['Weekly, Bi-Weekly & Monthly Options', 'Same Trusted Crew Every Visit', 'Discounted Recurring Rates', 'No Contracts, Cancel Anytime', 'Flexible Rescheduling', 'Satisfaction Guaranteed'],
   },
   {
     icon: '📦',

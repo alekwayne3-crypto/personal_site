@@ -12,7 +12,7 @@ const REASONS = [
   {
     icon: '🌱',
     title: 'Eco Friendly Products',
-    desc: 'Our nontoxic, biodegradable solutions are safe for children, pets, and the environment — zero compromises.',
+    desc: 'Our nontoxic, biodegradable solutions are safe for children, pets, and the environment. Clean results without the harsh chemicals.',
   },
   {
     icon: '⭐',

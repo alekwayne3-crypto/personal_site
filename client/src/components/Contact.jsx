@@ -52,7 +52,7 @@ export default function Contact() {
             <span className="contact-eyebrow">Reach Us</span>
             <h3 className="contact-title">We&apos;re Easy to Reach</h3>
             <p className="contact-sub">
-              Call, email, or stop by — we&apos;d love to hear from you. Our team is available Monday through Saturday and always happy to help.
+              Call, email, or stop by. We&apos;d love to hear from you. Our team is available Monday through Saturday and always happy to help.
             </p>
             <div className="contact-details">
               {DETAILS.map(({ icon, label, value }) => (

@@ -905,6 +905,7 @@ input, textarea, select { font-family: var(--font); }
 }
 
 .testi-google-badge { display: none; align-items: center; gap: 10px; justify-content: center; margin-bottom: 24px; }
+.testi-google-badge-inner { display: flex; align-items: center; gap: 10px; background: #fff; border-radius: 12px; padding: 10px 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); border: 1px solid #eee; }
 .testi-google-text { display: flex; flex-direction: column; }
 .testi-google-label { font-size: 13px; font-weight: 700; color: var(--black); }
 .testi-google-stars { font-size: 14px; color: #FBBC05; letter-spacing: 2px; }

@@ -87,20 +87,20 @@ export default function Contact() {
                 <form onSubmit={submit}>
                   <div className="form-row">
                     <div className="form-col">
-                      <label className="form-label">Full Name *</label>
+                      <label className="form-label">Full Name</label>
                       <input className="form-input" type="text" placeholder="Jane Smith" value={form.name} onChange={set('name')} required />
                     </div>
                     <div className="form-col">
-                      <label className="form-label">Phone Number *</label>
+                      <label className="form-label">Phone Number</label>
                       <input className="form-input" type="tel" placeholder="(918) 555-0000" value={form.phone} onChange={set('phone')} required />
                     </div>
                   </div>
                   <div className="form-col">
-                    <label className="form-label">Email Address *</label>
+                    <label className="form-label">Email Address</label>
                     <input className="form-input" type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} required />
                   </div>
                   <div className="form-col">
-                    <label className="form-label">Home Address *</label>
+                    <label className="form-label">Home Address</label>
                     <input className="form-input" type="text" placeholder="123 Main St, Tulsa, OK" value={form.address} onChange={set('address')} required />
                   </div>
                   <div className="form-col">

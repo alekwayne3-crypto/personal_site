@@ -584,8 +584,8 @@ input, textarea, select { font-family: var(--font); }
   .hero-bg-photo { object-position: 75% top; }
   .hero-overlay { background: linear-gradient(to right, rgba(255,252,240,0.94) 0%, rgba(255,252,240,0.72) 45%, rgba(255,248,208,0.35) 75%, transparent 100%); }
   .hero-phone-link { border: 2px solid var(--yellow); border-radius: 8px; padding: 8px 32px; }
-  .hero-body { color: #111; text-shadow: 0 0 20px rgba(255,252,240,1), 0 0 50px rgba(255,252,240,0.95), 0 0 100px rgba(255,252,240,0.85), 0 0 150px rgba(255,252,240,0.7); }
-  .hero-eyebrow { color: #111; }
+  .hero-body { color: #333; text-shadow: 0 0 20px rgba(255,252,240,1), 0 0 50px rgba(255,252,240,0.95), 0 0 100px rgba(255,252,240,0.85), 0 0 150px rgba(255,252,240,0.7); }
+  .hero-eyebrow { color: #333; }
 }
 
 /* ── Scroll hint (reused) ── */

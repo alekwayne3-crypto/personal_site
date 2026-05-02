@@ -60,7 +60,7 @@ export default function Footer() {
               <h4 className="footer-col-title">Contact</h4>
               {[
                 { icon: '📞', text: '(918) 772-7228' },
-                { icon: '✉️', text: 'hello@cleanbeecleaning.com' },
+                { icon: '✉️', text: 'info@cleanbeetulsa.com' },
                 { icon: '📍', text: 'Tulsa, OK & Surrounding Areas' },
                 { icon: '🕐', text: 'Mon–Fri 8AM–6PM · Sat 9AM–5PM' },
               ].map(({ icon, text }) => (

@@ -1025,7 +1025,7 @@ input, textarea, select { font-family: var(--font); }
   background: #FAFAF8;
   border: 1.5px solid var(--border);
   border-radius: 10px;
-  font-size: 14px; color: var(--text);
+  font-size: 16px; color: var(--text);
   transition: all var(--transition);
   outline: none; appearance: none; -webkit-appearance: none;
 }

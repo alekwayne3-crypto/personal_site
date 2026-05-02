@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const REVIEWS = [
   {
@@ -27,16 +27,25 @@ const REVIEWS = [
   },
 ]
 
-const PER_PAGE = 3
-const TOTAL_PAGES = Math.ceil(REVIEWS.length / PER_PAGE)
-
 export default function Testimonials() {
   const [page, setPage] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
 
-  const prev = () => setPage(p => (p - 1 + TOTAL_PAGES) % TOTAL_PAGES)
-  const next = () => setPage(p => (p + 1) % TOTAL_PAGES)
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)')
+    setIsMobile(mq.matches)
+    const handler = (e) => { setIsMobile(e.matches); setPage(0) }
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
 
-  const visible = REVIEWS.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE)
+  const perPage = isMobile ? 1 : 3
+  const totalPages = Math.ceil(REVIEWS.length / perPage)
+
+  const prev = () => setPage(p => (p - 1 + totalPages) % totalPages)
+  const next = () => setPage(p => (p + 1) % totalPages)
+
+  const visible = REVIEWS.slice(page * perPage, page * perPage + perPage)
 
   return (
     <section className="testimonials" id="testimonials">
@@ -80,10 +89,9 @@ export default function Testimonials() {
 
         <div className="testi-nav-arrows">
           <button className="testi-nav-arrow" onClick={prev} aria-label="Previous">&#8592;</button>
-          <span className="testi-nav-page">{page + 1} / {TOTAL_PAGES}</span>
+          <span className="testi-nav-page">{page + 1} / {totalPages}</span>
           <button className="testi-nav-arrow" onClick={next} aria-label="Next">&#8594;</button>
         </div>
-
 
       </div>
     </section>

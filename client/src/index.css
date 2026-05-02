@@ -1100,4 +1100,4 @@ input, textarea, select { font-family: var(--font); }
 .footer-bottom-links a { color: rgba(255,255,255,0.2); transition: color var(--transition); }
 .footer-bottom-links a:hover { color: var(--yellow); }
 @media (max-width: 540px) { .footer-bottom { flex-direction: column; text-align: center; } }
-@media (max-width: 600px) { .services { padding-top: 90px; padding-bottom: 90px; } .about { padding-top: 90px; padding-bottom: 90px; } .why-us { padding-top: 80px; padding-bottom: 80px; } .testimonials { padding-top: 80px; padding-bottom: 80px; } .contact { padding-top: 90px; padding-bottom: 90px; } }
+@media (max-width: 600px) { .services { padding-top: 90px; padding-bottom: 90px; } .about { padding-top: 90px; padding-bottom: 80px; } .why-us { padding-top: 80px; padding-bottom: 80px; } .testimonials { padding-top: 80px; padding-bottom: 80px; } .contact { padding-top: 90px; padding-bottom: 90px; } }

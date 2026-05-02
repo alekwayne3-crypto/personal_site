@@ -70,7 +70,7 @@ export default function Services() {
                 <span className="svc-arrow">{open.has(i) ? '−' : '+'}</span>
               </button>
 
-              {open.has(i) && (
+              <div className={`svc-body-wrap${open.has(i) ? ' svc-body-wrap--open' : ''}`}>
                 <div className="svc-body">
                   <p className="svc-desc">{s.desc}</p>
                   <ul className="svc-features">
@@ -85,7 +85,7 @@ export default function Services() {
                     Get a Free Quote →
                   </button>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

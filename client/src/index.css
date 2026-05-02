@@ -864,7 +864,7 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    Testimonials
    ============================================================ */
-.testimonials { padding: 128px 0 140px; background: #FFF9EC; border-radius: 32px; }
+.testimonials { padding: 108px 0; background: #FFF9EC; border-radius: 32px; }
 
 .testi-carousel {
   display: flex;

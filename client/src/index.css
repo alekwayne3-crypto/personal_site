@@ -972,7 +972,7 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    Contact
    ============================================================ */
-.contact { padding: 108px 0; background: var(--white); scroll-margin-top: 20px; }
+.contact { padding: 108px 0; background: var(--white); scroll-margin-top: 50px; }
 
 .contact-inner { display: grid; grid-template-columns: 1fr 1.45fr; gap: 72px; align-items: start; }
 .contact-hours-col { grid-column: 1; display: none; }

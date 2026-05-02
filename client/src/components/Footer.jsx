@@ -40,7 +40,7 @@ export default function Footer() {
             <div>
               <h4 className="footer-col-title">Services</h4>
               <ul className="footer-links">
-                {['Standard Cleaning','Deep Cleaning','Move-In / Move-Out','Recurring Cleaning','Post-Construction','Green Cleaning'].map((s) => (
+                {['Standard Cleaning','Deep Cleaning','Commercial Cleaning','Recurring Cleaning','Move-In / Move-Out','Post-Construction'].map((s) => (
                   <li key={s}><a href="#services" onClick={e => { e.preventDefault(); go('services') }}>{s}</a></li>
                 ))}
               </ul>

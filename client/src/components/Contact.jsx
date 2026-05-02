@@ -50,7 +50,7 @@ export default function Contact() {
     <section className="contact" id="contact">
       <div className="container">
         <div className="section-header">
-          <span className="pill pill-white-yellow">FREE QUOTE</span>
+          <span className="pill pill-white-yellow">GET A QUOTE</span>
           <h2 className="h2 h2-dark">Let&apos;s Make Your Home Shine</h2>
           <p className="lead lead-muted">
             Ready for a cleaner home? Reach out and we&apos;ll respond within a few hours.

@@ -1072,7 +1072,7 @@ input, textarea, select { font-family: var(--font); }
   .footer-contact-val { font-size: 13px; color: rgba(255,255,255,0.6); }
   .footer-contact-icon { opacity: 0.8; }
 }
-@media (max-width: 540px)  { .footer-top { grid-template-columns: 1fr; } .footer-logo-row { padding-bottom: 14px; } .footer-logo-row img { border-bottom: 1px solid var(--yellow); padding-bottom: 14px; } }
+@media (max-width: 540px)  { .footer-top { grid-template-columns: 1fr; } .footer-logo-row { padding-bottom: 14px; } .footer-logo-row img { border-bottom: 0.5px solid var(--yellow); padding-bottom: 14px; } }
 
 .footer-logo-row { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
 .footer-logo-row img { height: 110px; width: auto; object-fit: contain; }

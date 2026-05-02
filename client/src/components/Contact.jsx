@@ -142,6 +142,18 @@ export default function Contact() {
                 <span className={open ? 'hours-open' : 'hours-closed'}>{time}</span>
               </div>
             ))}
+            <div className="contact-map">
+              <iframe
+                title="Clean Bee Service Area"
+                src="https://maps.google.com/maps?q=Tulsa,Oklahoma&z=11&output=embed"
+                width="100%"
+                height="200"
+                style={{ border: 0, borderRadius: '8px', marginTop: '16px' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
 
         </div>

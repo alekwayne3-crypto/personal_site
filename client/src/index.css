@@ -1099,4 +1099,4 @@ input, textarea, select { font-family: var(--font); }
 .footer-bottom-links a:hover { color: var(--yellow); }
 @media (max-width: 540px) { .footer-bottom { flex-direction: column; text-align: center; } }
 @media (max-width: 600px) { .services { padding-top: 90px; padding-bottom: 90px; } .about { padding-top: 90px; padding-bottom: 80px; } .why-us { padding-top: 80px; padding-bottom: 80px; } .testimonials { padding-top: 80px; padding-bottom: 80px; } .contact { padding-top: 90px; padding-bottom: 90px; } }
-@media (max-width: 900px) { .footer-col-title { font-size: 15px; } .footer-links a { font-size: 15px; color: rgba(255,255,255,0.6); } .footer-contact-val { font-size: 14px; color: rgba(255,255,255,0.6); } }
+@media (max-width: 900px) { .footer-col-title { font-size: 15px; } .footer-links a { font-size: 15px; color: rgba(255,255,255,0.6); } .footer-contact-val { font-size: 14px; color: rgba(255,255,255,0.6); } .footer-body { font-size: 14px; } }

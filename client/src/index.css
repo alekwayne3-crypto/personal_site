@@ -704,7 +704,7 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    About
    ============================================================ */
-.about { padding: 108px 0; background: #FFF9EC; }
+.about { padding: 108px 0; background: #FFF9EC; border-radius: 32px; margin: 0 24px; }
 
 .about-inner {
   display: grid;
@@ -903,13 +903,6 @@ input, textarea, select { font-family: var(--font); }
   gap: 20px;
   flex: 1;
 }
-
-.testi-google-badge { display: none; align-items: center; gap: 10px; justify-content: center; margin-bottom: 24px; }
-.testi-google-badge-inner { display: flex; align-items: center; gap: 10px; background: #fff; border-radius: 12px; padding: 10px 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); border: 1px solid #eee; }
-.testi-google-text { display: flex; flex-direction: column; }
-.testi-google-label { font-size: 13px; font-weight: 700; color: var(--black); }
-.testi-google-stars { font-size: 14px; color: #FBBC05; letter-spacing: 2px; }
-@media (max-width: 768px) { .testi-google-badge { display: flex; } }
 
 .testi-nav-arrows { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 36px; }
 .testi-nav-arrow { background: none; border: 2px solid var(--yellow); border-radius: 50%; width: 40px; height: 40px; font-size: 18px; cursor: pointer; color: var(--black); display: flex; align-items: center; justify-content: center; transition: all var(--transition); }

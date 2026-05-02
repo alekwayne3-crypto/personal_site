@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-bottom">
-            <span>© {yr} Clean Bee Cleaning Co. All rights reserved. · Tulsa, Oklahoma</span>
+            <span>© {yr} Clean Bee Cleaning Co. All rights reserved.</span>
             <div className="footer-bottom-links">
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Service</a>

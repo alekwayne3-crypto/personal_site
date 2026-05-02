@@ -824,7 +824,7 @@ input, textarea, select { font-family: var(--font); }
 
 .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 960px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 580px) { .why-grid { grid-template-columns: 1fr; } }
+@media (max-width: 580px) { .why-grid { grid-template-columns: 1fr; } .why-card { text-align: center; align-items: center; display: flex; flex-direction: column; } .why-title { text-align: center; } .why-desc { text-align: center; } }
 
 .why-card {
   padding: 36px 28px;
@@ -834,10 +834,6 @@ input, textarea, select { font-family: var(--font); }
   transition: all var(--transition);
   position: relative;
   overflow: hidden;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .why-card::before {

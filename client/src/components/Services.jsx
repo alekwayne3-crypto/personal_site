@@ -10,7 +10,7 @@ const SERVICES = [
   {
     icon: '✨',
     title: 'Deep Cleaning',
-    desc: 'A thorough, top-to-bottom scrub — ideal for seasonal refreshes, before guests arrive, or as a first clean.',
+    desc: 'More than a regular clean. We get into every corner, appliance, and surface your standard visit doesn\'t touch.',
     features: ['Detailed Kitchen Cleaning', 'Bathrooms Deep Cleaned', 'Baseboards, Doors & Trim Cleaned', 'Detailed Dusting & Debris Removal', 'Meticulous Cleaning of Appliances', 'Floors Vacuumed & Mopped', 'Custom Requests Available'],
   },
   {

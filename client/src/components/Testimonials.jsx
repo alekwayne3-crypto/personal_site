@@ -78,15 +78,10 @@ export default function Testimonials() {
           </button>
         </div>
 
-        <div className="testi-dots">
-          {Array.from({ length: TOTAL_PAGES }).map((_, i) => (
-            <button
-              key={i}
-              className={`testi-dot${i === page ? ' active' : ''}`}
-              onClick={() => setPage(i)}
-              aria-label={`Page ${i + 1}`}
-            />
-          ))}
+        <div className="testi-nav-arrows">
+          <button className="testi-nav-arrow" onClick={prev} aria-label="Previous">&#8592;</button>
+          <span className="testi-nav-page">{page + 1} / {TOTAL_PAGES}</span>
+          <button className="testi-nav-arrow" onClick={next} aria-label="Next">&#8594;</button>
         </div>
 
 

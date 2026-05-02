@@ -40,7 +40,8 @@ const SERVICES = [
 ]
 
 export default function Services() {
-  const [open, setOpen] = useState(null)
+  const [open, setOpen] = useState(new Set())
+  const toggle = (i) => setOpen(prev => { const s = new Set(prev); s.has(i) ? s.delete(i) : s.add(i); return s })
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
@@ -59,17 +60,17 @@ export default function Services() {
           {SERVICES.map((s, i) => (
             <div
               key={s.title}
-              className={`svc-item${open === i ? ' svc-item--open' : ''}`}
+              className={`svc-item${open.has(i) ? ' svc-item--open' : ''}`}
             >
-              <button className="svc-header" onClick={() => setOpen(open === i ? null : i)}>
+              <button className="svc-header" onClick={() => toggle(i)}>
                 <div className="svc-header-left">
                   <span className="svc-icon">{s.icon}</span>
                   <span className="svc-title">{s.title}</span>
                 </div>
-                <span className="svc-arrow">{open === i ? '−' : '+'}</span>
+                <span className="svc-arrow">{open.has(i) ? '−' : '+'}</span>
               </button>
 
-              <div className={`svc-body-wrap${open === i ? ' svc-body-wrap--open' : ''}`}>
+              {open.has(i) && (
                 <div className="svc-body">
                   <p className="svc-desc">{s.desc}</p>
                   <ul className="svc-features">
@@ -84,7 +85,7 @@ export default function Services() {
                     Get a Free Quote →
                   </button>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>

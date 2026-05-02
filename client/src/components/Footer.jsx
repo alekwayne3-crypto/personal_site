@@ -29,10 +29,6 @@ export default function Footer() {
                   ? <img src="/logo.png" alt="Clean Bee" onError={() => setLogoErr(true)} />
                   : <span className="footer-logo-fallback">🐝</span>
                 }
-                <div>
-                  <span className="footer-name">Clean Bee</span>
-                  <span className="footer-sub">Clean That Creates a Buzz!</span>
-                </div>
               </div>
               <p className="footer-body">
                 Tulsa&apos;s trusted residential cleaning service since 2016.

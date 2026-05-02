@@ -835,6 +835,7 @@ input, textarea, select { font-family: var(--font); }
   transition: all var(--transition);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .why-card::before {

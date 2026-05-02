@@ -417,7 +417,7 @@ input, textarea, select { font-family: var(--font); }
 }
 
 @media (max-width: 480px) {
-  .nb-logo img  { height: 120px; }
+  .nb-logo img  { height: 108px; }
 }
 
 /* ============================================================

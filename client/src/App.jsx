@@ -4,6 +4,7 @@ import Services from './components/Services'
 import About from './components/About'
 import WhyUs from './components/WhyUs'
 import Testimonials from './components/Testimonials'
+import ServiceAreas from './components/ServiceAreas'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -17,6 +18,7 @@ function App() {
         <About />
         <WhyUs />
         <Testimonials />
+        <ServiceAreas />
         <Contact />
       </main>
       <Footer />

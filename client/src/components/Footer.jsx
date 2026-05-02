@@ -9,6 +9,7 @@ export default function Footer() {
     <>
       {/* Service Areas Banner */}
       <div className="cta-banner">
+        <span className="pill pill-white-yellow" style={{ marginBottom: 20, display: 'inline-block' }}>Service Areas</span>
         <h2 className="cta-banner-title">Proudly Serving the Greater Tulsa Area</h2>
         <p className="cta-banner-sub">
           Clean Bee provides professional residential cleaning services across Tulsa and all surrounding communities.

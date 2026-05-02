@@ -35,7 +35,7 @@ const SERVICES = [
     icon: '🏗️',
     title: 'Post-Construction',
     desc: 'Specialized removal of construction dust, debris, and residue after a renovation or new build.',
-    features: ['Construction dust', 'Window & glass clean', 'Floor polish', 'Detail vacuuming'],
+    features: ['Construction Dust & Debris Removal', 'Windows, Glass & Tracks Cleaned', 'Floors Vacuumed, Polished & Mopped', 'Surfaces Wiped & Sanitized', 'Fixtures & Hardware Cleaned', 'Final Detail Inspection', 'Custom Scope Available'],
   },
 ]
 

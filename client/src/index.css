@@ -704,8 +704,7 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    About
    ============================================================ */
-.about { padding: 108px 0; background: linear-gradient(to bottom, #ffffff 0%, #FFF9EC 8%, #FFF9EC 88%, #ffffff 100%); position: relative; overflow: hidden; }
-.about::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 90px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90'%3E%3Cpath fill='%23ffffff' d='M0,45 C180,90 360,0 540,45 C720,90 900,0 1080,45 C1260,90 1350,20 1440,45 L1440,90 L0,90 Z'/%3E%3C/svg%3E") no-repeat bottom; background-size: cover; z-index: 2; pointer-events: none; }
+.about { padding: 108px 0; background: #FFF9EC; }
 
 .about-inner {
   display: grid;
@@ -865,7 +864,8 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    Testimonials
    ============================================================ */
-.testimonials { padding: 108px 0; background: #FFF9EC; }
+.testimonials { padding: 108px 0; background: #FFF9EC; position: relative; overflow: hidden; }
+.testimonials::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 150px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 150'%3E%3Cpolygon points='70,35 52.5,65.6 17.5,65.6 0,35 17.5,4.4 52.5,4.4' fill='none' stroke='white' stroke-width='2.5' opacity='0.5'/%3E%3Cpolygon points='140,35 122.5,65.6 87.5,65.6 70,35 87.5,4.4 122.5,4.4' fill='none' stroke='white' stroke-width='2.5' opacity='0.4'/%3E%3Cpolygon points='105,95.6 87.5,126.2 52.5,126.2 35,95.6 52.5,65.6 87.5,65.6' fill='none' stroke='white' stroke-width='2.5' opacity='0.3'/%3E%3Cpolygon points='35,95.6 17.5,126.2 -17.5,126.2 -35,95.6 -17.5,65.6 17.5,65.6' fill='none' stroke='white' stroke-width='2.5' opacity='0.2'/%3E%3Cpolygon points='210,35 192.5,65.6 157.5,65.6 140,35 157.5,4.4 192.5,4.4' fill='none' stroke='white' stroke-width='2.5' opacity='0.2'/%3E%3Cpolygon points='1440,35 1422.5,65.6 1387.5,65.6 1370,35 1387.5,4.4 1422.5,4.4' fill='none' stroke='white' stroke-width='2.5' opacity='0.5'/%3E%3Cpolygon points='1370,35 1352.5,65.6 1317.5,65.6 1300,35 1317.5,4.4 1352.5,4.4' fill='none' stroke='white' stroke-width='2.5' opacity='0.4'/%3E%3Cpolygon points='1405,95.6 1387.5,126.2 1352.5,126.2 1335,95.6 1352.5,65.6 1387.5,65.6' fill='none' stroke='white' stroke-width='2.5' opacity='0.3'/%3E%3Cpolygon points='1475,95.6 1457.5,126.2 1422.5,126.2 1405,95.6 1422.5,65.6 1457.5,65.6' fill='none' stroke='white' stroke-width='2.5' opacity='0.2'/%3E%3Cpolygon points='1300,35 1282.5,65.6 1247.5,65.6 1230,35 1247.5,4.4 1282.5,4.4' fill='none' stroke='white' stroke-width='2.5' opacity='0.2'/%3E%3C/svg%3E") no-repeat top; background-size: 100% 150px; pointer-events: none; z-index: 1; -webkit-mask-image: linear-gradient(to bottom, white 0%, transparent 100%); mask-image: linear-gradient(to bottom, white 0%, transparent 100%); }
 
 .testi-carousel {
   display: flex;

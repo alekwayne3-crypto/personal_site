@@ -40,7 +40,7 @@ const SERVICES = [
 ]
 
 export default function Services() {
-  const [open, setOpen] = useState(0)
+  const [open, setOpen] = useState(null)
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (

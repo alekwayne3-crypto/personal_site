@@ -9,7 +9,7 @@ const HOURS = [
 const DETAILS = [
   { icon: '📞', label: 'Phone',        value: '(918) 772-7228' },
   { icon: '✉️', label: 'Email',        value: 'info@cleanbeetulsa.com' },
-  { icon: '📍', label: 'Service Area', value: 'Tulsa, OK' },
+  { icon: '📍', label: 'Based In', value: 'Tulsa, OK' },
 ]
 
 export default function Contact() {

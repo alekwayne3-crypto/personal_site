@@ -3,7 +3,7 @@ import { useState } from 'react'
 const TEAM_IMG = '/team.jpg'
 
 const POINTS = [
-  { icon: '🏆', text: "Award-Winning Results" },
+  { icon: '🏆', text: "Top Rated in Tulsa" },
   { icon: '🔐', text: "Fully Bonded & Insured" },
   { icon: '👥', text: "Background-Checked Staff" },
   { icon: '🌱', text: "Eco-Friendly Products" },

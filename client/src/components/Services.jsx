@@ -29,7 +29,7 @@ const SERVICES = [
     icon: '📦',
     title: 'Move-In / Move-Out',
     desc: 'Guarantee your full deposit back or start fresh in a spotless new home. We cover every corner.',
-    features: ['Inside closets & cabinets', 'Walls & switches', 'Window sills', 'Full appliance clean'],
+    features: ['Inside Closets & Cabinets', 'Walls, Switches & Outlets', 'Window Sills & Tracks', 'Full Appliance Cleaning', 'Bathrooms Deep Scrubbed', 'Floors Vacuumed & Mopped', 'Deposit-Back Guarantee'],
   },
   {
     icon: '🏗️',

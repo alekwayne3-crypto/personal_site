@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const SERVICES = [
   {
     icon: '🧹',
@@ -38,6 +40,7 @@ const SERVICES = [
 ]
 
 export default function Services() {
+  const [open, setOpen] = useState(0)
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
@@ -52,21 +55,33 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="services-grid">
-          {SERVICES.map((s) => (
-            <div className={`service-card${s.title === 'Post-Construction' || s.title === 'Move-In / Move-Out' ? ' hide-mobile' : ''}`} key={s.title}>
-              <div className="service-card-top-bar" />
-              <div className="service-icon-box">{s.icon}</div>
-              <h3 className="service-title">{s.title}</h3>
-              <p className="service-desc">{s.desc}</p>
-              <ul className="service-features">
-                {s.features.map((f) => (
-                  <li className="service-feature" key={f}>
-                    <span className="service-check">✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
+        <div className="services-accordion">
+          {SERVICES.map((s, i) => (
+            <div
+              key={s.title}
+              className={`svc-item${open === i ? ' svc-item--open' : ''}`}
+            >
+              <button className="svc-header" onClick={() => setOpen(open === i ? null : i)}>
+                <div className="svc-header-left">
+                  <span className="svc-icon">{s.icon}</span>
+                  <span className="svc-title">{s.title}</span>
+                </div>
+                <span className="svc-arrow">{open === i ? '−' : '+'}</span>
+              </button>
+
+              {open === i && (
+                <div className="svc-body">
+                  <p className="svc-desc">{s.desc}</p>
+                  <ul className="svc-features">
+                    {s.features.map(f => (
+                      <li key={f} className="svc-feature">
+                        <span className="svc-check">✓</span>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           ))}
         </div>

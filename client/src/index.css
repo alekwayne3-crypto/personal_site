@@ -749,7 +749,7 @@ input, textarea, select { font-family: var(--font); }
 .about-point-icon { font-size: 20px; flex-shrink: 0; }
 .about-point-text { font-size: 13px; color: var(--text); font-weight: 700; line-height: 1.3; }
 
-@media (max-width: 540px) { .about-points { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .about-points { grid-template-columns: 1fr; margin: 32px 0 42px; } }
 
 /* ============================================================
    Why Us

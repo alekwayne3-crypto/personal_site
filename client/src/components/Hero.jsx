@@ -31,7 +31,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-body">
-          Professional home cleaning in Tulsa, tailored to your schedule, budget, and standards.
+          Professional home cleaning tailored to your schedule, budget, and standards.
         </p>
 
         <hr className="hero-divider" />

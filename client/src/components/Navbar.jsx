@@ -97,7 +97,6 @@ export default function Navbar() {
         ))}
         <div className="nb-mobile-actions">
           <button className="nb-cta" onClick={() => go('contact')}>Get a Free Quote</button>
-          <a className="nb-phone" href="tel:9187727228">(918) 772-7228</a>
         </div>
       </div>
 

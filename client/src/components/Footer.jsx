@@ -14,7 +14,7 @@ export default function Footer() {
           Clean Bee provides professional residential cleaning services across Tulsa and all surrounding communities.
         </p>
         <div className="service-areas-grid">
-          {['Tulsa','Broken Arrow','Bixby','Jenks','Owasso','Sand Springs','Sapulpa','Glenpool','Collinsville','Catoosa','Skiatook','Coweta','Claremore','Sperry','Turley','Midtown Tulsa','South Tulsa','East Tulsa','West Tulsa','Tulsa Hills'].map(area => (
+          {['Broken Arrow','Bixby','Jenks','Owasso','Sand Springs','Sapulpa','Glenpool','Collinsville','Catoosa','Skiatook','Coweta','Claremore','South Tulsa'].map(area => (
             <span key={area} className="service-area-tag">{area}</span>
           ))}
         </div>

@@ -912,7 +912,6 @@ input, textarea, select { font-family: var(--font); }
 
 .testi-nav-arrows { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 36px; }
 .testi-nav-arrow { background: none; border: 2px solid var(--yellow); border-radius: 50%; width: 40px; height: 40px; font-size: 18px; cursor: pointer; color: var(--black); display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
-@media (max-width: 768px) { .testi-nav-arrow { border-color: #aaa; color: #aaa; } .testi-nav-arrow:hover { background: #aaa; color: #fff; } }
 .testi-nav-arrow:hover { background: var(--yellow); }
 .testi-nav-page { font-size: 14px; font-weight: 700; color: var(--text-muted); min-width: 40px; text-align: center; }
 

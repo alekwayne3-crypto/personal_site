@@ -160,9 +160,13 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    Navbar — Two-tier (Molly Maid-style layout)
    ============================================================ */
+.announcement-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 1001; background: var(--black); color: #fff; text-align: center; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; padding: 9px 16px; }
+.announcement-bar a { color: var(--yellow); text-decoration: underline; margin-left: 4px; }
+.announcement-bar a:hover { color: #fff; }
+
 .navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 36px; left: 0; right: 0;
   z-index: 1000;
   background: var(--white);
   transition: all var(--transition);

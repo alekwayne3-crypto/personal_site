@@ -1,7 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
-import CalloutBanner from './components/CalloutBanner'
 import About from './components/About'
 import WhyUs from './components/WhyUs'
 import Testimonials from './components/Testimonials'
@@ -15,7 +14,6 @@ function App() {
       <main>
         <Hero />
         <Services />
-        <CalloutBanner />
         <About />
         <WhyUs />
         <Testimonials />

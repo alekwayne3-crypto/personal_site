@@ -5,7 +5,7 @@ const SERVICES = [
     icon: '🧹',
     title: 'Standard Cleaning',
     desc: 'Regular maintenance cleaning to keep every room in your home fresh, tidy, and consistently spotless.',
-    features: ['Kitchen Surfaces Cleaned', 'Bathrooms Cleaned and Sanitized', 'Bedrooms Tidied and Beds Made', 'Floors Vacuumed and Mopped', 'Dusting of Surfaces', 'Additional Add-Ons Available'],
+    features: ['Kitchen Surfaces Cleaned', 'Bathrooms Cleaned and Sanitized', 'Bedrooms Tidied and Beds Made', 'Floors Vacuumed and Mopped', 'Dusting of Surfaces', 'Add-Ons Available'],
   },
   {
     icon: '✨',

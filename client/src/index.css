@@ -1008,15 +1008,6 @@ input, textarea, select { font-family: var(--font); }
   padding: 48px;
   border: 1.5px solid rgba(245,194,0,0.25);
   box-shadow: var(--shadow-lg), 0 0 40px rgba(245,194,0,0.12), 0 0 80px rgba(245,194,0,0.06);
-  position: relative;
-}
-.form-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, var(--yellow), transparent);
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 @media (max-width: 960px) { .form-card { padding: 20px 24px 48px; } }
 

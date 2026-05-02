@@ -82,7 +82,7 @@ export default function Services() {
                     ))}
                   </ul>
                   <button className="btn btn-yellow svc-cta" onClick={() => go('contact')}>
-                    Get a Free Quote →
+                    Book Now →
                   </button>
                 </div>
               </div>

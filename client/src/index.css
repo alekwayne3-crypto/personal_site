@@ -641,7 +641,7 @@ input, textarea, select { font-family: var(--font); }
 .svc-feature { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-2); font-weight: 600; }
 .svc-check { color: var(--yellow-dark); font-size: 13px; font-weight: 900; flex-shrink: 0; }
 .svc-cta { margin-top: 28px; font-size: 14px; padding: 10px 24px; }
-@media (max-width: 600px) { .svc-body { padding: 0 20px 24px 20px; } .svc-header { padding: 20px; } .svc-features { grid-template-columns: 1fr; } .svc-arrow { line-height: 1; padding-bottom: 3px; } .services { padding-top: 90px; padding-bottom: 90px; } .about { padding-top: 90px; padding-bottom: 90px; } .why-us { padding-top: 90px; padding-bottom: 90px; } .testimonials { padding-top: 90px; padding-bottom: 90px; } .contact { padding-top: 90px; padding-bottom: 90px; } }
+@media (max-width: 600px) { .svc-body { padding: 0 20px 24px 20px; } .svc-header { padding: 20px; } .svc-features { grid-template-columns: 1fr; } .svc-arrow { line-height: 1; padding-bottom: 3px; } .services { padding-top: 90px; padding-bottom: 90px; } .about { padding-top: 90px; padding-bottom: 90px; } .why-us { padding-top: 90px; padding-bottom: 90px; } .testimonials { padding-top: 90px; padding-bottom: 90px; } .contact { padding-top: 90px; padding-bottom: 80px; } }
 
 /* ============================================================
    About

@@ -1009,19 +1009,19 @@ input, textarea, select { font-family: var(--font); }
   border: 1.5px solid var(--border);
   box-shadow: var(--shadow-lg);
 }
-@media (max-width: 600px) { .form-card { padding: 28px 20px; } }
+@media (max-width: 960px) { .form-card { padding: 32px 24px 48px; } }
 
-.form-card-title { font-size: 22px; font-weight: 900; color: var(--black); margin-bottom: 5px; letter-spacing: -0.02em; }
+.form-card-title { font-size: 22px; font-weight: 900; color: var(--black); margin-bottom: 16px; letter-spacing: -0.02em; }
 
-.funnel-progress-bar { height: 6px; background: var(--border); border-radius: 99px; margin-bottom: 28px; overflow: hidden; }
+.funnel-progress-bar { height: 6px; background: var(--border); border-radius: 99px; margin-bottom: 32px; overflow: hidden; }
 .funnel-progress-fill { height: 100%; background: var(--yellow); border-radius: 99px; transition: width 0.4s ease; }
-.funnel-step-num { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-.funnel-question { font-size: 20px; font-weight: 900; color: var(--black); margin-bottom: 24px; letter-spacing: -0.02em; }
-.funnel-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
-.funnel-option { padding: 14px 8px; border: 2px solid var(--border); border-radius: 10px; background: var(--white); font-size: 14px; font-weight: 700; color: var(--black); cursor: pointer; transition: all var(--transition); text-align: center; }
+.funnel-step-num { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+.funnel-question { font-size: 22px; font-weight: 900; color: var(--black); margin-bottom: 28px; letter-spacing: -0.02em; }
+.funnel-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 28px; }
+.funnel-option { padding: 20px 8px; border: 2px solid var(--border); border-radius: 12px; background: var(--white); font-size: 15px; font-weight: 700; color: var(--black); cursor: pointer; transition: all var(--transition); text-align: center; }
 .funnel-option:hover { border-color: var(--yellow); background: var(--yellow-light); }
 .funnel-option.selected { border-color: var(--yellow); background: var(--yellow); }
-.funnel-back { background: none; border: none; color: var(--text-muted); font-size: 13px; font-weight: 600; cursor: pointer; padding: 8px 0; margin-top: 8px; }
+.funnel-back { background: none; border: none; color: var(--text-muted); font-size: 13px; font-weight: 600; cursor: pointer; padding: 12px 0; margin-top: 12px; }
 .funnel-back:hover { color: var(--black); }
 .form-card-sub   { font-size: 14px; color: var(--text-muted); margin-bottom: 30px; }
 

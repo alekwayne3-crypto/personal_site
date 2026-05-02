@@ -50,10 +50,9 @@ export default function Contact() {
           {/* Left — info */}
           <div className="contact-info-col">
             <span className="contact-eyebrow">Reach Us</span>
-            <h3 className="contact-title">Let&apos;s Make Your Home Shine</h3>
+            <h3 className="contact-title">We&apos;re Easy to Reach</h3>
             <p className="contact-sub">
-              Fill out the form and a Clean Bee team member will reach back out with
-              a custom quote. Or give us a call — we&apos;re happy to chat.
+              Call, email, or stop by — we&apos;d love to hear from you. Our team is available Monday through Saturday and always happy to help.
             </p>
             <div className="contact-details">
               {DETAILS.map(({ icon, label, value }) => (

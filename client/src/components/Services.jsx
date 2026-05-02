@@ -4,7 +4,7 @@ const SERVICES = [
   {
     icon: '🧹',
     title: 'Standard Cleaning',
-    desc: 'Your home, maintained the way it should be. We handle the recurring work so you never have to think about it.',
+    desc: 'Come home to a clean house without lifting a finger. Perfect for busy households who want a consistent baseline clean.',
     features: ['Kitchen Surfaces Cleaned', 'Bathrooms Cleaned & Sanitized', 'Bedrooms Tidied & Beds Made', 'Floors Vacuumed & Mopped', 'Dusting of Surfaces', 'Add-Ons Available'],
   },
   {

@@ -132,7 +132,7 @@ export default function Contact() {
                   </div>
                   {status === 'error' && <p className="form-error">⚠️ {errMsg}</p>}
                   <button type="submit" className="form-submit" disabled={status === 'loading'}>
-                    {status === 'loading' ? '⏳ Sending…' : '🐝 Send My Free Quote Request'}
+                    {status === 'loading' ? '⏳ Sending…' : 'Send My Free Quote Request'}
                   </button>
                 </form>
               </>

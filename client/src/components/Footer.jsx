@@ -33,8 +33,7 @@ export default function Footer() {
                 }
               </div>
               <p className="footer-body">
-                Tulsa&apos;s trusted residential cleaning service since 2016.
-                Eco-friendly, bonded, insured, and always on time.
+                Keeping Tulsa homes clean since 2016. Locally owned, trusted by hundreds.
               </p>
             </div>
 

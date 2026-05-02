@@ -7,14 +7,18 @@ export default function Footer() {
 
   return (
     <>
-      {/* CTA Banner */}
+      {/* Service Areas Banner */}
       <div className="cta-banner">
-        <h2 className="cta-banner-title">Ready for a Buzz-Worthy Clean?</h2>
+        <h2 className="cta-banner-title">Proudly Serving the Greater Tulsa Area</h2>
         <p className="cta-banner-sub">
-          Join 500+ Tulsa families who trust Clean Bee. Get your free quote today —
-          no commitment, no pressure, just results.
+          Clean Bee provides professional residential cleaning services across Tulsa and all surrounding communities.
         </p>
-        <button className="btn btn-black" style={{ fontSize: 16, padding: '15px 36px' }} onClick={() => go('contact')}>
+        <div className="service-areas-grid">
+          {['Tulsa','Broken Arrow','Bixby','Jenks','Owasso','Sand Springs','Sapulpa','Glenpool','Collinsville','Catoosa','Skiatook','Coweta','Claremore','Sperry','Turley','Midtown Tulsa','South Tulsa','East Tulsa','West Tulsa','Tulsa Hills'].map(area => (
+            <span key={area} className="service-area-tag">{area}</span>
+          ))}
+        </div>
+        <button className="btn btn-black" style={{ fontSize: 16, padding: '15px 36px', marginTop: 32 }} onClick={() => go('contact')}>
           Get My Free Quote →
         </button>
       </div>

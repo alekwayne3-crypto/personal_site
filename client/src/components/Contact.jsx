@@ -25,7 +25,7 @@ const DETAILS = [
 ]
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', bedrooms: '', bathrooms: '', message: '' })
   const [status, setStatus] = useState('idle')
   const [errMsg, setErrMsg] = useState('')
 
@@ -113,12 +113,22 @@ export default function Contact() {
                       <input className="form-input" type="tel" placeholder="(918) 555-0000" value={form.phone} onChange={set('phone')} />
                     </div>
                     <div className="form-col">
-                      <label className="form-label">Service Needed</label>
-                      <select className="form-select" value={form.service} onChange={set('service')}>
-                        <option value="">Select a service…</option>
-                        {SERVICE_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                      <label className="form-label">How Many Bedrooms?</label>
+                      <select className="form-select" value={form.bedrooms} onChange={set('bedrooms')}>
+                        <option value="">Select…</option>
+                        {['1', '2', '3', '4', '5', '6+'].map(o => <option key={o} value={o}>{o}</option>)}
                       </select>
                     </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="form-col">
+                      <label className="form-label">How Many Bathrooms?</label>
+                      <select className="form-select" value={form.bathrooms} onChange={set('bathrooms')}>
+                        <option value="">Select…</option>
+                        {['1', '1.5', '2', '2.5', '3', '3.5', '4+'].map(o => <option key={o} value={o}>{o}</option>)}
+                      </select>
+                    </div>
+                    <div className="form-col" />
                   </div>
                   <div className="form-col">
                     <label className="form-label">Tell Us About Your Home *</label>

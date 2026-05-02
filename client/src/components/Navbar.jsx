@@ -95,7 +95,7 @@ export default function Navbar() {
         {NAV_LINKS.map(([label, id]) => (
           <a key={label} href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{label}</a>
         ))}
-        <button className="btn btn-yellow nb-mobile-cta" onClick={() => go('contact')}>Get a Free Quote</button>
+        <a href="#contact" onClick={e => { e.preventDefault(); go('contact') }}>Get a Free Quote</a>
       </div>
 
     </nav>

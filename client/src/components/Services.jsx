@@ -14,10 +14,10 @@ const SERVICES = [
     features: ['Inside appliances', 'Baseboards & trim', 'Cabinet fronts', 'Grout & tile scrubbing'],
   },
   {
-    icon: '📦',
-    title: 'Move-In / Move-Out',
-    desc: 'Guarantee your full deposit back or start fresh in a spotless new home. We cover every corner.',
-    features: ['Inside closets & cabinets', 'Walls & switches', 'Window sills', 'Full appliance clean'],
+    icon: '🏢',
+    title: 'Commercial Cleaning',
+    desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
+    features: ['Office & workspace', 'Restroom sanitation', 'Floor care', 'Flexible scheduling'],
   },
   {
     icon: '🔄',
@@ -26,16 +26,16 @@ const SERVICES = [
     features: ['Flexible scheduling', 'Loyalty discounts', 'Consistent crew', 'No contracts'],
   },
   {
+    icon: '📦',
+    title: 'Move-In / Move-Out',
+    desc: 'Guarantee your full deposit back or start fresh in a spotless new home. We cover every corner.',
+    features: ['Inside closets & cabinets', 'Walls & switches', 'Window sills', 'Full appliance clean'],
+  },
+  {
     icon: '🏗️',
     title: 'Post-Construction',
     desc: 'Specialized removal of construction dust, debris, and residue after a renovation or new build.',
     features: ['Construction dust', 'Window & glass clean', 'Floor polish', 'Detail vacuuming'],
-  },
-  {
-    icon: '🏢',
-    title: 'Commercial Cleaning',
-    desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
-    features: ['Office & workspace', 'Restroom sanitation', 'Floor care', 'Flexible scheduling'],
   },
 ]
 

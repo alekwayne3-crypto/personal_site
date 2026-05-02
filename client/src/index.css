@@ -633,6 +633,8 @@ input, textarea, select { font-family: var(--font); }
 .svc-item--open .svc-title { color: var(--black); }
 .svc-arrow { font-size: 22px; font-weight: 300; color: var(--yellow-dark); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--yellow-light); flex-shrink: 0; }
 
+.svc-body-wrap { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.svc-body-wrap--open { max-height: 600px; }
 .svc-body { padding: 4px 32px 36px 92px; }
 .svc-desc { font-size: 14px; color: var(--text-muted); line-height: 1.75; margin-bottom: 24px; }
 .svc-features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }

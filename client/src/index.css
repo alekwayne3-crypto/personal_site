@@ -1109,7 +1109,7 @@ input, textarea, select { font-family: var(--font); }
   100% { transform: translateX(-100%); }
 }
 
-.cta-banner { background: #FFF9EC; padding: 80px 28px; text-align: center; }
+.cta-banner { background: #FFF9EC; padding: 80px 28px; text-align: center; border-radius: 32px 32px 0 0; }
 .cta-banner-title { font-size: clamp(26px, 4.5vw, 46px); font-weight: 900; color: var(--black); margin-bottom: 12px; letter-spacing: -0.03em; line-height: 1.1; }
 .cta-banner-sub   { font-size: 17px; color: rgba(0,0,0,0.58); margin-bottom: 28px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.65; }
 .service-areas-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 700px; margin: 0 auto; }

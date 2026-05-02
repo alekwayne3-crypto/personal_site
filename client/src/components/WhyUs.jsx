@@ -17,7 +17,7 @@ const REASONS = [
   {
     icon: '⭐',
     title: 'Satisfaction Guaranteed',
-    desc: "Not happy with something? Tell us within 24 hours and we'll clean that area again at absolutely no charge.",
+    desc: "Not happy with something? Tell us within 24 hours and we'll come back and clean it again. No charge, no questions asked.",
   },
   {
     icon: '📅',

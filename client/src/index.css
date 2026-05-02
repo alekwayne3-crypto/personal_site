@@ -1083,7 +1083,7 @@ input, textarea, select { font-family: var(--font); }
 .footer-social-icon { color: var(--yellow); transition: opacity var(--transition); opacity: 0.85; }
 .footer-social-icon:hover { opacity: 1; }
 .footer-body { order: 2; }
-@media (max-width: 540px) { .footer-brand { display: flex; flex-direction: column; } .footer-socials { order: 1; margin-top: 12px; margin-bottom: 4px; } .footer-body { order: 2; margin-top: 12px; } }
+@media (max-width: 540px) { .footer-brand { display: flex; flex-direction: column; } .footer-socials { order: 1; margin-top: 12px; margin-bottom: 4px; gap: 20px; } .footer-socials svg { width: 32px; height: 32px; } .footer-body { order: 2; margin-top: 12px; } }
 .footer-col-title { font-size: 11px; font-weight: 800; color: var(--yellow); margin-bottom: 18px; letter-spacing: 0.1em; text-transform: uppercase; }
 .footer-links { display: flex; flex-direction: column; gap: 10px; }
 .footer-links a { font-size: 13px; color: rgba(255,255,255,0.4); transition: color var(--transition); }

@@ -54,7 +54,7 @@ export default function Testimonials() {
           <span className="pill pill-white-yellow">Customer Reviews</span>
           <h2 className="h2 h2-dark">Tulsa Loves Clean Bee</h2>
           <p className="lead lead-muted">
-            Hundreds of Tulsa families have experienced the Clean Bee difference. Here&apos;s what they think.
+            Hundreds of families have experienced the Clean Bee difference. Here&apos;s what they think.
           </p>
         </div>
 

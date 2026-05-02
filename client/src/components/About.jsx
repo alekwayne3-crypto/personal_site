@@ -8,7 +8,7 @@ const POINTS = [
   { icon: '👥', text: "Background-Checked Staff" },
   { icon: '🌱', text: "Eco-Friendly Products" },
   { icon: '📅', text: "8+ Years of Experience" },
-  { icon: '⭐', text: "100% Satisfaction Guarantee" },
+  { icon: '⭐', text: "Trusted by 500+ Families" },
 ]
 
 export default function About() {

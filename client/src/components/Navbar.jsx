@@ -20,6 +20,7 @@ export default function Navbar() {
     ['Residential',    'services'],
     ['Deep Cleaning',  'services'],
     ['Why Clean Bee',  'why-us'],
+    ['Get Free Quote', 'contact'],
     ['About Us',       'about'],
     ['Reviews',        'testimonials'],
     ['Contact',        'contact'],
@@ -95,7 +96,6 @@ export default function Navbar() {
         {NAV_LINKS.map(([label, id]) => (
           <a key={label} href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{label}</a>
         ))}
-        <a href="#contact" onClick={e => { e.preventDefault(); go('contact') }}>Get Free Quote</a>
       </div>
 
     </nav>

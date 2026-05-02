@@ -58,7 +58,7 @@ export default function About() {
 
             <div className="about-points">
               {POINTS.map((p) => (
-                <div className={`about-point${p.text === 'Eco-Friendly Products' ? ' hide-mobile' : ''}`} key={p.text}>
+                <div className={`about-point${p.text === 'Eco-Friendly Products' || p.text === 'Fully Bonded & Insured' || p.text === 'Background-Checked Staff' ? ' hide-mobile' : ''}`} key={p.text}>
                   <span className="about-point-icon">{p.icon}</span>
                   <span className="about-point-text">{p.text}</span>
                 </div>

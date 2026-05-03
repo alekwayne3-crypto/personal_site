@@ -149,7 +149,7 @@ export default function WhyCleanBeePage() {
               You Deserve a Cleaning Company You Can Trust.
             </h1>
             <p className="wcb-hero-sub">
-              Most cleaning companies send whoever is available, use whatever products are on hand, and hope you don't notice. We built Clean Bee to be different from the ground up.
+              Most cleaning companies send whoever is available, use whatever products are on hand, and hope you don't notice. We built Clean Bee to be different.
             </p>
             <div className="wcb-hero-actions">
               <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>

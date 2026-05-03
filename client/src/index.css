@@ -988,6 +988,7 @@ input, textarea, select { font-family: var(--font); }
   font-size: 16px; color: var(--text);
   transition: all var(--transition);
   outline: none; appearance: none; -webkit-appearance: none;
+  scroll-margin-top: 120px;
 }
 .form-input::placeholder, .form-textarea::placeholder { color: #BBBAB3; }
 .form-select option { background: var(--white); color: var(--text); }

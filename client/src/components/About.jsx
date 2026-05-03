@@ -26,6 +26,7 @@ export default function About() {
                 className="about-team-img"
                 src={TEAM_IMG}
                 alt="Clean Bee Team"
+                loading="lazy"
                 onError={e => { e.target.style.display='none' }}
               />
             </div>

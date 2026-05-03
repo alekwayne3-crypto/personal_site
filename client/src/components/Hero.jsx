@@ -13,6 +13,7 @@ export default function Hero() {
           src="/maid.png"
           alt=""
           className="hero-bg-photo"
+          fetchpriority="high"
           onError={() => setImgErr(true)}
         />
       )}

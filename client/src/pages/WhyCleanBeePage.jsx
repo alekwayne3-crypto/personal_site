@@ -33,7 +33,7 @@ const DIFFERENTIATORS = [
   {
     icon: '🏠',
     title: 'Locally Owned Since 2016',
-    desc: 'We\'re not a franchise. We\'re not a national chain. We\'re a Tulsa business built by Tulsa people who care about this community. When you hire Clean Bee, you\'re supporting a local team that actually gives a damn.',
+    desc: 'We\'re not a franchise. We\'re not a national chain. We\'re a Tulsa business built by Tulsa people who care about this community. When you hire Clean Bee, you\'re supporting a local team that actually gives a dang.',
   },
 ]
 

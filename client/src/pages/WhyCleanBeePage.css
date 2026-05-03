@@ -19,7 +19,7 @@
    Hero — dark full-width
    ============================================================ */
 .wcb-hero {
-  background: #0A0A0A;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/why-hero.jpg') center/cover no-repeat;
   padding: 88px 0 96px;
   text-align: center;
 }

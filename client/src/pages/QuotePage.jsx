@@ -276,17 +276,6 @@ export default function QuotePage() {
           </div>
         </section>
 
-        {/* ── Trust strip ── */}
-        <section className="qp-trust">
-          <div className="container qp-trust-inner">
-            {TRUST.map(({ icon, text }) => (
-              <div className="qp-trust-item" key={text}>
-                <span className="qp-trust-icon">{icon}</span>
-                <span className="qp-trust-text">{text}</span>
-              </div>
-            ))}
-          </div>
-        </section>
 
       </main>
       <Footer />

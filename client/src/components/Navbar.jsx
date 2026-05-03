@@ -119,7 +119,7 @@ export default function Navbar() {
       {/* ── Mobile dropdown ── */}
       <div className={`nb-mobile-menu${menuOpen ? ' open' : ''}${menuClose ? ' closing' : ''}`}>
         <Link to="/" className={location.pathname === '/' ? 'nb-mobile-active' : ''} onClick={() => { closeMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</Link>
-        <Link to="/services" className={location.pathname === '/services' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Services</Link>
+        <Link to="/services" className={location.pathname === '/services' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Our Services</Link>
         <a href="#contact" onClick={e => { e.preventDefault(); go('contact') }}>Get Free Quote</a>
         <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Clean Bee</Link>
         <a href="#about" onClick={e => { e.preventDefault(); go('about') }}>About Clean Bee</a>

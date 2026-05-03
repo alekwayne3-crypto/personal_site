@@ -123,7 +123,7 @@ export default function Navbar() {
         <a href="#contact" onClick={e => { e.preventDefault(); go('contact') }}>Get Free Quote</a>
         <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Clean Bee</Link>
         <a href="#about" onClick={e => { e.preventDefault(); go('about') }}>About Clean Bee</a>
-        <a href="#testimonials" onClick={e => { e.preventDefault(); go('testimonials') }}>Reviews</a>
+        <a href="#testimonials" onClick={e => { e.preventDefault(); go('testimonials') }}>Customer Reviews</a>
         <a href="#reach-us" onClick={e => { e.preventDefault(); go('reach-us') }}>Contact</a>
         <a href="#contact" className="nb-mobile-quote-btn" onClick={e => { e.preventDefault(); go('contact') }}>Get a Free Quote</a>
         <div className="nb-mobile-socials">

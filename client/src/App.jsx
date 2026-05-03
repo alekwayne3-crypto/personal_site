@@ -1,20 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
-
-function ScrollToTop() {
-  const { pathname, hash } = useLocation()
-  useEffect(() => {
-    if (hash) {
-      setTimeout(() => {
-        const el = document.getElementById(hash.replace('#', ''))
-        if (el) el.scrollIntoView({ behavior: 'smooth' })
-      }, 100)
-    } else {
-      window.scrollTo(0, 0)
-    }
-  }, [pathname, hash])
-  return null
-}
+import { useEffect, useLayoutEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -31,6 +16,22 @@ import CommercialCleaningPage from './pages/services/CommercialCleaningPage'
 import RecurringCleaningPage from './pages/services/RecurringCleaningPage'
 import MoveInMoveOutPage from './pages/services/MoveInMoveOutPage'
 import PostConstructionPage from './pages/services/PostConstructionPage'
+
+function ScrollToTop() {
+  const { pathname, hash } = useLocation()
+  useLayoutEffect(() => {
+    if (!hash) window.scrollTo(0, 0)
+  }, [pathname, hash])
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const el = document.getElementById(hash.replace('#', ''))
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }, [pathname, hash])
+  return null
+}
 
 function HomePage() {
   return (

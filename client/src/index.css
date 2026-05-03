@@ -73,7 +73,6 @@ input, textarea, select { font-family: var(--font); }
 .pill-yellow { background: var(--yellow); color: var(--black); }
 .pill-white-yellow { background: var(--white); color: var(--black); border: 2px solid var(--yellow); }
 .pill-dark   { background: rgba(245,194,0,0.14); color: var(--yellow); border: 1px solid rgba(245,194,0,0.28); }
-.pill-outline { background: transparent; color: var(--text-muted); border: 1.5px solid var(--border-2); }
 
 .h2 {
   font-size: clamp(28px, 4vw, 46px);
@@ -123,46 +122,10 @@ input, textarea, select { font-family: var(--font); }
   box-shadow: var(--shadow-yellow);
 }
 
-.btn-black {
-  background: var(--black);
-  color: var(--yellow);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.28);
-}
-.btn-black:hover {
-  background: var(--black-3);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.38);
-}
-
-.btn-ghost-yellow {
-  background: transparent;
-  color: var(--yellow);
-  border: 2px solid rgba(245,194,0,0.5);
-}
-.btn-ghost-yellow:hover {
-  background: rgba(245,194,0,0.1);
-  border-color: var(--yellow);
-  transform: translateY(-2px);
-}
-
-.btn-ghost-black {
-  background: transparent;
-  color: var(--black);
-  border: 2px solid rgba(0,0,0,0.18);
-}
-.btn-ghost-black:hover {
-  background: var(--black);
-  color: var(--yellow);
-  border-color: var(--black);
-  transform: translateY(-2px);
-}
 
 /* ============================================================
    Navbar — Two-tier (Molly Maid-style layout)
    ============================================================ */
-.announcement-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 1001; background: var(--black); color: #fff; text-align: center; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; padding: 9px 16px; }
-.announcement-bar a { color: var(--yellow); text-decoration: underline; margin-left: 4px; }
-.announcement-bar a:hover { color: #fff; }
 
 .navbar {
   position: fixed;
@@ -428,8 +391,7 @@ input, textarea, select { font-family: var(--font); }
   .nb-mobile-icons { display: flex; }
   .nb-mobile-icons .nb-toggle { display: flex; }
   .nb-top-inner    { height: 100px; }
-  .callout-banner  { display: none; }
-  .hide-mobile     { display: none !important; }
+.hide-mobile     { display: none !important; }
 }
 
 @media (max-width: 480px) {
@@ -603,30 +565,6 @@ input, textarea, select { font-family: var(--font); }
   .hero-body { color: #333; text-shadow: 0 0 20px rgba(255,252,240,1), 0 0 50px rgba(255,252,240,0.95), 0 0 100px rgba(255,252,240,0.85), 0 0 150px rgba(255,252,240,0.7); }
   .hero-eyebrow { color: #333; }
   .hero-title { text-shadow: 0 0 30px rgba(255,252,240,0.9), 0 0 80px rgba(255,252,240,0.7), 0 0 150px rgba(255,252,240,0.5); }
-}
-
-/* ── Scroll hint (reused) ── */
-.hero-scroll-hint {
-  position: absolute;
-  bottom: 24px;
-  left: 26%;
-  transform: translateX(-50%);
-  color: rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  animation: hintBounce 2.5s ease-in-out infinite;
-}
-.hero-scroll-line { width: 1px; height: 32px; background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent); }
-
-@keyframes hintBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(7px); }
 }
 
 
@@ -1021,55 +959,6 @@ input, textarea, select { font-family: var(--font); }
 
 @media (max-width: 540px) { .form-row { grid-template-columns: 1fr; } }
 
-/* ============================================================
-   CTA Banner
-   ============================================================ */
-.callout-banner {
-  background: #2A2A2A;
-  padding: 14px 0;
-  overflow: hidden;
-}
-
-.marquee-track {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.marquee-content {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  animation: marqueeScroll 72s linear infinite;
-}
-
-.marquee-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--white);
-  white-space: nowrap;
-  padding: 0 8px;
-  letter-spacing: 0.02em;
-}
-
-.marquee-bee {
-  font-size: 16px;
-  filter: brightness(0) invert(1);
-}
-
-@keyframes marqueeScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-
-.cta-banner { background: #FFF9EC; padding: 80px 28px; text-align: center; border-radius: 32px 32px 0 0; }
-.cta-banner-title { font-size: clamp(26px, 4.5vw, 46px); font-weight: 900; color: var(--black); margin-bottom: 12px; letter-spacing: -0.03em; line-height: 1.1; }
-.cta-banner-sub   { font-size: 17px; color: rgba(0,0,0,0.58); margin-bottom: 28px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.65; }
-.service-areas-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 700px; margin: 0 auto; }
-.service-area-tag { background: rgba(0,0,0,0.08); color: var(--black); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 100px; border: 1px solid rgba(0,0,0,0.12); }
 
 /* ============================================================
    Footer

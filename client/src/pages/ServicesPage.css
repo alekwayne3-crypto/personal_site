@@ -19,8 +19,6 @@
    Page Hero — compact, not full-height
    ============================================================ */
 .sp-hero {
-  background: linear-gradient(135deg, var(--yellow-pale) 0%, #FFF8D0 55%, #FFFDF5 100%);
-  border-bottom: 2px solid var(--yellow);
   padding: 72px 0 80px;
   text-align: center;
 }
@@ -36,7 +34,7 @@
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.03em;
-  color: var(--black);
+  color: #fff;
   margin-bottom: 18px;
   margin-top: 4px;
 }
@@ -52,7 +50,7 @@
 
 .sp-hero-sub {
   font-size: 17px;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.85);
   line-height: 1.75;
   max-width: 560px;
   margin: 0 auto 36px;

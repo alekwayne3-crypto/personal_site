@@ -102,23 +102,23 @@ export default function Contact() {
                     <input className="form-input" type="text" placeholder="123 Main St, Tulsa, OK" value={form.address} onChange={set('address')} required />
                   </div>
                   <div className="form-col">
-                    <label className="form-label">Type of Cleaning</label>
-                    <select className="form-select" value={form.service} onChange={set('service')}>
+                    <label className="form-label" htmlFor="service">Type of Cleaning</label>
+                    <select id="service" className="form-select" value={form.service} onChange={set('service')}>
                       <option value="">Select a service…</option>
                       {['Standard Cleaning', 'Deep Cleaning', 'Move-In / Move-Out', 'Recurring Cleaning', 'Post-Construction', 'Commercial Cleaning', 'Not Sure'].map(o => <option key={o} value={o}>{o}</option>)}
                     </select>
                   </div>
                   <div className="form-row">
                     <div className="form-col">
-                      <label className="form-label">Bedrooms</label>
-                      <select className="form-select" value={form.bedrooms} onChange={set('bedrooms')}>
+                      <label className="form-label" htmlFor="bedrooms">Bedrooms</label>
+                      <select id="bedrooms" className="form-select" value={form.bedrooms} onChange={set('bedrooms')}>
                         <option value="">Select…</option>
                         {['1', '2', '3', '4', '5', '6+'].map(o => <option key={o} value={o}>{o}</option>)}
                       </select>
                     </div>
                     <div className="form-col">
-                      <label className="form-label">Bathrooms</label>
-                      <select className="form-select" value={form.bathrooms} onChange={set('bathrooms')}>
+                      <label className="form-label" htmlFor="bathrooms">Bathrooms</label>
+                      <select id="bathrooms" className="form-select" value={form.bathrooms} onChange={set('bathrooms')}>
                         <option value="">Select…</option>
                         {['1', '1.5', '2', '2.5', '3', '4+'].map(o => <option key={o} value={o}>{o}</option>)}
                       </select>

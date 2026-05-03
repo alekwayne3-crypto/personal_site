@@ -254,6 +254,7 @@
   }
   .wcb-how-connector { display: none !important; }
   .wcb-how { padding: 80px 0; }
+  .wcb-how-card { text-align: center; }
 }
 
 .wcb-how-card {

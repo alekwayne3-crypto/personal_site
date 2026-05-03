@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SERVICES = [
   {
@@ -80,9 +81,9 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <button className="btn btn-yellow svc-cta" onClick={() => go('contact')}>
+                  <Link className="btn btn-yellow svc-cta" to="/get-a-quote">
                     Book Now →
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -90,9 +91,9 @@ export default function Services() {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: 52 }}>
-          <button className="btn btn-yellow" onClick={() => go('contact')}>
+          <Link className="btn btn-yellow" to="/get-a-quote">
             Book Your Cleaning →
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -65,7 +65,7 @@ export default function MoveInMoveOutPage() {
               Protect your deposit. Start fresh. We handle every corner.
             </p>
             <div className="sd-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -177,7 +177,7 @@ export default function MoveInMoveOutPage() {
               Serving renters, homeowners, and landlords across Tulsa, Broken Arrow, and surrounding areas. Book before your move date.
             </p>
             <div className="sd-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

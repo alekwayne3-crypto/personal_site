@@ -64,7 +64,7 @@ export default function StandardCleaningPage() {
               Your home, maintained the way it should be. Come home to clean every time.
             </p>
             <div className="sd-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function StandardCleaningPage() {
               Serving Tulsa, Broken Arrow, Midtown, South Tulsa, and surrounding areas. Book in minutes.
             </p>
             <div className="sd-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

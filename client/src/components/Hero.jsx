@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
   const [imgErr, setImgErr] = useState(false)
@@ -53,9 +54,9 @@ export default function Hero() {
         </div>
 
         <div className="hero-left-btns">
-          <button className="btn btn-yellow hero-cta" onClick={() => go('contact')}>
+          <Link className="btn btn-yellow hero-cta" to="/get-a-quote">
             Get a Free Quote →
-          </button>
+          </Link>
           <a className="hero-phone-link" href="tel:9187727228">
             (918) 772-7228
           </a>

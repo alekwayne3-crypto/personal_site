@@ -64,7 +64,7 @@ export default function CommercialCleaningPage() {
               Your workspace reflects your business. We keep it sharp.
             </p>
             <div className="sd-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function CommercialCleaningPage() {
               Serving offices, retail spaces, and businesses across Tulsa, Broken Arrow, and Midtown. Get a custom quote today.
             </p>
             <div className="sd-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

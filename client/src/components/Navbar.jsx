@@ -42,7 +42,6 @@ export default function Navbar() {
   }
 
   const NAV_LINKS = [
-    ['Get Free Quote',  'contact'],
     ['About Clean Bee', 'about'],
     ['Reviews',         'testimonials'],
     ['Contact',         'reach-us'],
@@ -103,6 +102,9 @@ export default function Navbar() {
             {/* Dedicated Why Clean Bee page link */}
             <li>
               <Link to="/why-clean-bee">Why Clean Bee</Link>
+            </li>
+            <li>
+              <Link to="/get-a-quote">Get Free Quote</Link>
             </li>
             {NAV_LINKS.map(([label, id]) => (
               <li key={label}>

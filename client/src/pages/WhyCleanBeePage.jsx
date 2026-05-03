@@ -152,7 +152,7 @@ export default function WhyCleanBeePage() {
               Most cleaning companies send whoever is available, use whatever products are on hand, and hope you don't notice. We built Clean Bee to be different.
             </p>
             <div className="wcb-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote →</a>
               <a className="wcb-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function WhyCleanBeePage() {
               Join hundreds of Tulsa families who trust us every week. Get a free quote today.
             </p>
             <div className="wcb-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote →</a>
               <a className="wcb-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

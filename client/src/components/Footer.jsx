@@ -63,9 +63,10 @@ export default function Footer() {
             <div>
               <h4 className="footer-col-title">Company</h4>
               <ul className="footer-links">
-                {[['About Clean Bee','about'],['Customer Reviews','testimonials'],['Why Clean Bee','why-us'],['Free Quote','contact']].map(([l,id]) => (
+                {[['About Clean Bee','about'],['Customer Reviews','testimonials'],['Why Clean Bee','why-us']].map(([l,id]) => (
                   <li key={l}><a href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{l}</a></li>
                 ))}
+                <li><a href="/get-a-quote">Free Quote</a></li>
               </ul>
             </div>
 

@@ -133,7 +133,7 @@ export default function ServicesPage() {
               Whether your home needs a quick refresh or a full top-to-bottom deep clean, we have a service built around your schedule, your budget, and your life.
             </p>
             <div className="sp-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote →</a>
               <a className="sp-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function ServicesPage() {
                     ))}
                   </ul>
 
-                  <a className="btn btn-yellow sp-svc-cta" href="/#contact">
+                  <a className="btn btn-yellow sp-svc-cta" href="/get-a-quote">
                     Book This Service →
                   </a>
                 </div>
@@ -234,7 +234,7 @@ export default function ServicesPage() {
               Call us, fill out the form, or just tell us what you need. We&apos;ll handle the rest.
             </p>
             <div className="sp-final-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote →</a>
               <a className="sp-final-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

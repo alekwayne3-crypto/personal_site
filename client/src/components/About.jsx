@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const TEAM_IMG = '/team.jpg'
 
@@ -61,9 +62,9 @@ export default function About() {
               ))}
             </div>
 
-            <button className="btn btn-yellow" onClick={() => go('contact')}>
+            <Link className="btn btn-yellow" to="/get-a-quote">
               Get Your Free Quote →
-            </button>
+            </Link>
           </div>
 
         </div>

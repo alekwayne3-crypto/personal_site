@@ -64,7 +64,7 @@ export default function RecurringCleaningPage() {
               Set it and forget it. Same crew, same standard, every visit.
             </p>
             <div className="sd-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function RecurringCleaningPage() {
               Weekly, bi-weekly, or monthly options available. Serving Tulsa, Broken Arrow, Midtown, and surrounding areas.
             </p>
             <div className="sd-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

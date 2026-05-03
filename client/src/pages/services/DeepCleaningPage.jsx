@@ -65,7 +65,7 @@ export default function DeepCleaningPage() {
               More than a regular clean. We get into every corner, appliance, and surface your standard visit doesn&apos;t touch.
             </p>
             <div className="sd-hero-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-hero-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>
@@ -177,7 +177,7 @@ export default function DeepCleaningPage() {
               Serving Tulsa, Broken Arrow, Midtown, South Tulsa, and surrounding areas. Same-week availability often open.
             </p>
             <div className="sd-cta-actions">
-              <a className="btn btn-yellow" href="/#contact">Get a Free Quote &rarr;</a>
+              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote &rarr;</a>
               <a className="sd-cta-phone" href="tel:9187727228">(918) 772-7228</a>
             </div>
           </div>

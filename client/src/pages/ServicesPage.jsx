@@ -127,7 +127,7 @@ export default function ServicesPage() {
           <div className="container sp-hero-inner">
             <span className="pill pill-white-yellow">Our Services</span>
             <h1 className="sp-hero-title">
-              Professional Cleaning Services<br className="sp-hero-br" /> in Tulsa, OK
+              Professional Cleaning Services in Tulsa, OK
             </h1>
             <p className="sp-hero-sub">
               Whether your home needs a quick refresh or a full top-to-bottom deep clean, we have a service built around your schedule, your budget, and your life.

@@ -34,7 +34,7 @@ export default function Navbar() {
 
           <button className="nb-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             {!logoErr
-              ? <img src="/logo.png" alt="Clean Bee" onError={() => setLogoErr(true)} />
+              ? <img src="/logo.webp" alt="Clean Bee" onError={() => setLogoErr(true)} />
               : <span className="nb-logo-emoji">🐝</span>
             }
           </button>

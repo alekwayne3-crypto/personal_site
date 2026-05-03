@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="footer-brand">
               <div className="footer-logo-row">
                 {!logoErr
-                  ? <img src="/logo.png" alt="Clean Bee" onError={() => setLogoErr(true)} />
+                  ? <img src="/logo.webp" alt="Clean Bee" onError={() => setLogoErr(true)} />
                   : <span className="footer-logo-fallback">🐝</span>
                 }
               </div>

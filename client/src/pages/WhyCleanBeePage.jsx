@@ -146,7 +146,7 @@ export default function WhyCleanBeePage() {
           <div className="container wcb-hero-inner">
             <span className="pill pill-dark">Why Clean Bee?</span>
             <h1 className="wcb-hero-title">
-              You Deserve a Cleaning Company You Can Actually Trust.
+              You Deserve a Cleaning Company You Can Trust.
             </h1>
             <p className="wcb-hero-sub">
               Most cleaning companies send whoever is available, use whatever products are on hand, and hope you don't notice. We built Clean Bee to be different from the ground up.

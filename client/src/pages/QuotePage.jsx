@@ -85,7 +85,7 @@ export default function QuotePage() {
               <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> 2 Minutes</span>
               <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> No Contracts</span>
               <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> 100% Free</span>
-              <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> Response in 24 hrs</span>
+              <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> Quick Response</span>
             </div>
           </div>
         </section>

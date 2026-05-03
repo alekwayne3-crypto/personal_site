@@ -220,7 +220,7 @@ export default function WhyCleanBeePage() {
         </section>
 
         {/* ── Meet the Standard ── */}
-        <section className="wcb-standard">
+        <section className="wcb-standard" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/why-people.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container wcb-standard-inner">
             <span className="pill pill-dark">Our People</span>
             <h2 className="h2 h2-white">Every Cleaner. Every Visit. The Same Standard.</h2>

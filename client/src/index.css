@@ -396,9 +396,9 @@ input, textarea, select { font-family: var(--font); }
 }
 .nb-mobile-menu a:hover { color: var(--yellow-dark); text-decoration: underline; }
 .nb-mobile-active { color: var(--yellow-dark) !important; font-weight: 800 !important; }
-.nb-mobile-socials { display: flex; gap: 20px; padding: 16px 12px; border-top: 1px solid var(--border); margin-top: 4px; }
-.nb-mobile-socials a { color: var(--text-2); transition: color var(--transition); }
-.nb-mobile-socials a:hover { color: var(--yellow-dark); }
+.nb-mobile-socials { display: flex; gap: 20px; padding: 16px 12px; margin-top: 4px; }
+.nb-mobile-socials a { color: var(--text-2); transition: color var(--transition); border-bottom: none !important; }
+.nb-mobile-socials a:hover { color: var(--yellow-dark); text-decoration: none; }
 
 .nb-mobile-actions {
   display: flex;

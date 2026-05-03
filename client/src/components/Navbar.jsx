@@ -114,6 +114,9 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* ── Mobile overlay ── */}
+      {menuOpen && <div className="nb-overlay" onClick={closeMenu} />}
+
       {/* ── Mobile dropdown ── */}
       <div className={`nb-mobile-menu${menuOpen ? ' open' : ''}${menuClose ? ' closing' : ''}`}>
         <Link to="/" className={location.pathname === '/' ? 'nb-mobile-active' : ''} onClick={() => { closeMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</Link>

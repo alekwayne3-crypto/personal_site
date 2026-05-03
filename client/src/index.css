@@ -334,6 +334,19 @@ input, textarea, select { font-family: var(--font); }
 .nb-phone:hover { color: var(--yellow-dark); }
 
 /* ── Mobile dropdown ── */
+.nb-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 998;
+  animation: overlayIn 0.25s ease forwards;
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .nb-mobile-menu {
   display: none;
   flex-direction: column;
@@ -341,6 +354,7 @@ input, textarea, select { font-family: var(--font); }
   border-top: 1px solid var(--border);
   padding: 12px 16px 4px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  z-index: 999;
 }
 .nb-mobile-menu.open { display: flex; animation: menuFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 .nb-mobile-menu.closing { display: flex; animation: menuFadeOut 0.22s ease-in forwards; }

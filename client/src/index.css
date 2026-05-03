@@ -394,7 +394,7 @@ input, textarea, select { font-family: var(--font); }
   border-bottom: 1px solid var(--border);
   transition: color var(--transition);
 }
-.nb-mobile-menu a:hover { text-decoration: underline; text-shadow: 0 0 8px rgba(245, 194, 0, 0.6); }
+.nb-mobile-menu a:hover { text-decoration: underline; }
 .nb-mobile-active { color: var(--yellow-dark) !important; font-weight: 800 !important; }
 .nb-mobile-quote-btn { display: block; margin: 8px 16px 12px; padding: 12px 24px; background: #fff; color: var(--black) !important; font-weight: 800; font-size: 15px; text-align: center; border: 2px solid var(--yellow); border-radius: 8px; text-decoration: none !important; transition: background var(--transition); }
 .nb-mobile-quote-btn:hover { background: var(--yellow-pale) !important; }

@@ -336,20 +336,16 @@ input, textarea, select { font-family: var(--font); }
 /* ── Mobile dropdown ── */
 .nb-overlay {
   position: fixed;
-  top: 100px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.08);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  inset: 0;
   z-index: 998;
-  animation: overlayIn 0.25s ease forwards;
 }
 
-@keyframes overlayIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.app > *:not(nav) {
+  transition: filter 0.25s ease;
+}
+
+body.menu-open .app > *:not(nav) {
+  filter: blur(3px);
 }
 
 .nb-mobile-menu {

@@ -21,6 +21,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn)
   }, [])
 
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', menuOpen)
+    return () => document.body.classList.remove('menu-open')
+  }, [menuOpen])
+
   // Scroll to a section on the homepage. If we're on a different page, navigate
   // home first then scroll after the page has loaded.
   const go = (id) => {

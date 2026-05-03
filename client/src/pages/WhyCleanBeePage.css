@@ -20,7 +20,6 @@
    ============================================================ */
 .wcb-hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/why-hero.jpg') center/cover no-repeat;
-  background-attachment: fixed;
   padding: 88px 0 96px;
   text-align: center;
 }
@@ -311,7 +310,6 @@
    ============================================================ */
 .wcb-standard {
   background: var(--black);
-  background-attachment: fixed;
   padding: 108px 0;
 }
 

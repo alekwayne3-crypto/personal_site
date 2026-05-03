@@ -165,7 +165,7 @@ export default function WhyCleanBeePage() {
               <span className="pill pill-white-yellow">What Sets Us Apart</span>
               <h2 className="h2 h2-dark">Built Different. On Purpose.</h2>
               <p className="lead lead-muted">
-                These aren't marketing claims. They're the standards we hold ourselves to on every single job.
+                These aren't marketing claims. They're the standards we hold ourselves to on every single job, every single time.
               </p>
             </div>
             <div className="wcb-diff-grid">

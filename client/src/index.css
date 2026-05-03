@@ -204,7 +204,7 @@ input, textarea, select { font-family: var(--font); }
   flex-shrink: 0;
 }
 .nb-logo img {
-  height: 88px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 6px rgba(245, 194, 0, 0.35));
@@ -417,7 +417,7 @@ input, textarea, select { font-family: var(--font); }
 }
 
 @media (max-width: 480px) {
-  .nb-logo img  { height: 108px; }
+  .nb-logo img  { height: 120px; }
 }
 
 /* ============================================================

@@ -1071,7 +1071,7 @@ input, textarea, select { font-family: var(--font); }
 /* ============================================================
    Footer
    ============================================================ */
-.footer { background: #000000; border-top: 2px solid var(--yellow); padding: 64px 0 0; }
+.footer { background: #000000; padding: 64px 0 0; }
 
 .footer-top {
   display: grid;

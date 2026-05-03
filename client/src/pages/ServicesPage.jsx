@@ -226,7 +226,7 @@ export default function ServicesPage() {
         </section>
 
         {/* ── Final CTA ── */}
-        <section className="sp-final-cta" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)), url(/services-cta.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section className="sp-final-cta" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(/services-cta.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container sp-final-cta-inner">
             <span className="pill pill-dark">No Contracts. No Hassle.</span>
             <h2 className="h2 h2-white">Ready for a Cleaner Home?</h2>

@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Full-width background photo */}
       {!imgErr && (
         <img
-          src="/maid.png"
+          src="/ma.webp"
           alt=""
           className="hero-bg-photo"
           fetchpriority="high"

@@ -123,7 +123,7 @@ export default function ServicesPage() {
       <main className="sp-main">
 
         {/* ── Page Hero ── */}
-        <section className="sp-hero" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/services-hero.jpg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section className="sp-hero" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url(/services-hero.jpg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container sp-hero-inner">
             <span className="pill pill-white-yellow">Our Services</span>
             <h1 className="sp-hero-title">

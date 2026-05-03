@@ -2,8 +2,17 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const el = document.getElementById(hash.replace('#', ''))
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, hash])
   return null
 }
 import Navbar from './components/Navbar'

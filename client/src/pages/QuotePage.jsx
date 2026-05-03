@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './QuotePage.css'
+import './WhyCleanBeePage.css'
 
 const SERVICES = [
   { id: 'Standard Cleaning',      icon: '🧹', label: 'Standard Cleaning',      sub: 'Regular home maintenance' },
@@ -16,11 +17,22 @@ const SERVICES = [
 const BEDROOMS  = ['Studio', '1', '2', '3', '4', '5', '6+']
 const BATHROOMS = ['1', '1.5', '2', '2.5', '3', '4+']
 
-const TRUST = [
-  { icon: '🔒', text: 'Bonded & Fully Insured' },
-  { icon: '✅', text: 'Background-Checked Staff' },
-  { icon: '⭐', text: 'Satisfaction Guaranteed' },
-  { icon: '🌱', text: 'Eco-Friendly Products' },
+const STEPS = [
+  {
+    num: '01',
+    title: 'Request a Free Quote',
+    desc: 'Fill out our quick form or give us a call. Tell us about your home and what you need. We\'ll get back to you fast with a custom quote.',
+  },
+  {
+    num: '02',
+    title: 'We Show Up and Clean',
+    desc: 'A background-checked, trained Clean Bee crew arrives on time with everything needed. We clean your home top to bottom, exactly the way we promised.',
+  },
+  {
+    num: '03',
+    title: 'You Come Home to Clean',
+    desc: 'That\'s it. No surprises, no shortcuts. Just a genuinely clean home waiting for you. And if anything isn\'t right, we\'ll come back and fix it.',
+  },
 ]
 
 const STEP_LABELS = ['Service', 'Your Home', 'Contact', 'Confirm']
@@ -276,6 +288,29 @@ export default function QuotePage() {
           </div>
         </section>
 
+
+        {/* ── How It Works ── */}
+        <section className="wcb-how">
+          <div className="container">
+            <div className="section-header">
+              <span className="pill pill-white-yellow">How It Works</span>
+              <h2 className="h2 h2-dark">Three Steps to a Cleaner Home</h2>
+              <p className="lead lead-muted">
+                No complicated process. No hoops to jump through. Just tell us what you need and we'll handle the rest.
+              </p>
+            </div>
+            <div className="wcb-how-grid">
+              {STEPS.map((step, i) => (
+                <div className="wcb-how-card" key={step.num}>
+                  <div className="wcb-how-num">{step.num}</div>
+                  {i < STEPS.length - 1 && <div className="wcb-how-connector" aria-hidden="true" />}
+                  <h3 className="wcb-how-title">{step.title}</h3>
+                  <p className="wcb-how-desc">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
       </main>
       <Footer />

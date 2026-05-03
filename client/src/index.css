@@ -1011,6 +1011,8 @@ input, textarea, select { font-family: var(--font); }
 .form-submit:disabled { opacity: 0.55; cursor: not-allowed; transform: none; box-shadow: none; }
 
 .form-error { color: #DC2626; font-size: 12px; font-weight: 600; margin-top: 4px; }
+.form-required-err { color: #DC2626; font-weight: 900; }
+.form-input-err { border-color: #DC2626 !important; background: #fff8f8; }
 
 .form-success { text-align: center; padding: 44px 20px; }
 .form-success-icon { font-size: 60px; margin-bottom: 18px; }

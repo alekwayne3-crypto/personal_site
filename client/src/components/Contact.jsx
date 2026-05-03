@@ -16,11 +16,17 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', address: '', bedrooms: '', bathrooms: '', service: '', message: '' })
   const [status, setStatus] = useState('idle')
   const [errMsg, setErrMsg] = useState('')
+  const [attempted, setAttempted] = useState(false)
 
   const set = (f) => (e) => setForm(prev => ({ ...prev, [f]: e.target.value }))
 
+  const required = ['name', 'phone', 'email', 'address']
+  const invalid = (f) => attempted && required.includes(f) && !form[f].trim()
+
   const submit = async (e) => {
     e.preventDefault()
+    setAttempted(true)
+    if (required.some(f => !form[f].trim())) return
     setStatus('loading')
     setErrMsg('')
     try {
@@ -85,21 +91,21 @@ export default function Contact() {
                 <form onSubmit={submit}>
                   <div className="form-row">
                     <div className="form-col">
-                      <label className="form-label">Full Name</label>
-                      <input className="form-input" type="text" placeholder="Jane Smith" value={form.name} onChange={set('name')} required />
+                      <label className="form-label">Full Name {invalid('name') && <span className="form-required-err">*</span>}</label>
+                      <input className={`form-input${invalid('name') ? ' form-input-err' : ''}`} type="text" placeholder="Jane Smith" value={form.name} onChange={set('name')} />
                     </div>
                     <div className="form-col">
-                      <label className="form-label">Phone Number</label>
-                      <input className="form-input" type="tel" placeholder="(918) 555-0000" value={form.phone} onChange={set('phone')} required />
+                      <label className="form-label">Phone Number {invalid('phone') && <span className="form-required-err">*</span>}</label>
+                      <input className={`form-input${invalid('phone') ? ' form-input-err' : ''}`} type="tel" placeholder="(918) 555-0000" value={form.phone} onChange={set('phone')} />
                     </div>
                   </div>
                   <div className="form-col">
-                    <label className="form-label">Email Address</label>
-                    <input className="form-input" type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} required />
+                    <label className="form-label">Email Address {invalid('email') && <span className="form-required-err">*</span>}</label>
+                    <input className={`form-input${invalid('email') ? ' form-input-err' : ''}`} type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} />
                   </div>
                   <div className="form-col">
-                    <label className="form-label">Home Address</label>
-                    <input className="form-input" type="text" placeholder="123 Main St, Tulsa, OK" value={form.address} onChange={set('address')} required />
+                    <label className="form-label">Home Address {invalid('address') && <span className="form-required-err">*</span>}</label>
+                    <input className={`form-input${invalid('address') ? ' form-input-err' : ''}`} type="text" placeholder="123 Main St, Tulsa, OK" value={form.address} onChange={set('address')} />
                   </div>
                   <div className="form-col">
                     <label className="form-label" htmlFor="service">Type of Cleaning</label>

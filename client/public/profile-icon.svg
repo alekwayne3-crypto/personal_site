@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+
+    <clipPath id="circle-clip">
+      <circle cx="200" cy="200" r="196"/>
+    </clipPath>
+
+    <!-- Yellow center glow -->
+    <radialGradient id="yellow-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#F5C200" stop-opacity="0.38"/>
+      <stop offset="55%"  stop-color="#F5C200" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#F5C200" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Edge vignette to soften honeycomb at border -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="50%">
+      <stop offset="55%"  stop-color="#0d0d0d" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d0d0d" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <!-- Honeycomb pattern — pointy-top hexagons, R=30 -->
+    <pattern id="honeycomb" x="4" y="8" width="52" height="90" patternUnits="userSpaceOnUse">
+      <polygon points="26,0 52,15 52,45 26,60 0,45 0,15"     fill="none" stroke="#F5C200" stroke-width="1.1"/>
+      <polygon points="0,45 26,60 26,90 0,105 -26,90 -26,60"  fill="none" stroke="#F5C200" stroke-width="1.1"/>
+      <polygon points="52,45 78,60 78,90 52,105 26,90 26,60"  fill="none" stroke="#F5C200" stroke-width="1.1"/>
+    </pattern>
+
+  </defs>
+
+  <!-- Black background -->
+  <circle cx="200" cy="200" r="200" fill="#0d0d0d"/>
+
+  <!-- Honeycomb grid -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#honeycomb)" opacity="0.14" clip-path="url(#circle-clip)"/>
+
+  <!-- Vignette over honeycomb so edges fade out -->
+  <circle cx="200" cy="200" r="200" fill="url(#vignette)" clip-path="url(#circle-clip)"/>
+
+  <!-- Yellow glow behind logo -->
+  <circle cx="200" cy="200" r="200" fill="url(#yellow-glow)"/>
+
+  <!-- Logo -->
+  <image href="./logo.webp" x="40" y="40" width="320" height="320"
+         clip-path="url(#circle-clip)"
+         preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- Thin gold ring border -->
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#F5C200" stroke-width="2.5" opacity="0.55"/>
+
+</svg>

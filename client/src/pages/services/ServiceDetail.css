@@ -1,0 +1,521 @@
+/* ============================================================
+   ServiceDetail — shared styles for all 6 service detail pages
+   Namespace: sd-
+   Uses CSS variables and shared classes from index.css.
+   ============================================================ */
+
+/* ── Page wrapper offset for fixed navbar ── */
+.sd-main {
+  padding-top: 168px;
+}
+
+@media (max-width: 900px) {
+  .sd-main {
+    padding-top: 100px;
+  }
+}
+
+/* ============================================================
+   Hero Section
+   ============================================================ */
+.sd-hero {
+  background: #0A0A0A;
+  padding: 96px 0 104px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sd-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 0%, rgba(245,194,0,0.07) 0%, transparent 60%),
+              radial-gradient(ellipse at 20% 100%, rgba(245,194,0,0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.sd-hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sd-hero-h1 {
+  font-size: clamp(32px, 5vw, 62px);
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 6px;
+  max-width: 800px;
+}
+
+.sd-hero-tagline {
+  font-size: clamp(16px, 2vw, 19px);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto 40px;
+  font-weight: 400;
+}
+
+.sd-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sd-hero-phone {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.sd-hero-phone:hover { color: var(--yellow); }
+
+@media (max-width: 768px) {
+  .sd-hero {
+    padding: 80px 0 88px;
+  }
+  .sd-hero-h1 {
+    font-size: clamp(28px, 7vw, 44px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-hero {
+    padding: 72px 0 80px;
+  }
+  .sd-hero-tagline {
+    font-size: 15px;
+  }
+  .sd-hero-phone {
+    border: 2px solid var(--yellow);
+    border-radius: 8px;
+    padding: 11px 24px;
+  }
+}
+
+/* ============================================================
+   What's Included — 2-col feature checklist
+   ============================================================ */
+.sd-included {
+  background: var(--white);
+  padding: 96px 0;
+}
+
+.sd-included-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.sd-included-label {
+  /* pill overrides already in index.css */
+}
+
+.sd-included-heading {
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+
+.sd-included-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 420px;
+}
+
+.sd-features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+.sd-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-2);
+  line-height: 1.4;
+}
+
+.sd-feature-check {
+  color: var(--yellow-dark);
+  font-size: 15px;
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-top: 1px;
+  background: var(--yellow-light);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border: 1.5px solid rgba(245,194,0,0.35);
+}
+
+@media (max-width: 900px) {
+  .sd-included {
+    padding: 72px 0;
+  }
+  .sd-included-inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  .sd-features-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-included {
+    padding: 56px 0;
+  }
+  .sd-features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Why This Service — copy section
+   ============================================================ */
+.sd-why {
+  background: #FFF9EC;
+  padding: 96px 0;
+}
+
+.sd-why-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.sd-why-heading {
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 36px;
+  margin-top: 4px;
+}
+
+.sd-why-body p {
+  font-size: 17px;
+  color: var(--text-2);
+  line-height: 1.85;
+  margin-bottom: 22px;
+}
+
+.sd-why-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .sd-why {
+    padding: 72px 0;
+  }
+  .sd-why-body p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-why {
+    padding: 56px 0;
+  }
+}
+
+/* ============================================================
+   Who It's For — 3 scenario cards
+   ============================================================ */
+.sd-who {
+  background: var(--white);
+  padding: 96px 0;
+}
+
+.sd-who-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sd-who-heading {
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 4px;
+}
+
+.sd-who-sub {
+  font-size: 17px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sd-who-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.sd-who-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.sd-who-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--yellow);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.sd-who-card:hover {
+  border-color: rgba(245,194,0,0.4);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.sd-who-card:hover::before {
+  transform: scaleX(1);
+}
+
+.sd-who-icon {
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.sd-who-card-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.sd-who-card-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .sd-who {
+    padding: 72px 0;
+  }
+  .sd-who-cards {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-who {
+    padding: 56px 0;
+  }
+  .sd-who-card {
+    padding: 28px 22px;
+  }
+}
+
+/* ============================================================
+   Trust Strip
+   ============================================================ */
+.sd-trust {
+  background: var(--black);
+  padding: 48px 0;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+
+.sd-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.sd-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.sd-trust-icon {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.sd-trust-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .sd-trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  .sd-trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Featured Review
+   ============================================================ */
+.sd-review {
+  background: #FFF9EC;
+  padding: 96px 0;
+}
+
+.sd-review-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sd-review-heading {
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 52px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.sd-review-card-wrap {
+  max-width: 640px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sd-review {
+    padding: 72px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-review {
+    padding: 56px 0;
+  }
+}
+
+/* ============================================================
+   Final CTA
+   ============================================================ */
+.sd-cta {
+  background: var(--black);
+  padding: 104px 0;
+}
+
+.sd-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sd-cta-headline {
+  font-size: clamp(28px, 4.5vw, 54px);
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin-bottom: 18px;
+  margin-top: 6px;
+  max-width: 720px;
+}
+
+.sd-cta-sub {
+  font-size: 17px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  margin-bottom: 44px;
+  max-width: 500px;
+}
+
+.sd-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sd-cta-phone {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--yellow);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.sd-cta-phone:hover { color: var(--yellow-dark); }
+
+@media (max-width: 768px) {
+  .sd-cta {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-cta {
+    padding: 64px 0;
+  }
+  .sd-cta-phone {
+    color: var(--white);
+    border: 2px solid rgba(245,194,0,0.5);
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 18px;
+  }
+}

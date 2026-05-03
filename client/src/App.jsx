@@ -16,6 +16,12 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ServicesPage from './pages/ServicesPage'
 import WhyCleanBeePage from './pages/WhyCleanBeePage'
+import StandardCleaningPage from './pages/services/StandardCleaningPage'
+import DeepCleaningPage from './pages/services/DeepCleaningPage'
+import CommercialCleaningPage from './pages/services/CommercialCleaningPage'
+import RecurringCleaningPage from './pages/services/RecurringCleaningPage'
+import MoveInMoveOutPage from './pages/services/MoveInMoveOutPage'
+import PostConstructionPage from './pages/services/PostConstructionPage'
 
 function HomePage() {
   return (
@@ -41,6 +47,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/standard-cleaning" element={<StandardCleaningPage />} />
+        <Route path="/services/deep-cleaning" element={<DeepCleaningPage />} />
+        <Route path="/services/commercial-cleaning" element={<CommercialCleaningPage />} />
+        <Route path="/services/recurring-cleaning" element={<RecurringCleaningPage />} />
+        <Route path="/services/move-in-move-out" element={<MoveInMoveOutPage />} />
+        <Route path="/services/post-construction" element={<PostConstructionPage />} />
         <Route path="/why-clean-bee" element={<WhyCleanBeePage />} />
       </Routes>
     </BrowserRouter>

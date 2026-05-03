@@ -386,6 +386,7 @@ input, textarea, select { font-family: var(--font); }
   transition: color var(--transition);
 }
 .nb-mobile-menu a:hover { color: var(--yellow-dark); }
+.nb-mobile-active { color: var(--yellow-dark) !important; font-weight: 800 !important; }
 
 .nb-mobile-actions {
   display: flex;

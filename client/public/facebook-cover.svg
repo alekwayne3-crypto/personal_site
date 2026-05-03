@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" width="820" height="312">
+  <defs>
+
+    <!-- Honeycomb pattern -->
+    <pattern id="hc" x="6" y="4" width="52" height="90" patternUnits="userSpaceOnUse">
+      <polygon points="26,0 52,15 52,45 26,60 0,45 0,15"    fill="none" stroke="#F5C200" stroke-width="1"/>
+      <polygon points="0,45 26,60 26,90 0,105 -26,90 -26,60" fill="none" stroke="#F5C200" stroke-width="1"/>
+      <polygon points="52,45 78,60 78,90 52,105 26,90 26,60" fill="none" stroke="#F5C200" stroke-width="1"/>
+    </pattern>
+
+    <!-- Honeycomb fade mask — full bright left, fades to dark right -->
+    <linearGradient id="hc-mask" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="white" stop-opacity="1"/>
+      <stop offset="45%"  stop-color="white" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.05"/>
+    </linearGradient>
+    <mask id="hc-fade">
+      <rect x="0" y="0" width="820" height="312" fill="url(#hc-mask)"/>
+    </mask>
+
+    <!-- Yellow glow behind logo -->
+    <radialGradient id="logo-glow" cx="32%" cy="50%" r="30%">
+      <stop offset="0%"   stop-color="#F5C200" stop-opacity="0.28"/>
+      <stop offset="70%"  stop-color="#F5C200" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#F5C200" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Right side dark fade so text pops -->
+    <linearGradient id="right-fade" x1="30%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0a0a0a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.6"/>
+    </linearGradient>
+
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect x="0" y="0" width="820" height="312" fill="#0a0a0a"/>
+
+  <!-- ── Honeycomb ── -->
+  <rect x="0" y="0" width="820" height="312" fill="url(#hc)" opacity="0.18" mask="url(#hc-fade)"/>
+
+  <!-- ── Glows ── -->
+  <rect x="0" y="0" width="820" height="312" fill="url(#logo-glow)"/>
+  <rect x="0" y="0" width="820" height="312" fill="url(#right-fade)"/>
+
+  <!-- ── Yellow accent bar at bottom ── -->
+  <rect x="0" y="305" width="820" height="7" fill="#F5C200" opacity="0.7"/>
+
+  <!-- ── Vertical divider ── -->
+  <line x1="296" y1="52" x2="296" y2="260" stroke="#F5C200" stroke-width="1" opacity="0.25"/>
+
+  <!-- ── Logo ── -->
+  <image href="./logo.webp"
+         x="32" y="22" width="248" height="268"
+         preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- ── Brand name ── -->
+  <text x="326" y="118"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="72"
+        fill="#F5C200"
+        letter-spacing="-1">CLEAN BEE</text>
+
+  <!-- ── Sub brand ── -->
+  <text x="329" y="148"
+        font-family="Arial, sans-serif"
+        font-weight="700"
+        font-size="15"
+        fill="rgba(255,255,255,0.45)"
+        letter-spacing="7">CLEANING  CO.  —  TULSA, OK</text>
+
+  <!-- ── Yellow rule ── -->
+  <rect x="326" y="164" width="460" height="1.5" fill="#F5C200" opacity="0.35"/>
+
+  <!-- ── Tagline ── -->
+  <text x="326" y="196"
+        font-family="Arial, sans-serif"
+        font-weight="400"
+        font-size="17"
+        fill="rgba(255,255,255,0.72)"
+        letter-spacing="0.2">Keeping Tulsa homes clean since 2016.</text>
+
+  <!-- ── Contact line ── -->
+  <text x="326" y="224"
+        font-family="Arial, sans-serif"
+        font-weight="600"
+        font-size="14"
+        fill="rgba(255,255,255,0.42)"
+        letter-spacing="0.5">(918) 772-7228   ·   cleanbeetulsa.com</text>
+
+  <!-- ── Trust badges ── -->
+  <text x="326" y="263"
+        font-family="Arial, sans-serif"
+        font-weight="700"
+        font-size="12"
+        fill="#F5C200"
+        opacity="0.85"
+        letter-spacing="0.8">✓ Bonded &amp; Insured    ✓ Background-Checked    ✓ Eco-Friendly    ✓ Satisfaction Guaranteed</text>
+
+</svg>

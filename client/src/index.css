@@ -334,11 +334,6 @@ input, textarea, select { font-family: var(--font); }
 .nb-phone:hover { color: var(--yellow-dark); }
 
 /* ── Mobile dropdown ── */
-.nb-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 998;
-}
 
 .app > *:not(nav) {
   transition: filter 0.25s ease;

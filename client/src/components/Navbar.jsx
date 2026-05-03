@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [logoErr, setLogoErr] = useState(false)
+  const [scrolled, setScrolled]   = useState(false)
+  const [menuOpen, setMenuOpen]   = useState(false)
+  const [logoErr,  setLogoErr]    = useState(false)
+
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 10)
@@ -11,9 +15,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn)
   }, [])
 
+  // Scroll to a section on the homepage. If we're on a different page, navigate
+  // home first then scroll after the page has loaded.
   const go = (id) => {
     setMenuOpen(false)
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    if (location.pathname !== '/') {
+      navigate('/')
+      // Wait a tick for the homepage to render, then scroll
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+      }, 120)
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   const NAV_LINKS = [
@@ -32,12 +46,12 @@ export default function Navbar() {
       <div className="nb-top">
         <div className="nb-top-inner">
 
-          <button className="nb-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <Link className="nb-logo" to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             {!logoErr
               ? <img src="/logo.webp" alt="Clean Bee Cleaning Co. - House Cleaning Service Tulsa OK" onError={() => setLogoErr(true)} />
               : <span className="nb-logo-emoji">🐝</span>
             }
-          </button>
+          </Link>
 
           <div className="nb-utility">
             <div className="nb-location">
@@ -73,6 +87,10 @@ export default function Navbar() {
         <div className="nb-bottom-inner">
 
           <ul className="nb-nav">
+            {/* Dedicated Services page link */}
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
             {NAV_LINKS.map(([label, id]) => (
               <li key={label}>
                 <a href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{label}</a>
@@ -92,6 +110,8 @@ export default function Navbar() {
 
       {/* ── Mobile dropdown ── */}
       <div className={`nb-mobile-menu${menuOpen ? ' open' : ''}`}>
+        {/* Services page link in mobile menu */}
+        <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
         {NAV_LINKS.map(([label, id]) => (
           <a key={label} href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{label}</a>
         ))}

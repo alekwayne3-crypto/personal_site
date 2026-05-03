@@ -67,12 +67,12 @@
 .sp-hero-phone {
   font-size: 18px;
   font-weight: 900;
-  color: var(--black);
+  color: #fff;
   letter-spacing: -0.02em;
   transition: color var(--transition);
   text-decoration: none;
 }
-.sp-hero-phone:hover { color: var(--yellow-dark); }
+.sp-hero-phone:hover { color: var(--yellow); }
 
 @media (max-width: 480px) {
   .sp-hero { padding: 52px 0 60px; }

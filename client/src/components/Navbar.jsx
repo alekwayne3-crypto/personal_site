@@ -34,7 +34,7 @@ export default function Navbar() {
     ['Get Free Quote', 'contact'],
     ['About Us',       'about'],
     ['Reviews',        'testimonials'],
-    ['Contact',        'contact'],
+    ['Contact',        'reach-us'],
   ]
 
   return (

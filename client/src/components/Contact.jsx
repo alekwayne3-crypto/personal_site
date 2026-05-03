@@ -48,7 +48,7 @@ export default function Contact() {
         <div className="contact-inner">
 
           {/* Left — info */}
-          <div className="contact-info-col">
+          <div className="contact-info-col" id="reach-us">
             <span className="contact-eyebrow">Reach Us</span>
             <h3 className="contact-title">We&apos;re Easy to Reach</h3>
             <p className="contact-sub">

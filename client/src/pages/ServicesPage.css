@@ -45,7 +45,7 @@
 
 @media (max-width: 640px) {
   .sp-hero-br { display: inline; }
-  .sp-hero-title { font-size: clamp(22px, 6vw, 32px); }
+  .sp-hero-title { font-size: clamp(30px, 8vw, 42px); }
 }
 
 .sp-hero-sub {

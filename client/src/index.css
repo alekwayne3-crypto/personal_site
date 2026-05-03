@@ -336,8 +336,13 @@ input, textarea, select { font-family: var(--font); }
 /* ── Mobile dropdown ── */
 .nb-overlay {
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.08);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   z-index: 998;
   animation: overlayIn 0.25s ease forwards;
 }

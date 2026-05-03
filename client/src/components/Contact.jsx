@@ -27,7 +27,8 @@ export default function Contact() {
     e.preventDefault()
     setAttempted(true)
     if (required.some(f => !form[f].trim())) return
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById('contact')
+    if (el) window.scrollTo({ top: el.offsetTop + 80, behavior: 'smooth' })
     setStatus('loading')
     setErrMsg('')
     try {

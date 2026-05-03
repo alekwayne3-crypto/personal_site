@@ -124,6 +124,7 @@ export default function Navbar() {
         <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Clean Bee</Link>
         <a href="#about" onClick={e => { e.preventDefault(); go('about') }}>About Clean Bee</a>
         <a href="#testimonials" onClick={e => { e.preventDefault(); go('testimonials') }}>Customer Reviews</a>
+        <a href="#service-areas" onClick={e => { e.preventDefault(); go('service-areas') }}>Service Areas</a>
         <a href="#reach-us" onClick={e => { e.preventDefault(); go('reach-us') }}>Contact Us</a>
         <div className="nb-mobile-socials">
           <a href="https://www.instagram.com/cleanbeetulsa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

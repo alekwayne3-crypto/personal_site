@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       {/* Service Areas Banner */}
-      <div className="cta-banner">
+      <div className="cta-banner" id="service-areas">
         <span className="pill pill-white-yellow" style={{ marginBottom: 20, display: 'inline-block' }}>Service Areas</span>
         <h2 className="cta-banner-title">Proudly Serving the Greater Tulsa Area Since 2016</h2>
         <p className="cta-banner-sub">

@@ -15,6 +15,7 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ServicesPage from './pages/ServicesPage'
+import WhyCleanBeePage from './pages/WhyCleanBeePage'
 
 function HomePage() {
   return (
@@ -40,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/why-clean-bee" element={<WhyCleanBeePage />} />
       </Routes>
     </BrowserRouter>
   )

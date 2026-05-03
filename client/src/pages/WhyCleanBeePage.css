@@ -1,0 +1,547 @@
+/* ============================================================
+   WhyCleanBeePage — /why-clean-bee dedicated page styles
+   Uses CSS variables and shared classes from index.css.
+   Do NOT modify index.css.
+   ============================================================ */
+
+/* ── Page wrapper offset for fixed two-tier navbar ── */
+.wcb-main {
+  padding-top: 168px;
+}
+
+@media (max-width: 900px) {
+  .wcb-main {
+    padding-top: 100px;
+  }
+}
+
+/* ============================================================
+   Hero — dark full-width
+   ============================================================ */
+.wcb-hero {
+  background: #0A0A0A;
+  padding: 88px 0 96px;
+  text-align: center;
+}
+
+.wcb-hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wcb-hero-title {
+  font-size: clamp(30px, 4.8vw, 62px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 4px;
+}
+
+.wcb-hero-br {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .wcb-hero-br { display: inline; }
+  .wcb-hero-title { font-size: clamp(26px, 7vw, 38px); }
+}
+
+.wcb-hero-sub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.78;
+  max-width: 580px;
+  margin: 0 auto 40px;
+}
+
+.wcb-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wcb-hero-phone {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.wcb-hero-phone:hover { color: var(--yellow); }
+
+@media (max-width: 480px) {
+  .wcb-hero { padding: 72px 0 80px; }
+  .wcb-hero-sub { font-size: 15px; }
+  .wcb-hero-phone {
+    border: 2px solid var(--yellow);
+    border-radius: 8px;
+    padding: 10px 24px;
+  }
+}
+
+/* ============================================================
+   Differentiators — 6 cards
+   ============================================================ */
+.wcb-diff {
+  padding: 108px 0;
+  background: var(--white);
+}
+
+.wcb-diff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 960px) {
+  .wcb-diff-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .wcb-diff-grid { grid-template-columns: 1fr; }
+  .wcb-diff { padding: 80px 0; }
+}
+
+.wcb-diff-card {
+  padding: 36px 28px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--border);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.wcb-diff-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--yellow), var(--blue));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.wcb-diff-card:hover {
+  border-color: var(--yellow);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(245, 194, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.wcb-diff-card:hover::before {
+  transform: scaleX(1);
+}
+
+.wcb-diff-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: var(--yellow-light);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  border: 1px solid rgba(245, 194, 0, 0.25);
+  transition: all var(--transition);
+}
+
+.wcb-diff-card:hover .wcb-diff-icon-wrap {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  transform: rotate(5deg) scale(1.05);
+}
+
+.wcb-diff-icon {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.wcb-diff-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.wcb-diff-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   By the Numbers — stats strip
+   ============================================================ */
+.wcb-stats {
+  background: #FFF9EC;
+  padding: 72px 0;
+  border-top: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+}
+
+.wcb-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 700px) {
+  .wcb-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 380px) {
+  .wcb-stats-grid { grid-template-columns: 1fr; }
+}
+
+.wcb-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.wcb-stat-value {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900;
+  color: var(--black);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.wcb-stat-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   How It Works — 3 steps
+   ============================================================ */
+.wcb-how {
+  padding: 108px 0;
+  background: var(--white);
+}
+
+.wcb-how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .wcb-how-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .wcb-how-connector { display: none !important; }
+  .wcb-how { padding: 80px 0; }
+}
+
+.wcb-how-card {
+  padding: 40px 28px;
+  background: #FFF9EC;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--border);
+  position: relative;
+  transition: all var(--transition);
+}
+
+.wcb-how-card:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 12px 40px rgba(245, 194, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.wcb-how-num {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--yellow);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.wcb-how-connector {
+  position: absolute;
+  top: 52px;
+  right: -12px;
+  width: 24px;
+  height: 2px;
+  background: var(--yellow);
+  z-index: 1;
+}
+
+.wcb-how-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.wcb-how-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.78;
+}
+
+/* ============================================================
+   Meet the Standard — dark section
+   ============================================================ */
+.wcb-standard {
+  background: var(--black);
+  padding: 108px 0;
+}
+
+.wcb-standard-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wcb-standard .h2 {
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.wcb-standard-body {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.82;
+  max-width: 620px;
+  margin-bottom: 44px;
+}
+
+.wcb-standard-badges {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wcb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 194, 0, 0.12);
+  color: var(--yellow);
+  border: 1.5px solid rgba(245, 194, 0, 0.3);
+  border-radius: 100px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .wcb-standard { padding: 80px 0; }
+  .wcb-standard-body { font-size: 15px; }
+}
+
+/* ============================================================
+   Reviews
+   ============================================================ */
+.wcb-reviews {
+  padding: 108px 0;
+  background: #FFF9EC;
+}
+
+.wcb-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .wcb-reviews { padding: 80px 0; }
+  .wcb-reviews-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================================================
+   FAQ — accordion
+   ============================================================ */
+.wcb-faq {
+  padding: 108px 0;
+  background: var(--white);
+}
+
+.wcb-faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.wcb-faq-item {
+  border-bottom: 1.5px solid var(--border);
+  background: var(--white);
+  transition: background var(--transition);
+}
+
+.wcb-faq-item:last-child {
+  border-bottom: none;
+}
+
+.wcb-faq-item--open {
+  background: #FFFDF8;
+}
+
+.wcb-faq-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 20px;
+}
+
+.wcb-faq-btn:hover {
+  background: rgba(245, 194, 0, 0.04);
+}
+
+.wcb-faq-q {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.wcb-faq-icon {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--yellow-dark);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--yellow-light);
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.wcb-faq-item--open .wcb-faq-icon {
+  background: var(--yellow);
+}
+
+.wcb-faq-body-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.28s ease;
+}
+
+.wcb-faq-body-wrap--open {
+  grid-template-rows: 1fr;
+}
+
+.wcb-faq-body {
+  overflow: hidden;
+  padding: 0 32px 0;
+}
+
+.wcb-faq-body-wrap--open .wcb-faq-body {
+  padding-bottom: 28px;
+}
+
+.wcb-faq-a {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.78;
+}
+
+@media (max-width: 600px) {
+  .wcb-faq { padding: 80px 0; }
+  .wcb-faq-btn { padding: 18px 20px; }
+  .wcb-faq-body { padding: 0 20px 0; }
+  .wcb-faq-body-wrap--open .wcb-faq-body { padding-bottom: 22px; }
+  .wcb-faq-q { font-size: 14px; }
+}
+
+/* ============================================================
+   Final CTA — dark
+   ============================================================ */
+.wcb-cta {
+  background: var(--black);
+  padding: 108px 0;
+}
+
+.wcb-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wcb-cta .h2 {
+  margin-bottom: 16px;
+  max-width: 680px;
+}
+
+.wcb-cta .lead {
+  margin-bottom: 44px;
+}
+
+.wcb-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wcb-cta-phone {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--yellow);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.wcb-cta-phone:hover { color: var(--yellow-dark); }
+
+@media (max-width: 600px) {
+  .wcb-cta { padding: 80px 0; }
+  .wcb-cta-phone {
+    color: var(--white);
+    border: 2px solid rgba(245, 194, 0, 0.5);
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 18px;
+  }
+}

@@ -31,7 +31,6 @@ export default function Navbar() {
   }
 
   const NAV_LINKS = [
-    ['Why Clean Bee',  'why-us'],
     ['Get Free Quote', 'contact'],
     ['About Us',       'about'],
     ['Reviews',        'testimonials'],
@@ -90,6 +89,10 @@ export default function Navbar() {
             <li>
               <Link to="/services">Services</Link>
             </li>
+            {/* Dedicated Why Clean Bee page link */}
+            <li>
+              <Link to="/why-clean-bee">Why Clean Bee</Link>
+            </li>
             {NAV_LINKS.map(([label, id]) => (
               <li key={label}>
                 <a href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{label}</a>
@@ -111,6 +114,8 @@ export default function Navbar() {
       <div className={`nb-mobile-menu${menuOpen ? ' open' : ''}`}>
         {/* Services page link in mobile menu */}
         <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+        {/* Why Clean Bee page link in mobile menu */}
+        <Link to="/why-clean-bee" onClick={() => setMenuOpen(false)}>Why Clean Bee</Link>
         {NAV_LINKS.map(([label, id]) => (
           <a key={label} href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{label}</a>
         ))}

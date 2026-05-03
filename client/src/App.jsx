@@ -16,6 +16,7 @@ import CommercialCleaningPage from './pages/services/CommercialCleaningPage'
 import RecurringCleaningPage from './pages/services/RecurringCleaningPage'
 import MoveInMoveOutPage from './pages/services/MoveInMoveOutPage'
 import PostConstructionPage from './pages/services/PostConstructionPage'
+import QuotePage from './pages/QuotePage'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -68,6 +69,7 @@ function App() {
         <Route path="/services/move-in-move-out" element={<MoveInMoveOutPage />} />
         <Route path="/services/post-construction" element={<PostConstructionPage />} />
         <Route path="/why-clean-bee" element={<WhyCleanBeePage />} />
+        <Route path="/get-a-quote"  element={<QuotePage />} />
       </Routes>
     </BrowserRouter>
   )

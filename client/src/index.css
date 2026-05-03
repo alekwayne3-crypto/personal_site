@@ -1097,8 +1097,8 @@ input, textarea, select { font-family: var(--font); }
 .footer-body { font-size: 13px; line-height: 1.8; color: rgba(255,255,255,0.4); max-width: 250px; }
 
 .footer-socials { display: flex; gap: 14px; margin-top: 8px; }
-.footer-social-icon { color: var(--yellow); transition: opacity var(--transition); opacity: 0.85; }
-.footer-social-icon:hover { opacity: 1; }
+.footer-social-icon { color: var(--yellow); transition: opacity var(--transition); }
+.footer-social-icon:hover { opacity: 0.75; }
 .footer-body { order: 2; }
 @media (max-width: 540px) { .footer-brand { display: flex; flex-direction: column; } .footer-socials { order: 1; margin-top: 6px; margin-bottom: 4px; gap: 20px; } .footer-socials svg { width: 26px; height: 26px; } .footer-body { order: 2; margin-top: 12px; } }
 .footer-col-title { font-size: 11px; font-weight: 800; color: var(--yellow); margin-bottom: 18px; letter-spacing: 0.1em; text-transform: uppercase; }

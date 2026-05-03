@@ -118,15 +118,12 @@
   justify-content: center;
 }
 
-.sp-svc-img-placeholder {
+.sp-svc-img {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: var(--yellow);
+  object-fit: cover;
   border-radius: var(--radius-xl);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-yellow);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
   border: 3px solid rgba(255,255,255,0.7);
   position: relative;
   overflow: hidden;

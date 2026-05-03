@@ -6,6 +6,7 @@ import './ServicesPage.css'
 const SERVICES = [
   {
     icon: '🧹',
+    image: '/service1.jpg.png',
     title: 'Standard Cleaning',
     desc: 'Come home to a clean house without lifting a finger. Perfect for busy households who want a consistent baseline clean.',
     features: [
@@ -19,6 +20,7 @@ const SERVICES = [
   },
   {
     icon: '✨',
+    image: '/service3.jpg.png',
     title: 'Deep Cleaning',
     desc: "More than a regular clean. We get into every corner, appliance, and surface your standard visit doesn't touch.",
     features: [
@@ -33,6 +35,7 @@ const SERVICES = [
   },
   {
     icon: '🏢',
+    image: '/service4.jpg.png',
     title: 'Commercial Cleaning',
     desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
     features: [
@@ -46,6 +49,7 @@ const SERVICES = [
   },
   {
     icon: '🔄',
+    image: '/service2.jpg.png',
     title: 'Recurring Cleaning',
     desc: 'Weekly, bi-weekly, or monthly visits at a discounted rate. Same great team, every time.',
     features: [
@@ -59,6 +63,7 @@ const SERVICES = [
   },
   {
     icon: '📦',
+    image: '/services6.jpg.png',
     title: 'Move-In / Move-Out',
     desc: 'Guarantee your full deposit back or start fresh in a spotless new home. We cover every corner.',
     features: [
@@ -73,6 +78,7 @@ const SERVICES = [
   },
   {
     icon: '🏗️',
+    image: '/service5.jpg.png',
     title: 'Post-Construction',
     desc: 'Specialized removal of construction dust, debris, and residue after a renovation or new build.',
     features: [
@@ -143,11 +149,9 @@ export default function ServicesPage() {
             >
               <div className={`container sp-svc-inner${isEven ? '' : ' sp-svc-inner--reverse'}`}>
 
-                {/* Visual placeholder */}
+                {/* Service image */}
                 <div className="sp-svc-visual">
-                  <div className="sp-svc-img-placeholder">
-                    <span className="sp-svc-big-icon">{svc.icon}</span>
-                  </div>
+                  <img src={svc.image} alt={`Clean Bee ${svc.title} in Tulsa OK`} className="sp-svc-img" loading="lazy" />
                 </div>
 
                 {/* Content */}

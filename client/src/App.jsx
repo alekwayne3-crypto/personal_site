@@ -20,7 +20,11 @@ import PostConstructionPage from './pages/services/PostConstructionPage'
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
   useLayoutEffect(() => {
-    if (!hash) window.scrollTo(0, 0)
+    if (!hash) {
+      document.documentElement.style.scrollBehavior = 'auto'
+      window.scrollTo(0, 0)
+      document.documentElement.style.scrollBehavior = ''
+    }
   }, [pathname, hash])
   useEffect(() => {
     if (hash) {

@@ -387,7 +387,7 @@ input, textarea, select { font-family: var(--font); }
   to   { opacity: 0; transform: translateY(-6px) scaleY(0.97); transform-origin: top; }
 }
 .nb-mobile-menu a {
-  padding: 13px 12px;
+  padding: 16px 12px;
   font-size: 15px;
   font-weight: 600;
   color: var(--text-2);

@@ -37,7 +37,7 @@ const SERVICES = [
     icon: '🏢',
     image: '/service4.jpg.jpg',
     title: 'Commercial Cleaning',
-    desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
+    desc: 'Your workspace reflects your business. We keep offices, retail spaces, and small businesses in Tulsa looking sharp — on your schedule, without disruption.',
     features: [
       'Office & Workspace Cleaning',
       'Restroom Sanitation',
@@ -51,7 +51,7 @@ const SERVICES = [
     icon: '🔄',
     image: '/service2.jpg.png',
     title: 'Recurring Cleaning',
-    desc: 'Weekly, bi-weekly, or monthly visits at a discounted rate. Same great team, every time.',
+    desc: 'A consistently clean home doesn\'t happen by accident. Set a schedule and forget it — same trusted crew, same high standards, every single visit.',
     features: [
       'Weekly, Bi-Weekly & Monthly Options',
       'Same Trusted Crew Every Visit',
@@ -80,7 +80,7 @@ const SERVICES = [
     icon: '🏗️',
     image: '/service5.jpg.png',
     title: 'Post-Construction',
-    desc: 'Specialized removal of construction dust, debris, and residue after a renovation or new build.',
+    desc: 'Renovation dust gets into everything. We go room by room to remove every trace of construction debris so your space is genuinely ready to live in.',
     features: [
       'Construction Dust & Debris Removal',
       'Windows, Glass & Tracks Cleaned',
@@ -130,7 +130,7 @@ export default function ServicesPage() {
               Professional Cleaning Services<br className="sp-hero-br" /> in Tulsa, OK
             </h1>
             <p className="sp-hero-sub">
-              From routine upkeep to full deep cleans — we have a service that fits your home, schedule, and budget.
+              Whether your home needs a quick refresh or a full top-to-bottom deep clean, we have a service built around your schedule, your budget, and your life.
             </p>
             <div className="sp-hero-actions">
               <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>
@@ -228,10 +228,10 @@ export default function ServicesPage() {
         {/* ── Final CTA ── */}
         <section className="sp-final-cta">
           <div className="container sp-final-cta-inner">
-            <span className="pill pill-dark">Get Started Today</span>
+            <span className="pill pill-dark">No Contracts. No Hassle.</span>
             <h2 className="h2 h2-white">Ready for a Cleaner Home?</h2>
             <p className="lead lead-faint">
-              Book online in minutes or give us a call — we&apos;ll take care of the rest.
+              Call us, fill out the form, or just tell us what you need. We&apos;ll handle the rest.
             </p>
             <div className="sp-final-cta-actions">
               <a className="btn btn-yellow" href="/#contact">Get a Free Quote →</a>

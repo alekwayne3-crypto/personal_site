@@ -11,7 +11,7 @@ export default function Hero() {
       {!imgErr && (
         <img
           src="/maid.webp.webp"
-          alt=""
+          alt="Professional house cleaner in Tulsa, OK - Clean Bee Cleaning Co."
           className="hero-bg-photo"
           fetchpriority="high"
           onError={() => setImgErr(true)}

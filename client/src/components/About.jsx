@@ -25,7 +25,7 @@ export default function About() {
               <img
                 className="about-team-img"
                 src={TEAM_IMG}
-                alt="Clean Bee Team"
+                alt="Clean Bee cleaning team serving Tulsa, OK"
                 loading="lazy"
                 onError={e => { e.target.style.display='none' }}
               />

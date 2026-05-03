@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="nb-utility">
             <div className="nb-location">
               <strong>Clean Bee of Greater Tulsa</strong>
-              <span>Locally Owned and Operated</span>
+              <span>Locally Owned and Operated Since 2016</span>
             </div>
             <div className="nb-util-links">
               <a href="#services" onClick={e => { e.preventDefault(); go('services') }}>Service Areas</a>

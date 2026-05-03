@@ -35,7 +35,7 @@ const SERVICES = [
   },
   {
     icon: '🏢',
-    image: '/service4.jpg.png',
+    image: '/service4.jpg.jpg',
     title: 'Commercial Cleaning',
     desc: 'Professional cleaning for offices, retail spaces, and small businesses — keep your workplace spotless.',
     features: [

@@ -45,10 +45,10 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="contact-inner">
+        <div className="contact-inner" id="reach-us">
 
           {/* Left — info */}
-          <div className="contact-info-col" id="reach-us">
+          <div className="contact-info-col">
             <span className="contact-eyebrow">Reach Us</span>
             <h3 className="contact-title">We&apos;re Easy to Reach</h3>
             <p className="contact-sub">

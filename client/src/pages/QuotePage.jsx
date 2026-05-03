@@ -82,9 +82,10 @@ export default function QuotePage() {
             <h1 className="qp-hero-title">How Much Will It Cost?</h1>
             <p className="qp-hero-sub">Answer a few quick questions and we'll send you a custom quote within 24 hours.</p>
             <div className="qp-hero-badges">
-              <span className="qp-hero-badge">⏱ 2 Minutes</span>
-              <span className="qp-hero-badge">🔒 No Contracts</span>
-              <span className="qp-hero-badge">✅ 100% Free</span>
+              <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> 2 Minutes</span>
+              <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> No Contracts</span>
+              <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> 100% Free</span>
+              <span className="qp-hero-badge"><span className="qp-badge-check">✓</span> Response in 24 hrs</span>
             </div>
           </div>
         </section>

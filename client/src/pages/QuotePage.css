@@ -67,6 +67,16 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.qp-badge-check {
+  color: var(--yellow);
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1;
 }
 
 @media (max-width: 480px) {

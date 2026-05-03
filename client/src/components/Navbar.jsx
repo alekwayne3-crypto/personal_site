@@ -112,6 +112,7 @@ export default function Navbar() {
 
       {/* ── Mobile dropdown ── */}
       <div className={`nb-mobile-menu${menuOpen ? ' open' : ''}`}>
+        <Link to="/" onClick={() => { setMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</Link>
         {/* Services page link in mobile menu */}
         <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
         {/* Why Clean Bee page link in mobile menu */}

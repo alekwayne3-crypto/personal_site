@@ -68,21 +68,21 @@ const REVIEWS = [
     name: 'Sarah M.',
     location: 'South Tulsa',
     rating: 5,
-    text: 'Clean Bee has completely transformed my home. The deep cleaning was incredible, every single nook spotless. I\'ve tried three other Tulsa services and none come close. The buzz is absolutely real.',
+    text: 'Honestly did not expect to be this impressed. We have two little kids and the house was... a lot. They got things I had completely given up on — the grout in the master bath, behind the stove, inside the fridge. My husband walked in after work and thought we had gotten new appliances. Booking again next month for sure.',
   },
   {
     initials: 'MR',
     name: 'Mike R.',
     location: 'Broken Arrow',
     rating: 5,
-    text: 'Hired them for move-out cleaning and got every penny of our deposit back. Professional, on time, and left the place better than when we first moved in. Cannot recommend them enough.',
+    text: 'We were stressed trying to get out of our old place on a deadline and called Clean Bee kind of last minute. They fit us in, got every wall scuff and every carpet stain, and we got our full deposit back — $1,400. Landlord texted us saying it was the cleanest move-out they\'d ever seen. I wasn\'t expecting that.',
   },
   {
     initials: 'JK',
     name: 'Jennifer K.',
     location: 'Midtown Tulsa',
     rating: 5,
-    text: 'Best recurring cleaning in Tulsa, hands down. They remember all my preferences, always on time, and my house smells amazing after every visit. Three years a customer and I\'ll never switch.',
+    text: 'I\'ve had them coming every two weeks for almost two years. I work from home so I\'m usually here when they clean and it never feels awkward — the team is just really easy to be around. They figured out early on that I\'m particular about my kitchen and never have to be reminded. I\'ve referred them to at least five people at this point.',
   },
 ]
 

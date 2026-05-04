@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react'
 
 const REVIEWS = [
   {
+    initials: 'JK', name: 'Jennifer K.', location: 'Midtown Tulsa, OK', rating: 5,
+    text: "Five stars is not enough. Been on a bi-weekly schedule for close to two years and I have never once had to ask them to redo something. I work from home so I am usually here when they clean. It never feels weird. They just know my preferences at this point without me saying anything. Referred them to at least five people.",
+  },
+  {
     initials: 'SM', name: 'Sarah M.', location: 'South Tulsa, OK', rating: 5,
     text: "Two kids under five so the house was a disaster and they got things I had completely stopped trying to clean: grout, behind the stove, inside the fridge. My husband walked in after work and thought we had gotten new appliances. Booking them again next month.",
   },
   {
     initials: 'MR', name: 'Mike R.', location: 'Broken Arrow, OK', rating: 5,
     text: "Got our full $1,400 deposit back. After the state we left that place in I genuinely was not expecting that. Called Clean Bee last minute before our move-out inspection and they fit us in same day. Every wall scuff, every carpet stain, gone. Landlord texted us after saying it was the cleanest move-out he had seen.",
-  },
-  {
-    initials: 'JK', name: 'Jennifer K.', location: 'Midtown Tulsa, OK', rating: 5,
-    text: "Five stars is not enough. Been on a bi-weekly schedule for close to two years and I have never once had to ask them to redo something. I work from home so I am usually here when they clean. It never feels weird. They just know my preferences at this point without me saying anything. Referred them to at least five people.",
   },
   {
     initials: 'DL', name: 'David L.', location: 'Owasso, OK', rating: 5,

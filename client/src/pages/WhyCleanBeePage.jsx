@@ -68,21 +68,21 @@ const REVIEWS = [
     name: 'Sarah M.',
     location: 'South Tulsa',
     rating: 5,
-    text: 'Honestly did not expect to be this impressed. We have two little kids and the house was... a lot. They got things I had completely given up on: the grout in the master bath, behind the stove, inside the fridge. My husband walked in after work and thought we had gotten new appliances. Booking again next month for sure.',
+    text: 'My husband walked in after work and genuinely thought I hired a contractor. That is how different the kitchen looked. Two kids under five so the house was a disaster and they got things I had completely stopped trying to clean: grout, behind the stove, inside the fridge. Booking them again next month.',
   },
   {
     initials: 'MR',
     name: 'Mike R.',
     location: 'Broken Arrow',
     rating: 5,
-    text: 'We were stressed trying to get out of our old place on a deadline and called Clean Bee kind of last minute. They fit us in, got every wall scuff and every carpet stain, and we got our full deposit back. $1,400. Landlord texted us saying it was the cleanest move-out they\'d ever seen. I wasn\'t expecting that.',
+    text: 'Got our full $1,400 deposit back. After the state we left that place in I genuinely was not expecting that. Called Clean Bee last minute before our move-out inspection and they fit us in same week. Every wall scuff, every carpet stain, gone. Landlord texted us after saying it was the cleanest move-out he had seen.',
   },
   {
     initials: 'JK',
     name: 'Jennifer K.',
     location: 'Midtown Tulsa',
     rating: 5,
-    text: 'I\'ve had them coming every two weeks for almost two years. I work from home so I\'m usually here when they clean and it never feels awkward. The team is just really easy to be around. They figured out early on that I\'m particular about my kitchen and never have to be reminded. I\'ve referred them to at least five people at this point.',
+    text: 'Five stars is not enough. Been on a bi-weekly schedule for close to two years and I have never once had to ask them to redo something. I work from home so I am usually here when they clean. It never feels weird. They just know my preferences at this point without me saying anything. Referred them to at least five people.',
   },
 ]
 

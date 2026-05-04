@@ -3,27 +3,27 @@ import { useState, useEffect } from 'react'
 const REVIEWS = [
   {
     initials: 'SM', name: 'Sarah M.', location: 'South Tulsa, OK', rating: 5,
-    text: "Honestly did not expect to be this impressed. We have two little kids and the house was... a lot. They got things I had completely given up on: the grout in the master bath, behind the stove, inside the fridge. My husband walked in after work and thought we had gotten new appliances. Booking again next month for sure.",
+    text: "My husband walked in after work and genuinely thought I hired a contractor. That is how different the kitchen looked. Two kids under five so the house was a disaster and they got things I had completely stopped trying to clean: grout, behind the stove, inside the fridge. Booking them again next month.",
   },
   {
     initials: 'MR', name: 'Mike R.', location: 'Broken Arrow, OK', rating: 5,
-    text: "We were stressed trying to get out of our old place on a deadline and called Clean Bee kind of last minute. They fit us in, got every wall scuff and every carpet stain, and we got our full deposit back. $1,400. Landlord texted us saying it was the cleanest move-out they'd ever seen. I wasn't expecting that.",
+    text: "Got our full $1,400 deposit back. After the state we left that place in I genuinely was not expecting that. Called Clean Bee last minute before our move-out inspection and they fit us in same week. Every wall scuff, every carpet stain, gone. Landlord texted us after saying it was the cleanest move-out he had seen.",
   },
   {
     initials: 'JK', name: 'Jennifer K.', location: 'Midtown Tulsa, OK', rating: 5,
-    text: "I've had them coming every two weeks for almost two years. I work from home so I'm usually here when they clean and it never feels awkward. The team is just really easy to be around. They figured out early on that I'm particular about my kitchen and never have to be reminded. I've referred them to at least five people at this point.",
+    text: "Five stars is not enough. Been on a bi-weekly schedule for close to two years and I have never once had to ask them to redo something. I work from home so I am usually here when they clean. It never feels weird. They just know my preferences at this point without me saying anything. Referred them to at least five people.",
   },
   {
     initials: 'DL', name: 'David L.', location: 'Owasso, OK', rating: 5,
-    text: "Had them come in after we finished a full bathroom remodel. There was drywall dust on literally everything: inside cabinets, on ceiling fans, in rooms that weren't even part of the project. They spent about five hours and I could not find a single thing they missed. Already scheduled them to come back monthly.",
+    text: "Drywall dust everywhere after our bathroom remodel. Inside cabinets, on ceiling fans, in rooms that had nothing to do with the project. They spent five hours and I genuinely could not find a single thing they missed. Already have them coming back monthly. Worth every dollar.",
   },
   {
     initials: 'AT', name: 'Angela T.', location: 'Jenks, OK', rating: 5,
-    text: "I was nervous about having strangers in the house with our dogs and a two year old. They use non-toxic products which was a dealbreaker for us since our oldest has skin allergies. The team was wonderful and I felt totally comfortable the whole time. House smelled clean without that harsh chemical smell I hate. Really glad I found them.",
+    text: "The house smelled clean without that chemical smell that gives me a headache. That alone was worth it. Our oldest has skin allergies so the non-toxic products were a requirement and they had no problem with that. Team was friendly and professional the whole time. We have two dogs and a toddler so this has been a lifesaver.",
   },
   {
     initials: 'CR', name: 'Carlos R.', location: 'East Tulsa, OK', rating: 5,
-    text: "I had been burned by two other cleaning companies before this. Clean Bee showed up at exactly 8am, were done in under three hours, and the place looked great. No drama, no excuses. They texted the night before to confirm and followed up after to make sure I was happy. Small things but they matter. Not going anywhere.",
+    text: "Two other companies let me down before this. One ghosted me day of, the other argued when I said the job was not done right. Clean Bee showed up at 8am exactly, finished in under three hours, and the place looked great. Texted the night before to confirm and followed up after. Simple stuff but nobody else does it.",
   },
 ]
 

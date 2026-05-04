@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './ServicesPage.css'
+import './WhyCleanBeePage.css'
 
 const SERVICES = [
   {
@@ -93,11 +94,22 @@ const SERVICES = [
   },
 ]
 
-const TRUST_SIGNALS = [
-  { icon: '🛡️', label: 'Bonded & Insured' },
-  { icon: '✅', label: 'Background Checked' },
-  { icon: '🌿', label: 'Eco-Friendly Products' },
-  { icon: '⭐', label: 'Satisfaction Guaranteed' },
+const STEPS = [
+  {
+    num: '01',
+    title: 'Request a Free Quote',
+    desc: "Fill out our quick form or give us a call. Tell us about your home and what you need. We'll get back to you fast with a custom quote.",
+  },
+  {
+    num: '02',
+    title: 'We Show Up and Clean',
+    desc: "A background-checked, trained Clean Bee crew arrives on time with everything needed. We clean your home top to bottom, exactly the way we promised.",
+  },
+  {
+    num: '03',
+    title: 'You Come Home to Clean',
+    desc: "That's it. No surprises, no shortcuts. Just a genuinely clean home waiting for you. And if anything isn't right, we'll come back and fix it.",
+  },
 ]
 
 const REVIEWS = [
@@ -182,13 +194,22 @@ export default function ServicesPage() {
         })}
 
         {/* ── Trust Strip ── */}
-        <section className="sp-trust">
+        <section className="wcb-how">
           <div className="container">
-            <div className="sp-trust-grid">
-              {TRUST_SIGNALS.map(t => (
-                <div className="sp-trust-item" key={t.label}>
-                  <span className="sp-trust-icon">{t.icon}</span>
-                  <span className="sp-trust-label">{t.label}</span>
+            <div className="section-header">
+              <span className="pill pill-white-yellow">How It Works</span>
+              <h2 className="h2 h2-dark">Three Steps to a Cleaner Home</h2>
+              <p className="lead lead-muted">
+                No complicated process. No hoops to jump through. Just tell us what you need and we'll handle the rest.
+              </p>
+            </div>
+            <div className="wcb-how-grid">
+              {STEPS.map((step, i) => (
+                <div className="wcb-how-card" key={step.num}>
+                  <div className="wcb-how-num">{step.num}</div>
+                  {i < STEPS.length - 1 && <div className="wcb-how-connector" aria-hidden="true" />}
+                  <h3 className="wcb-how-title">{step.title}</h3>
+                  <p className="wcb-how-desc">{step.desc}</p>
                 </div>
               ))}
             </div>

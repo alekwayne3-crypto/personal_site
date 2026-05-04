@@ -34,8 +34,8 @@ export default function Footer() {
               </div>
               <p className="footer-body">
                 Clean Bee of Tulsa<br />
-                4425 S Retana Ave<br />
-                Tulsa, OK 74011
+                (918) 772-7228<br />
+                Tulsa, OK
               </p>
               <div className="footer-socials">
                 <a href="https://www.instagram.com/cleanbeetulsa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="footer-social-icon">

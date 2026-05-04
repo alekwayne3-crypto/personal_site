@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+
+    <!-- Honeycomb pattern -->
+    <pattern id="hc" x="0" y="0" width="72" height="124" patternUnits="userSpaceOnUse">
+      <polygon points="36,0 72,20 72,62 36,82 0,62 0,20"     fill="none" stroke="#F5C200" stroke-width="1.2"/>
+      <polygon points="0,62 36,82 36,124 0,144 -36,124 -36,82" fill="none" stroke="#F5C200" stroke-width="1.2"/>
+      <polygon points="72,62 108,82 108,124 72,144 36,124 36,82" fill="none" stroke="#F5C200" stroke-width="1.2"/>
+    </pattern>
+
+    <!-- Honeycomb fade: bright edges, dark center -->
+    <radialGradient id="hc-fade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="black" stop-opacity="1"/>
+      <stop offset="55%"  stop-color="black" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="hc-mask">
+      <rect x="0" y="0" width="1080" height="1080" fill="url(#hc-fade)"/>
+    </mask>
+
+    <!-- Yellow glow behind offer -->
+    <radialGradient id="offer-glow" cx="50%" cy="46%" r="35%">
+      <stop offset="0%"   stop-color="#F5C200" stop-opacity="0.22"/>
+      <stop offset="70%"  stop-color="#F5C200" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#F5C200" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Edge vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="45%"  stop-color="#0b0b0b" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b0b0b" stop-opacity="0.7"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="#0b0b0b"/>
+
+  <!-- ── Honeycomb (bright at edges, fades to center) ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#hc)" opacity="0.2" mask="url(#hc-mask)"/>
+
+  <!-- ── Glows ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#offer-glow)"/>
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#vignette)"/>
+
+  <!-- ── Large circle ring accent behind offer ── -->
+  <circle cx="540" cy="490" r="310" fill="none" stroke="#F5C200" stroke-width="1.5" opacity="0.1"/>
+  <circle cx="540" cy="490" r="340" fill="none" stroke="#F5C200" stroke-width="1" opacity="0.06"/>
+
+  <!-- ── Logo ── -->
+  <image href="./logo.webp"
+         x="390" y="52" width="300" height="220"
+         preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- ── "CLEAN BEE" label ── -->
+  <text x="540" y="308"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="34"
+        fill="rgba(255,255,255,0.35)"
+        letter-spacing="10">CLEAN BEE TULSA</text>
+
+  <!-- ── Yellow rule top ── -->
+  <rect x="200" y="326" width="680" height="1.5" fill="#F5C200" opacity="0.25"/>
+
+  <!-- ── "20%" hero number ── -->
+  <text x="540" y="590"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="290"
+        fill="#F5C200"
+        letter-spacing="-8">20%</text>
+
+  <!-- ── "OFF" ── -->
+  <text x="540" y="718"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="148"
+        fill="#ffffff"
+        letter-spacing="28">OFF</text>
+
+  <!-- ── Yellow rule mid ── -->
+  <rect x="200" y="750" width="680" height="1.5" fill="#F5C200" opacity="0.25"/>
+
+  <!-- ── "YOUR FIRST CLEAN" ── -->
+  <text x="540" y="832"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="52"
+        fill="#ffffff"
+        letter-spacing="4">YOUR FIRST CLEAN</text>
+
+  <!-- ── Fine print ── -->
+  <text x="540" y="886"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-weight="400"
+        font-size="26"
+        fill="rgba(255,255,255,0.35)"
+        letter-spacing="1">New customers only  ·  No contracts</text>
+
+  <!-- ── CTA ── -->
+  <text x="540" y="970"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="38"
+        fill="#F5C200"
+        letter-spacing="1">cleanbeetulsa.com</text>
+
+  <text x="540" y="1018"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-weight="500"
+        font-size="28"
+        fill="rgba(255,255,255,0.35)"
+        letter-spacing="1">(918) 772-7228</text>
+
+  <!-- ── Yellow bottom bar ── -->
+  <rect x="0" y="1068" width="1080" height="12" fill="#F5C200" opacity="0.85"/>
+
+  <!-- ── Border ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="none" stroke="#F5C200" stroke-width="6" opacity="0.12"/>
+
+</svg>

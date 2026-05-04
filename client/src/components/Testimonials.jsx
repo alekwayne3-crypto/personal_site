@@ -15,7 +15,7 @@ const REVIEWS = [
   },
   {
     initials: 'DL', name: 'David L.', location: 'Owasso, OK', rating: 5,
-    text: "Drywall dust everywhere after our bathroom remodel. Inside cabinets, on ceiling fans, in rooms that had nothing to do with the project. They spent five hours and I genuinely could not find a single thing they missed. Already have them coming back monthly. Worth every dollar.",
+    text: "Drywall dust everywhere after our bathroom remodel. Inside cabinets, on ceiling fans, in rooms that had nothing to do with the project. They spent five hours and I could not find a single thing they missed. Already have them coming back monthly. Worth every dollar.",
   },
   {
     initials: 'AT', name: 'Angela T.', location: 'Jenks, OK', rating: 5,

@@ -21,6 +21,9 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Yellow accent line between service areas and footer */}
+      <div className="footer-accent-line" />
+
       <footer className="footer">
         <div className="container">
           <div className="footer-top">
@@ -32,6 +35,7 @@ export default function Footer() {
                   : <span className="footer-logo-fallback">🐝</span>
                 }
               </div>
+              <p className="footer-tagline">Keeping Tulsa homes clean since 2016.</p>
               <p className="footer-body">
                 Clean Bee of Tulsa<br />
                 (918) 772-7228<br />

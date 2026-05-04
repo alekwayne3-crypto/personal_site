@@ -374,7 +374,7 @@ body.menu-open .app > *:not(nav) {
 .nb-mobile-active { color: var(--yellow-dark) !important; font-weight: 800 !important; }
 .nb-mobile-quote-btn { display: block; margin: 8px 16px 12px; padding: 12px 24px; background: #fff; color: var(--black) !important; font-weight: 800; font-size: 15px; text-align: center; border: 2px solid var(--yellow); border-radius: 8px; text-decoration: none !important; transition: background var(--transition); }
 .nb-mobile-quote-btn:hover { background: var(--yellow-pale) !important; }
-.nb-mobile-book-btn { display: block; margin: 4px 16px 12px; padding: 14px 24px; background: var(--yellow); color: var(--black) !important; font-weight: 900; font-size: 16px; text-align: center; border-radius: 8px; text-decoration: none !important; transition: background var(--transition); box-shadow: 0 4px 16px rgba(245,194,0,0.3); }
+.nb-mobile-book-btn { display: block; margin: 16px 16px 12px; padding: 14px 24px; background: var(--yellow); color: var(--black) !important; font-weight: 900; font-size: 16px; text-align: center; border-radius: 8px; text-decoration: none !important; transition: background var(--transition); box-shadow: 0 4px 16px rgba(245,194,0,0.3); }
 .nb-mobile-book-btn:hover { background: var(--yellow-dark) !important; }
 .nb-mobile-socials { display: flex; gap: 20px; padding: 16px 12px 16px 20px; margin-top: 4px; }
 .nb-mobile-socials a { color: var(--text-2); transition: color var(--transition); border-bottom: none !important; padding: 0 !important; }

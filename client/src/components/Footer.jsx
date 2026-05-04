@@ -33,7 +33,9 @@ export default function Footer() {
                 }
               </div>
               <p className="footer-body">
-                Keeping Tulsa homes clean since 2016. No shortcuts, no excuses, just a clean home every time.
+                Clean Bee of Tulsa<br />
+                4425 S Retana Ave<br />
+                Tulsa, OK 74011
               </p>
               <div className="footer-socials">
                 <a href="https://www.instagram.com/cleanbeetulsa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="footer-social-icon">

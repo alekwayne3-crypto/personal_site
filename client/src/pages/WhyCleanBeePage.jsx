@@ -68,7 +68,7 @@ const REVIEWS = [
     name: 'Sarah M.',
     location: 'South Tulsa',
     rating: 5,
-    text: 'My husband walked in after work and genuinely thought I hired a contractor. That is how different the kitchen looked. Two kids under five so the house was a disaster and they got things I had completely stopped trying to clean: grout, behind the stove, inside the fridge. Booking them again next month.',
+    text: 'Two kids under five so the house was a disaster and they got things I had completely stopped trying to clean: grout, behind the stove, inside the fridge. My husband walked in after work and thought we had gotten new appliances. Booking them again next month.',
   },
   {
     initials: 'MR',

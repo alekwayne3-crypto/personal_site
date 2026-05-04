@@ -615,7 +615,7 @@ body.menu-open .app > *:not(nav) {
 /* ============================================================
    About
    ============================================================ */
-.about { padding: 108px 0; background: #FFF9EC; border-radius: 32px; }
+.about { padding: 108px 0; background: #FFF9EC; border-radius: 32px; scroll-margin-top: 90px; }
 
 .about-inner {
   display: grid;

@@ -7,7 +7,7 @@ const REVIEWS = [
   },
   {
     initials: 'MR', name: 'Mike R.', location: 'Broken Arrow, OK', rating: 5,
-    text: "Got our full $1,400 deposit back. After the state we left that place in I genuinely was not expecting that. Called Clean Bee last minute before our move-out inspection and they fit us in same week. Every wall scuff, every carpet stain, gone. Landlord texted us after saying it was the cleanest move-out he had seen.",
+    text: "Got our full $1,400 deposit back. After the state we left that place in I genuinely was not expecting that. Called Clean Bee last minute before our move-out inspection and they fit us in same day. Every wall scuff, every carpet stain, gone. Landlord texted us after saying it was the cleanest move-out he had seen.",
   },
   {
     initials: 'JK', name: 'Jennifer K.', location: 'Midtown Tulsa, OK', rating: 5,

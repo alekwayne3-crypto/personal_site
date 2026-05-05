@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+
+    <pattern id="hc" x="0" y="0" width="72" height="124" patternUnits="userSpaceOnUse">
+      <polygon points="36,0 72,20 72,62 36,82 0,62 0,20"     fill="none" stroke="#F5C200" stroke-width="1.2"/>
+      <polygon points="0,62 36,82 36,124 0,144 -36,124 -36,82" fill="none" stroke="#F5C200" stroke-width="1.2"/>
+      <polygon points="72,62 108,82 108,124 72,144 36,124 36,82" fill="none" stroke="#F5C200" stroke-width="1.2"/>
+    </pattern>
+
+    <!-- Honeycomb: bright edges, invisible center -->
+    <radialGradient id="hc-fade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="black" stop-opacity="1"/>
+      <stop offset="48%"  stop-color="black" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="hc-mask">
+      <rect x="0" y="0" width="1080" height="1080" fill="url(#hc-fade)"/>
+    </mask>
+
+    <!-- Logo glow -->
+    <radialGradient id="logo-glow" cx="50%" cy="20%" r="26%">
+      <stop offset="0%"   stop-color="#F5C200" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#F5C200" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Offer glow -->
+    <radialGradient id="offer-glow" cx="50%" cy="58%" r="32%">
+      <stop offset="0%"   stop-color="#F5C200" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F5C200" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%"  stop-color="#0b0b0b" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b0b0b" stop-opacity="0.72"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="#0b0b0b"/>
+
+  <!-- ── Honeycomb ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#hc)" opacity="0.2" mask="url(#hc-mask)"/>
+
+  <!-- ── Glows ── -->
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#logo-glow)"/>
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#offer-glow)"/>
+  <rect x="0" y="0" width="1080" height="1080" fill="url(#vignette)"/>
+
+  <!-- ── Subtle ring accents ── -->
+  <circle cx="540" cy="610" r="272" fill="none" stroke="#F5C200" stroke-width="1" opacity="0.07"/>
+  <circle cx="540" cy="610" r="320" fill="none" stroke="#F5C200" stroke-width="1" opacity="0.04"/>
+
+  <!-- ── Outer border ── -->
+  <rect x="18" y="18" width="1044" height="1044" rx="4" fill="none" stroke="#F5C200" stroke-width="1.5" opacity="0.14"/>
+
+  <!-- ── Logo ── -->
+  <image href="./logo.webp"
+         x="390" y="38" width="300" height="210"
+         preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- ── Brand label ── -->
+  <text x="540" y="286"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="12"
+        fill="rgba(255,255,255,0.28)"
+        letter-spacing="7">CLEAN  BEE  CLEANING  CO.  —  TULSA, OK</text>
+
+  <!-- ── Pill badge: matches website pill style exactly ── -->
+  <rect x="326" y="308" width="428" height="50" rx="25"
+        fill="rgba(245,194,0,0.1)" stroke="#F5C200" stroke-width="1.5" opacity="0.85"/>
+  <text x="540" y="340"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="15"
+        fill="#F5C200"
+        letter-spacing="5">MOTHER'S DAY SPECIAL</text>
+
+  <!-- ── Top yellow rule ── -->
+  <rect x="200" y="376" width="680" height="1.5" fill="#F5C200" opacity="0.18"/>
+
+  <!-- ── "20%" hero ── -->
+  <text x="540" y="638"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="296"
+        fill="#F5C200"
+        letter-spacing="-6">20%</text>
+
+  <!-- ── "OFF" ── -->
+  <text x="540" y="766"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="152"
+        fill="#ffffff"
+        letter-spacing="36">OFF</text>
+
+  <!-- ── Mid yellow rule ── -->
+  <rect x="200" y="796" width="680" height="1.5" fill="#F5C200" opacity="0.22"/>
+
+  <!-- ── Tagline ── -->
+  <text x="540" y="858"
+        text-anchor="middle"
+        font-family="Georgia, serif"
+        font-style="italic"
+        font-size="34"
+        fill="rgba(255,255,255,0.7)"
+        letter-spacing="0.4">Give Mom the gift of a clean home.</text>
+
+  <!-- ── Fine print ── -->
+  <text x="540" y="908"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-weight="400"
+        font-size="19"
+        fill="rgba(255,255,255,0.25)"
+        letter-spacing="1.2">New customers only  ·  Limited availability</text>
+
+  <!-- ── Bottom rule ── -->
+  <rect x="200" y="938" width="680" height="1" fill="#F5C200" opacity="0.15"/>
+
+  <!-- ── Contact ── -->
+  <text x="540" y="996"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900"
+        font-size="32"
+        fill="#F5C200"
+        letter-spacing="1">cleanbeetulsa.com</text>
+
+  <text x="540" y="1038"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-weight="500"
+        font-size="24"
+        fill="rgba(255,255,255,0.32)"
+        letter-spacing="1">(918) 772-7228</text>
+
+  <!-- ── Yellow bottom bar ── -->
+  <rect x="0" y="1063" width="1080" height="17" fill="#F5C200" opacity="0.92"/>
+
+</svg>

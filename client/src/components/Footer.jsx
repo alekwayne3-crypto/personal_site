@@ -82,9 +82,9 @@ export default function Footer() {
                 { icon: '📞', text: '(918) 772-7228' },
                 { icon: '✉️', text: 'info@cleanbeetulsa.com' },
                 { icon: '📍', text: 'Tulsa, OK & Surrounding Areas' },
-                { icon: '🕐', text: 'Mon–Fri 8AM–8PM · Sat 9AM–5PM' },
-              ].map(({ icon, text }) => (
-                <div className="footer-contact-row" key={text}>
+                { icon: '🕐', text: 'Mon–Fri 8AM–8PM · Sat 9AM–5PM', hideOnMobile: true },
+              ].map(({ icon, text, hideOnMobile }) => (
+                <div className={`footer-contact-row${hideOnMobile ? ' hide-mobile' : ''}`} key={text}>
                   <span className="footer-contact-icon">{icon}</span>
                   <span className="footer-contact-val">{text}</span>
                 </div>

@@ -30,7 +30,7 @@ export default function Navbar() {
   useEffect(() => {
     const footer = document.querySelector('footer')
     if (!footer) return
-    const obs = new IntersectionObserver(([e]) => setFooterVisible(e.isIntersecting), { threshold: 0.05 })
+    const obs = new IntersectionObserver(([e]) => setFooterVisible(e.isIntersecting), { threshold: 0.25 })
     obs.observe(footer)
     return () => obs.disconnect()
   }, [])

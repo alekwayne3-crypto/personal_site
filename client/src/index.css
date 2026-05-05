@@ -411,7 +411,7 @@ body.menu-open .app > *:not(nav) {
   .nb-mobile-icons .nb-toggle { display: flex; }
   .nb-top-inner    { height: 100px; }
 .hide-mobile     { display: none !important; }
-.how-br          { display: none; }
+.how-break       { display: inline; }
 }
 
 @media (max-width: 480px) {

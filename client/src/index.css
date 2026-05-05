@@ -1018,7 +1018,7 @@ body.menu-open .app > *:not(nav) {
 .footer-social-icon svg { width: 26px; height: 26px; }
 .footer-social-icon:hover { opacity: 0.75; }
 .footer-body { order: 2; }
-@media (max-width: 540px) { .footer-brand { display: flex; flex-direction: column; } .footer-socials { order: 1; margin-top: 6px; margin-bottom: 4px; gap: 20px; } .footer-socials svg { width: 26px; height: 26px; } .footer-body { order: 2; margin-top: 12px; } .footer-logo-row img { height: 125px; } .footer-logo-row { margin-top: 16px; margin-left: -4px; } }
+@media (max-width: 540px) { .footer-brand { display: flex; flex-direction: column; } .footer-socials { order: 1; margin-top: 6px; margin-bottom: 4px; gap: 20px; } .footer-socials svg { width: 26px; height: 26px; } .footer-body { order: 2; margin-top: 12px; } .footer-logo-row img { height: 125px; } .footer-logo-row { margin-top: 16px; } }
 .footer-tagline { font-size: 13px; color: rgba(0,0,0,0.4); font-style: italic; margin-bottom: 10px; line-height: 1.5; }
 .footer-col-title { font-size: 13px; font-weight: 800; color: var(--black); margin-bottom: 22px; letter-spacing: 0.1em; text-transform: uppercase; }
 .footer-links { display: flex; flex-direction: column; gap: 10px; }

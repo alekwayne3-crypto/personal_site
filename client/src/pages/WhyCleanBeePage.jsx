@@ -283,20 +283,6 @@ export default function WhyCleanBeePage() {
           </div>
         </section>
 
-        {/* ── Final CTA ── */}
-        <section className="wcb-cta">
-          <div className="container wcb-cta-inner">
-            <span className="pill pill-dark">No Contracts. No Hassle.</span>
-            <h2 className="h2 h2-white">Ready to Experience the Clean Bee Difference?</h2>
-            <p className="lead lead-faint">
-              Join hundreds of Tulsa families who trust us every week. Get a free quote today.
-            </p>
-            <div className="wcb-cta-actions">
-              <a className="btn btn-yellow" href="/get-a-quote">Get a Free Quote →</a>
-              <a className="wcb-cta-phone" href="tel:9187727228">(918) 772-7228</a>
-            </div>
-          </div>
-        </section>
 
       </main>
 

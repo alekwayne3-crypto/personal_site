@@ -132,7 +132,11 @@ input, textarea, select { font-family: var(--font); }
   top: 0; left: 0; right: 0;
   z-index: 1000;
   background: var(--white);
-  transition: all var(--transition);
+  transition: all var(--transition), transform 0.35s ease;
+}
+
+@media (max-width: 900px) {
+  .navbar.footer-visible { transform: translateY(-100%); }
 }
 
 .navbar.scrolled {

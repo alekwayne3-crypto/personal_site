@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
-  const [scrolled,  setScrolled]  = useState(false)
-  const [menuOpen,  setMenuOpen]  = useState(false)
-  const [menuClose, setMenuClose] = useState(false)
-  const [logoErr,   setLogoErr]   = useState(false)
+  const [scrolled,      setScrolled]      = useState(false)
+  const [menuOpen,      setMenuOpen]      = useState(false)
+  const [menuClose,     setMenuClose]     = useState(false)
+  const [logoErr,       setLogoErr]       = useState(false)
+  const [footerVisible, setFooterVisible] = useState(false)
 
   const closeMenu = () => {
     setMenuClose(true)
@@ -25,6 +26,14 @@ export default function Navbar() {
     document.body.classList.toggle('menu-open', menuOpen)
     return () => document.body.classList.remove('menu-open')
   }, [menuOpen])
+
+  useEffect(() => {
+    const footer = document.querySelector('footer')
+    if (!footer) return
+    const obs = new IntersectionObserver(([e]) => setFooterVisible(e.isIntersecting), { threshold: 0.05 })
+    obs.observe(footer)
+    return () => obs.disconnect()
+  }, [])
 
   // Scroll to a section on the homepage. If we're on a different page, navigate
   // home first then scroll after the page has loaded.
@@ -48,7 +57,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
+    <nav className={`navbar${scrolled ? ' scrolled' : ''}${footerVisible ? ' footer-visible' : ''}`}>
 
       {/* ── Top bar: logo + utility links ── */}
       <div className="nb-top">

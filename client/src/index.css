@@ -1007,7 +1007,7 @@ body.menu-open .app > *:not(nav) {
 @media (max-width: 540px)  { .footer-top { grid-template-columns: 1fr; } }
 
 .footer-logo-row { display: flex; align-items: center; gap: 11px; margin-bottom: 8px; }
-.footer-logo-row img { height: 110px; width: auto; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0,0,0,0.15)); }
+.footer-logo-row img { height: 110px; width: auto; object-fit: contain; filter: drop-shadow(0 0 12px rgba(245,194,0,0.5)); }
 .footer-logo-fallback { font-size: 30px; }
 .footer-name { font-size: 18px; font-weight: 900; color: var(--yellow); letter-spacing: -0.02em; display: block; line-height: 1.1; }
 .footer-sub  { font-size: 9px; font-weight: 700; color: rgba(0,0,0,0.35); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 2px; display: block; }

@@ -201,7 +201,7 @@ export default function WhyCleanBeePage() {
           <div className="container">
             <div className="section-header">
               <span className="pill pill-white-yellow">How It Works</span>
-              <h2 className="h2 h2-dark">The Three Steps to a Cleaner Home</h2>
+              <h2 className="h2 h2-dark">The Three Steps to<br className="how-br" /> a Cleaner Home</h2>
               <p className="lead lead-muted">
                 No complicated process. No hoops to jump through. Just tell us what you need and we'll handle the rest.
               </p>

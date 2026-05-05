@@ -995,12 +995,12 @@ body.menu-open .app > *:not(nav) {
   grid-template-columns: 2fr 1fr 1fr 1.1fr;
   gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 2px solid var(--yellow);
 }
 @media (max-width: 900px) {
   .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; }
   .footer-brand { grid-column: 1 / -1; }
-  .footer-col-title { padding-bottom: 10px; border-bottom: 1px solid rgba(0,0,0,0.1); margin-bottom: 16px; }
+  .footer-col-title { padding-bottom: 10px; border-bottom: 1px solid var(--yellow); margin-bottom: 16px; }
   .footer-links { gap: 12px; }
   .footer-contact-icon { opacity: 0.8; }
 }

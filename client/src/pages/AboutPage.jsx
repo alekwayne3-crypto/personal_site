@@ -186,11 +186,6 @@ export default function AboutPage() {
               <p className="ab-local-body">
                 We serve Tulsa and all of the surrounding communities. Wherever you are in the greater Tulsa area, we can help.
               </p>
-              <div className="ab-areas-grid">
-                {AREAS.map(a => (
-                  <span className="ab-area-tag" key={a}>{a}</span>
-                ))}
-              </div>
             </div>
             <div className="ab-local-cta-box">
               <p className="ab-local-cta-title">Ready to experience the Clean Bee difference?</p>

@@ -154,25 +154,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ── The Guarantee ── */}
-        <section className="ab-guarantee">
-          <div className="container ab-guarantee-inner">
-            <div className="ab-guarantee-text">
-              <span className="ab-guarantee-eyebrow">Our Promise to You</span>
-              <h2 className="ab-guarantee-title">If It Is Not Right,<br />We Come Back.</h2>
-              <p className="ab-guarantee-body">
-                Tell us within 24 hours and we will return to re-clean the area at no charge. No hassle, no fine print, no arguing. We do not consider a job complete until you are satisfied with it. That is not a marketing line. That is how we operate.
-              </p>
-              <Link className="ab-guarantee-btn" to="/get-a-quote">Book Your First Clean →</Link>
-            </div>
-            <div className="ab-guarantee-icon">
-              <div className="ab-guarantee-circle">
-                <span className="ab-guarantee-emoji">🐝</span>
-                <span className="ab-guarantee-circle-text">100%<br />Satisfaction<br />Guaranteed</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* ── Why Local ── */}
         <section className="ab-local">

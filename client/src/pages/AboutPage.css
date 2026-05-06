@@ -66,7 +66,7 @@
 .ab-hero-phone:hover { color: var(--yellow); }
 
 @media (max-width: 480px) {
-  .ab-hero { padding: 72px 0 88px; background-size: cover; background-position: 80% center; }
+  .ab-hero { padding: 72px 0 88px; background-size: cover; background-position: 70% center; }
   .ab-hero-sub { font-size: 15px; }
   .ab-hero-phone {
     border: 2px solid var(--yellow);

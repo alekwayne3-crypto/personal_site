@@ -5,10 +5,10 @@ import Footer from '../components/Footer'
 import './AboutPage.css'
 
 const STATS = [
-  { value: '2016',  label: 'Year Founded',           sub: 'Locally owned since day one' },
-  { value: '500+',  label: 'Tulsa Families Served',  sub: 'And growing every week' },
-  { value: '4.9★',  label: 'Average Rating',         sub: 'Across all platforms' },
-  { value: '8+',    label: 'Years of Experience',    sub: 'In the Tulsa market' },
+  { value: '2016', label: 'Year Founded' },
+  { value: '500+', label: 'Tulsa Families Served' },
+  { value: '4.9',  label: 'Average Rating' },
+  { value: '8+',   label: 'Years of Experience' },
 ]
 
 const BELIEFS = [
@@ -105,7 +105,6 @@ export default function AboutPage() {
               <div className="ab-stat" key={s.label}>
                 <span className="ab-stat-value">{s.value}</span>
                 <span className="ab-stat-label">{s.label}</span>
-                <span className="ab-stat-sub">{s.sub}</span>
               </div>
             ))}
           </div>

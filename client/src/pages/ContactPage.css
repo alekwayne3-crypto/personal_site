@@ -47,6 +47,7 @@
 
 @media (max-width: 480px) {
   .cp-hero { padding: 56px 0 72px; }
+  .cp-hero-title { font-size: 52px; }
   .cp-hero-sub { font-size: 15px; }
 }
 

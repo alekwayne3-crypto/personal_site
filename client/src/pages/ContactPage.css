@@ -67,8 +67,13 @@
 }
 
 @media (max-width: 900px) {
-  .cp-body { padding-top: 0; margin-top: -48px; position: relative; z-index: 2; }
-  .cp-form-card { border-radius: var(--radius-xl) var(--radius-xl) var(--radius-lg) var(--radius-lg); box-shadow: 0 -4px 32px rgba(0,0,0,0.12), 0 8px 40px rgba(0,0,0,0.06); }
+  .cp-form-card {
+    margin-top: -48px;
+    position: relative;
+    z-index: 2;
+    border-radius: var(--radius-xl) var(--radius-xl) var(--radius-lg) var(--radius-lg);
+    box-shadow: 0 -4px 32px rgba(0,0,0,0.12), 0 8px 40px rgba(0,0,0,0.06);
+  }
 }
 
 .cp-grid {

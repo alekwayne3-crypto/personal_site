@@ -6,7 +6,7 @@ import './AboutPage.css'
 
 const STATS = [
   { value: '2016', label: 'Year Founded' },
-  { value: '500+', label: 'Tulsa Families Served' },
+  { value: '500+', label: 'Families Served' },
   { value: '4.9',  label: 'Average Rating' },
   { value: '8+',   label: 'Years of Experience' },
 ]

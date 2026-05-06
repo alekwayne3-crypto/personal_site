@@ -72,13 +72,13 @@ export default function AboutPage() {
               <span className="ab-eyebrow">Our Story</span>
               <h2 className="ab-story-title">Built Out of Frustration.<br />Run With Purpose.</h2>
               <p className="ab-story-body">
-                In 2016, Clean Bee was started because of a problem that every Tulsa homeowner knew too well — it was nearly impossible to find a cleaning service you could actually trust. The national chains sent whoever was available, with no accountability and no consistency. Local options were hit or miss. Communication was an afterthought.
+                Clean Bee was founded in Tulsa in 2016 because finding a cleaning company you could actually trust felt impossible. No-shows. Strangers with no background checks. Products that made your house smell like a hospital. No follow-up when something was wrong.
               </p>
               <p className="ab-story-body">
-                So we built the service we wished existed. One where every cleaner is background-checked and trained. Where the products are safe for your family. Where if something is not right, we come back and fix it — no arguments, no fees.
+                We started Clean Bee to be the service we always wished existed. Background-checked staff, every time. Eco-friendly products, every visit. And a guarantee that if something is not right, we come back and fix it. No runaround, no fine print.
               </p>
               <p className="ab-story-body">
-                Eight years and five hundred families later, Clean Bee is one of the most trusted cleaning companies in the greater Tulsa area. Not because of advertising. Because of the work.
+                Eight years later, we have served over 500 families across the greater Tulsa area. Not through advertising. Through showing up, doing the work, and earning it one clean home at a time.
               </p>
               <Link className="btn btn-yellow" to="/get-a-quote" style={{ marginTop: '8px', display: 'inline-flex' }}>
                 See What We Do →

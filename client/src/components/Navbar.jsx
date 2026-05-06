@@ -138,11 +138,10 @@ export default function Navbar() {
         <Link to="/" className={location.pathname === '/' ? 'nb-mobile-active' : ''} onClick={() => { closeMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</Link>
         <Link to="/services" className={location.pathname === '/services' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Our Services</Link>
         <Link to="/get-a-quote" className={location.pathname === '/get-a-quote' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Get Free Quote</Link>
-        <Link to="/about" className={location.pathname === '/about' ? 'nb-mobile-active' : ''} onClick={closeMenu}>About Us</Link>
         <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Clean Bee</Link>
-        <a href="#about" onClick={e => { e.preventDefault(); go('about') }}>About Clean Bee</a>
         <a href="#testimonials" onClick={e => { e.preventDefault(); go('testimonials') }}>Customer Reviews</a>
-<a href="#reach-us" onClick={e => { e.preventDefault(); go('reach-us') }}>Contact Us</a>
+        <Link to="/about" className={location.pathname === '/about' ? 'nb-mobile-active' : ''} onClick={closeMenu}>About Us</Link>
+        <a href="#reach-us" onClick={e => { e.preventDefault(); go('reach-us') }}>Contact Us</a>
         <Link className="nb-mobile-book-btn" to="/get-a-quote" onClick={closeMenu}>Book Now →</Link>
         <div className="nb-mobile-socials">
           <a href="https://www.instagram.com/cleanbeetulsa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

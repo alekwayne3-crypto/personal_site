@@ -60,7 +60,7 @@
 
 @media (max-width: 900px) {
   .cp-form-card {
-    margin-top: -32px;
+    margin-top: -38px;
     position: relative;
     z-index: 2;
     border-radius: var(--radius-xl) var(--radius-xl) var(--radius-lg) var(--radius-lg);

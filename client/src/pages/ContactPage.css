@@ -46,7 +46,8 @@
 }
 
 @media (max-width: 480px) {
-  .cp-hero { padding: 56px 0 72px; }
+  .cp-hero { padding: 56px 0 72px; min-height: 320px; display: flex; align-items: center; }
+  .cp-hero-inner { width: 100%; }
   .cp-hero-title { font-size: 44px; }
   .cp-hero-sub { font-size: 15px; }
 }

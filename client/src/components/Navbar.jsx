@@ -138,7 +138,7 @@ export default function Navbar() {
         <Link to="/" className={location.pathname === '/' ? 'nb-mobile-active' : ''} onClick={() => { closeMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</Link>
         <Link to="/services" className={location.pathname === '/services' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Our Services</Link>
         <Link to="/get-a-quote" className={location.pathname === '/get-a-quote' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Free Quote</Link>
-        <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Clean Bee</Link>
+        <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Hire Us</Link>
 <Link to="/about" className={location.pathname === '/about' ? 'nb-mobile-active' : ''} onClick={closeMenu}>About Us</Link>
         <a href="#reach-us" onClick={e => { e.preventDefault(); go('reach-us') }}>Contact Us</a>
         <Link className="nb-mobile-book-btn" to="/get-a-quote" onClick={closeMenu}>Book Now →</Link>

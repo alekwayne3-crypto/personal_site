@@ -78,7 +78,7 @@
   .cp-grid {
     grid-template-columns: 1fr;
     gap: 36px;
-    padding-top: 48px;
+    padding-top: 24px;
   }
 }
 

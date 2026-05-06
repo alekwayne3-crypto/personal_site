@@ -73,6 +73,7 @@ export default function Footer() {
                   <li key={l}><a href={`#${id}`} onClick={e => { e.preventDefault(); go(id) }}>{l}</a></li>
                 ))}
                 <li><a href="/get-a-quote">Free Quote</a></li>
+                <li><a href="/contact">Contact Us</a></li>
               </ul>
             </div>
 

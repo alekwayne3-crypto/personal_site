@@ -140,7 +140,7 @@ export default function Navbar() {
         <Link to="/get-a-quote" className={location.pathname === '/get-a-quote' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Free Quote</Link>
         <Link to="/why-clean-bee" className={location.pathname === '/why-clean-bee' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Why Hire Us</Link>
 <Link to="/about" className={location.pathname === '/about' ? 'nb-mobile-active' : ''} onClick={closeMenu}>About Us</Link>
-        <a href="#reach-us" onClick={e => { e.preventDefault(); go('reach-us') }}>Contact Us</a>
+        <Link to="/contact" className={location.pathname === '/contact' ? 'nb-mobile-active' : ''} onClick={closeMenu}>Contact Us</Link>
         <Link className="nb-mobile-book-btn" to="/get-a-quote" onClick={closeMenu}>Book Now →</Link>
         <div className="nb-mobile-socials">
           <a href="https://www.instagram.com/cleanbeetulsa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

@@ -66,6 +66,10 @@
   padding: 0 0 80px;
 }
 
+@media (max-width: 900px) {
+  .cp-body { padding-top: 0; }
+}
+
 .cp-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -78,7 +82,7 @@
   .cp-grid {
     grid-template-columns: 1fr;
     gap: 36px;
-    padding-top: 24px;
+    padding-top: 0;
   }
 }
 

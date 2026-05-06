@@ -991,7 +991,7 @@ body.menu-open .app > *:not(nav) {
 /* ============================================================
    Footer
    ============================================================ */
-.footer-accent-line { height: 3px; background: linear-gradient(90deg, transparent, var(--black), transparent); }
+.footer-accent-line { height: 3px; background: var(--yellow); }
 .footer { background: #ffffff; padding: 32px 0 0; }
 
 .footer-top {

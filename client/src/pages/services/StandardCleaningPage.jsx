@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './ServiceDetail.css'
@@ -45,13 +45,38 @@ const REVIEW = {
   text: "Best recurring cleaning in Tulsa, hands down. They remember all my preferences, always on time, and my house smells amazing after every visit. Three years a customer and I'll never switch.",
 }
 
-export default function StandardCleaningPage() {
-  useEffect(() => {
-    document.title = 'Standard House Cleaning in Tulsa, OK | Clean Bee Cleaning Co.'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'Standard Cleaning', item: 'https://cleanbeetulsa.com/services/standard-cleaning' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Standard House Cleaning',
+      serviceType: 'House Cleaning',
+      description: 'Reliable standard home cleaning in Tulsa, OK. Kitchens, bathrooms, floors, and more — consistent results every single visit.',
+      url: 'https://cleanbeetulsa.com/services/standard-cleaning',
+      provider: { '@type': 'LocalBusiness', name: 'Clean Bee Cleaning Co.', telephone: '+19187727228' },
+      areaServed: 'Tulsa, OK',
+    },
+  ],
+}
 
+export default function StandardCleaningPage() {
   return (
     <div className="app">
+      <SEO
+        title="Standard House Cleaning Tulsa OK | Clean Bee"
+        description="Reliable standard home cleaning in Tulsa, OK. Kitchens, bathrooms, floors & more. Consistent results every visit. Bonded, insured & background-checked."
+        path="/services/standard-cleaning"
+        schema={SCHEMA}
+      />
       <Navbar />
       <main className="sd-main">
 

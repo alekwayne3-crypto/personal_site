@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './ServiceDetail.css'
@@ -46,13 +46,38 @@ const REVIEW = {
   text: "Clean Bee has completely transformed my home. The deep cleaning was incredible — every single nook spotless. I've tried three other Tulsa services and none come close. The buzz is absolutely real.",
 }
 
-export default function PostConstructionPage() {
-  useEffect(() => {
-    document.title = 'Post-Construction Cleaning in Tulsa, OK | Clean Bee Cleaning Co.'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'Post-Construction Cleaning', item: 'https://cleanbeetulsa.com/services/post-construction' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Post-Construction Cleaning',
+      serviceType: 'Post-Construction Cleaning',
+      description: 'Post-construction cleaning in Tulsa, OK. We remove dust, debris, and construction residue so your newly built or renovated space is move-in ready.',
+      url: 'https://cleanbeetulsa.com/services/post-construction',
+      provider: { '@type': 'LocalBusiness', name: 'Clean Bee Cleaning Co.', telephone: '+19187727228' },
+      areaServed: 'Tulsa, OK',
+    },
+  ],
+}
 
+export default function PostConstructionPage() {
   return (
     <div className="app">
+      <SEO
+        title="Post-Construction Cleaning Tulsa OK | Clean Bee"
+        description="Post-construction cleaning in Tulsa, OK. We remove dust, debris & construction residue so your newly built or renovated space is spotless and move-in ready."
+        path="/services/post-construction"
+        schema={SCHEMA}
+      />
       <Navbar />
       <main className="sd-main">
 

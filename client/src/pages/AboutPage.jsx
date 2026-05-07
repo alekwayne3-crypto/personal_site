@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './AboutPage.css'
@@ -36,13 +36,41 @@ const BELIEFS = [
 
 const AREAS = ['Tulsa', 'Broken Arrow', 'Bixby', 'Jenks', 'Owasso', 'Sand Springs', 'Sapulpa', 'Glenpool', 'Catoosa', 'Coweta', 'Claremore']
 
-export default function AboutPage() {
-  useEffect(() => {
-    document.title = 'About Clean Bee | Tulsa\'s Trusted Cleaning Company Since 2016'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'About Us', item: 'https://cleanbeetulsa.com/about' },
+      ],
+    },
+    {
+      '@type': 'AboutPage',
+      name: 'About Clean Bee Cleaning Co.',
+      description: 'Clean Bee has been serving Tulsa families since 2016. Locally owned and operated with 500+ satisfied clients, a 4.9-star average rating, and a team you can trust.',
+      url: 'https://cleanbeetulsa.com/about',
+      about: {
+        '@type': 'LocalBusiness',
+        name: 'Clean Bee Cleaning Co.',
+        foundingDate: '2016',
+        telephone: '+19187727228',
+        address: { '@type': 'PostalAddress', addressLocality: 'Tulsa', addressRegion: 'OK', addressCountry: 'US' },
+      },
+    },
+  ],
+}
 
+export default function AboutPage() {
   return (
     <div className="app">
+      <SEO
+        title="About Clean Bee | Tulsa's Local Cleaning Company Since 2016"
+        description="Clean Bee has been serving Tulsa families since 2016. Locally owned and operated. 500+ satisfied clients, 4.9-star rating, and a team you can trust in your home."
+        path="/about"
+        schema={SCHEMA}
+      />
       <Navbar />
 
       <main className="ab-main">

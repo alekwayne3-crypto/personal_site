@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './WhyCleanBeePage.css'
@@ -130,13 +131,58 @@ function FaqItem({ q, a }) {
   )
 }
 
-export default function WhyCleanBeePage() {
-  useEffect(() => {
-    document.title = 'Why Choose Clean Bee | Tulsa Cleaning Service'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Why Clean Bee', item: 'https://cleanbeetulsa.com/why-clean-bee' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Are your cleaners background checked?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every Clean Bee team member undergoes a thorough background check before their first clean. Your safety and trust are our top priority.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you bring your own cleaning supplies?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we bring all cleaning products and equipment. We use eco-friendly, pet-safe products at no extra charge.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What if I am not satisfied with my clean?',
+          acceptedAnswer: { '@type': 'Answer', text: 'We offer a 100% satisfaction guarantee. If anything was missed, contact us within 24 hours and we will return to make it right at no cost.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are you bonded and insured?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, Clean Bee is fully bonded and insured. You are fully protected in the unlikely event of any damage or accident during your clean.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer recurring cleaning services?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer weekly, bi-weekly, and monthly recurring cleaning plans with no contracts required. Cancel anytime.' },
+        },
+      ],
+    },
+  ],
+}
 
+export default function WhyCleanBeePage() {
   return (
     <div className="app">
+      <SEO
+        title="Why Choose Clean Bee Tulsa | Bonded, Insured, Background-Checked"
+        description="See why Tulsa families choose Clean Bee. Bonded, insured, eco-friendly products, background-checked cleaners, and a 100% satisfaction guarantee. No contracts."
+        path="/why-clean-bee"
+        schema={SCHEMA}
+      />
       <Navbar />
 
       <main className="wcb-main">

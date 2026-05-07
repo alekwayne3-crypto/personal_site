@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './QuotePage.css'
@@ -48,8 +49,6 @@ export default function QuotePage() {
     name: '', phone: '', email: '', address: '', message: '',
   })
 
-  useEffect(() => { document.title = 'Get a Free Quote | Clean Bee Tulsa' }, [])
-
   const pick   = (f, v) => setForm(prev => ({ ...prev, [f]: v }))
   const setFld = (f)    => (e) => setForm(prev => ({ ...prev, [f]: e.target.value }))
 
@@ -84,6 +83,19 @@ export default function QuotePage() {
 
   return (
     <div className="app">
+      <SEO
+        title="Get a Free Cleaning Quote | Tulsa OK | Clean Bee"
+        description="Get a free house cleaning quote in Tulsa, OK. Takes just 2 minutes. No contracts, no hassle. Serving Tulsa, Broken Arrow, Jenks, Owasso & surrounding areas."
+        path="/get-a-quote"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Get a Free Quote', item: 'https://cleanbeetulsa.com/get-a-quote' },
+          ],
+        }}
+      />
       <Navbar />
       <main className="qp-main">
 

@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './ContactPage.css'
@@ -40,10 +41,6 @@ export default function ContactPage() {
   const [attempted, setAttempted] = useState(false)
   const [errMsg,    setErrMsg]    = useState('')
 
-  useEffect(() => {
-    document.title = 'Contact Us | Clean Bee Tulsa'
-  }, [])
-
   const set = (f) => (e) => setForm(prev => ({ ...prev, [f]: e.target.value }))
   const required = ['name', 'email', 'message']
   const inv = (f) => attempted && required.includes(f) && !form[f].trim()
@@ -71,6 +68,19 @@ export default function ContactPage() {
 
   return (
     <div className="app">
+      <SEO
+        title="Contact Clean Bee Tulsa | (918) 772-7228"
+        description="Get in touch with Clean Bee in Tulsa, OK. Call (918) 772-7228, email us, or fill out our contact form. We respond quickly during business hours Mon–Sat."
+        path="/contact"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://cleanbeetulsa.com/contact' },
+          ],
+        }}
+      />
       <Navbar />
 
       <main className="cp-main">

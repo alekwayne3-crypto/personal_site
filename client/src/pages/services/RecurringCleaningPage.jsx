@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './ServiceDetail.css'
@@ -45,13 +45,38 @@ const REVIEW = {
   text: "Best recurring cleaning in Tulsa, hands down. They remember all my preferences, always on time, and my house smells amazing after every visit. Three years a customer and I'll never switch.",
 }
 
-export default function RecurringCleaningPage() {
-  useEffect(() => {
-    document.title = 'Recurring Cleaning Service in Tulsa, OK | Clean Bee Cleaning Co.'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'Recurring Cleaning', item: 'https://cleanbeetulsa.com/services/recurring-cleaning' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Recurring House Cleaning',
+      serviceType: 'House Cleaning',
+      description: 'Weekly, bi-weekly, and monthly recurring house cleaning in Tulsa, OK. Same trusted crew every visit. No contracts, cancel anytime.',
+      url: 'https://cleanbeetulsa.com/services/recurring-cleaning',
+      provider: { '@type': 'LocalBusiness', name: 'Clean Bee Cleaning Co.', telephone: '+19187727228' },
+      areaServed: 'Tulsa, OK',
+    },
+  ],
+}
 
+export default function RecurringCleaningPage() {
   return (
     <div className="app">
+      <SEO
+        title="Recurring House Cleaning Tulsa OK | Weekly & Bi-Weekly | Clean Bee"
+        description="Set up recurring home cleaning in Tulsa, OK. Weekly, bi-weekly, or monthly plans. Same trusted crew every visit. No contracts, cancel anytime."
+        path="/services/recurring-cleaning"
+        schema={SCHEMA}
+      />
       <Navbar />
       <main className="sd-main">
 

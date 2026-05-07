@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './ServicesPage.css'
@@ -127,9 +128,40 @@ const REVIEWS = [
   },
 ]
 
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+      ],
+    },
+    {
+      '@type': 'ItemList',
+      name: 'Cleaning Services Offered by Clean Bee',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Standard Cleaning', url: 'https://cleanbeetulsa.com/services/standard-cleaning' },
+        { '@type': 'ListItem', position: 2, name: 'Deep Cleaning', url: 'https://cleanbeetulsa.com/services/deep-cleaning' },
+        { '@type': 'ListItem', position: 3, name: 'Move-In / Move-Out Cleaning', url: 'https://cleanbeetulsa.com/services/move-in-move-out' },
+        { '@type': 'ListItem', position: 4, name: 'Recurring Cleaning', url: 'https://cleanbeetulsa.com/services/recurring-cleaning' },
+        { '@type': 'ListItem', position: 5, name: 'Post-Construction Cleaning', url: 'https://cleanbeetulsa.com/services/post-construction' },
+        { '@type': 'ListItem', position: 6, name: 'Commercial Cleaning', url: 'https://cleanbeetulsa.com/services/commercial-cleaning' },
+      ],
+    },
+  ],
+}
+
 export default function ServicesPage() {
   return (
     <div className="app">
+      <SEO
+        title="Cleaning Services Tulsa OK | Standard, Deep, Move-Out | Clean Bee"
+        description="Professional house cleaning services in Tulsa, OK. Standard, deep, move-in/move-out, recurring, post-construction & commercial cleaning. Get a free quote today."
+        path="/services"
+        schema={SCHEMA}
+      />
       <Navbar />
 
       <main className="sp-main">

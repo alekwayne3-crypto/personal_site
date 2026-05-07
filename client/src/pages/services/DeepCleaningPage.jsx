@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './ServiceDetail.css'
@@ -46,13 +46,38 @@ const REVIEW = {
   text: "Clean Bee has completely transformed my home. The deep cleaning was incredible — every single nook spotless. I've tried three other Tulsa services and none come close. The buzz is absolutely real.",
 }
 
-export default function DeepCleaningPage() {
-  useEffect(() => {
-    document.title = 'Deep Cleaning Service in Tulsa, OK | Clean Bee Cleaning Co.'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'Deep Cleaning', item: 'https://cleanbeetulsa.com/services/deep-cleaning' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Deep Cleaning',
+      serviceType: 'House Cleaning',
+      description: 'Professional deep cleaning in Tulsa, OK. Baseboards, appliances, detailed scrubbing and more. Perfect for first-time cleans, seasonal refreshes, and before big events.',
+      url: 'https://cleanbeetulsa.com/services/deep-cleaning',
+      provider: { '@type': 'LocalBusiness', name: 'Clean Bee Cleaning Co.', telephone: '+19187727228' },
+      areaServed: 'Tulsa, OK',
+    },
+  ],
+}
 
+export default function DeepCleaningPage() {
   return (
     <div className="app">
+      <SEO
+        title="Deep Cleaning Service Tulsa OK | Clean Bee"
+        description="Professional deep cleaning in Tulsa, OK. Baseboards, appliances, detailed scrubbing & more. Perfect for first-time cleans, seasonal refreshes & before guests arrive."
+        path="/services/deep-cleaning"
+        schema={SCHEMA}
+      />
       <Navbar />
       <main className="sd-main">
 

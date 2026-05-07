@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './ServiceDetail.css'
@@ -45,13 +45,38 @@ const REVIEW = {
   text: "Best recurring cleaning in Tulsa, hands down. They remember all my preferences, always on time, and my house smells amazing after every visit. Three years a customer and I'll never switch.",
 }
 
-export default function CommercialCleaningPage() {
-  useEffect(() => {
-    document.title = 'Commercial Cleaning Service in Tulsa, OK | Clean Bee Cleaning Co.'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'Commercial Cleaning', item: 'https://cleanbeetulsa.com/services/commercial-cleaning' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Commercial Cleaning',
+      serviceType: 'Commercial Cleaning',
+      description: 'Professional office and commercial cleaning in Tulsa, OK. Bonded, insured, and background-checked. Flexible scheduling for businesses of all sizes.',
+      url: 'https://cleanbeetulsa.com/services/commercial-cleaning',
+      provider: { '@type': 'LocalBusiness', name: 'Clean Bee Cleaning Co.', telephone: '+19187727228' },
+      areaServed: 'Tulsa, OK',
+    },
+  ],
+}
 
+export default function CommercialCleaningPage() {
   return (
     <div className="app">
+      <SEO
+        title="Commercial Cleaning Tulsa OK | Office Cleaning | Clean Bee"
+        description="Professional commercial & office cleaning in Tulsa, OK. Bonded, insured & background-checked. Flexible scheduling, recurring plans, and consistent results."
+        path="/services/commercial-cleaning"
+        schema={SCHEMA}
+      />
       <Navbar />
       <main className="sd-main">
 

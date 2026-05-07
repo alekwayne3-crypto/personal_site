@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './ServiceDetail.css'
@@ -46,13 +46,38 @@ const REVIEW = {
   text: "Hired them for move-out cleaning and got every penny of our deposit back. Professional, on time, and left the place better than when we first moved in. Cannot recommend them enough.",
 }
 
-export default function MoveInMoveOutPage() {
-  useEffect(() => {
-    document.title = 'Move-In / Move-Out Cleaning in Tulsa, OK | Clean Bee Cleaning Co.'
-  }, [])
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cleanbeetulsa.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cleanbeetulsa.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'Move-In / Move-Out Cleaning', item: 'https://cleanbeetulsa.com/services/move-in-move-out' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Move-In / Move-Out Cleaning',
+      serviceType: 'House Cleaning',
+      description: 'Professional move-in and move-out cleaning in Tulsa, OK. Get your deposit back or start fresh in your new home with a top-to-bottom deep clean.',
+      url: 'https://cleanbeetulsa.com/services/move-in-move-out',
+      provider: { '@type': 'LocalBusiness', name: 'Clean Bee Cleaning Co.', telephone: '+19187727228' },
+      areaServed: 'Tulsa, OK',
+    },
+  ],
+}
 
+export default function MoveInMoveOutPage() {
   return (
     <div className="app">
+      <SEO
+        title="Move-In Move-Out Cleaning Tulsa OK | Clean Bee"
+        description="Professional move-in & move-out cleaning in Tulsa, OK. Get your deposit back or start fresh in your new home. Top-to-bottom deep clean by a bonded, insured team."
+        path="/services/move-in-move-out"
+        schema={SCHEMA}
+      />
       <Navbar />
       <main className="sd-main">
 

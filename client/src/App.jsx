@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, useLayoutEffect } from 'react'
+import SEO from './components/SEO'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -40,9 +41,27 @@ function ScrollToTop() {
   return null
 }
 
+const HOME_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Clean Bee Cleaning Co.',
+  url: 'https://cleanbeetulsa.com',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://cleanbeetulsa.com/?s={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 function HomePage() {
   return (
     <div className="app">
+      <SEO
+        title="House Cleaning Service Tulsa OK | Clean Bee"
+        description="Clean Bee is Tulsa's top-rated house cleaning service. Bonded, insured & background-checked. Standard, deep, move-out & recurring cleaning. Call (918) 772-7228."
+        path="/"
+        schema={HOME_SCHEMA}
+      />
       <Navbar />
       <main>
         <Hero />
